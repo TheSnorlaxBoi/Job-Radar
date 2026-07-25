@@ -12,7 +12,7 @@
     "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
     "location": "France",
     "remote_only": false,
-    "contract_types": [],
+    "contract_types": ["CDI"],
     "max_pages": 2,
     "published_since_seconds": 86400
   },
