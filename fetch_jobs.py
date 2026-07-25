@@ -81,75 +81,75 @@ def fetch_france_travail(cfg):
         print(f"[France Travail] Échec d'authentification : {e}")
         return []
 
-    params = {}
-    if ft_cfg.get("keywords"):
-        params["motsCles"] = ft_cfg["keywords"]
-    if ft_cfg.get("commune"):
-        params["commune"] = ft_cfg["commune"]
-    if ft_cfg.get("rayon_km"):
-        params["rayon"] = ft_cfg["rayon_km"]
+    # Un ou plusieurs mots-clés — rétrocompatible avec l'ancienne clé "keywords" (str)
+    keywords_list = ft_cfg.get("keywords_list")
+    if not keywords_list:
+        keywords_list = [ft_cfg["keywords"]] if ft_cfg.get("keywords") else [""]
+
+    base_params = {}
     if ft_cfg.get("contract_types"):
         # ex: CDI, CDD, MIS, SAI...
-        params["typeContrat"] = ",".join(ft_cfg["contract_types"])
+        base_params["typeContrat"] = ",".join(ft_cfg["contract_types"])
     if ft_cfg.get("remote_only"):
-        params["teletravail"] = "1"
+        base_params["teletravail"] = "1"
     if ft_cfg.get("min_salary"):
-        params["salaireMin"] = ft_cfg["min_salary"]
-    if ft_cfg.get("published_since_days"):
-        params["minCreationDate"] = None  # non utilisé, on filtre après coup
-    params["sort"] = 1  # tri par date de création décroissante
+        base_params["salaireMin"] = ft_cfg["min_salary"]
+    base_params["sort"] = 1  # tri par date de création décroissante
+    # Pas de "commune"/"rayon" : recherche au niveau national (toute la France)
 
     headers = {"Authorization": f"Bearer {token}"}
     jobs = []
-    range_start, page_size = 0, 150
+    seen_ids = set()
     max_results = ft_cfg.get("max_results", 150)
+    page_size = 150
 
-    while range_start < max_results:
-        range_end = min(range_start + page_size - 1, max_results - 1)
-        headers_range = dict(headers)
-        p = dict(params)
-        r = requests.get(
-            FT_SEARCH_URL,
-            params=p,
-            headers=headers,
-            timeout=30,
-        )
-        # Le paramètre range se passe en query string simple
-        r = requests.get(
-            f"{FT_SEARCH_URL}?range={range_start}-{range_end}",
-            params=p,
-            headers=headers,
-            timeout=30,
-        )
-        if r.status_code not in (200, 206):
-            print(f"[France Travail] Erreur HTTP {r.status_code} : {r.text[:300]}")
-            break
-        payload = r.json()
-        results = payload.get("resultats", [])
-        if not results:
-            break
+    for keyword in keywords_list:
+        params = dict(base_params)
+        if keyword:
+            params["motsCles"] = keyword
 
-        for o in results:
-            jobs.append({
-                "id": f"ft-{o.get('id')}",
-                "source": "France Travail",
-                "title": o.get("intitule"),
-                "company": (o.get("entreprise") or {}).get("nom", "Non précisé"),
-                "location": (o.get("lieuTravail") or {}).get("libelle", ""),
-                "contract": o.get("typeContratLibelle", ""),
-                "remote": bool((o.get("teletravail") or "")),
-                "salary": (o.get("salaire") or {}).get("libelle", ""),
-                "published_at": o.get("dateCreation", ""),
-                "url": o.get("origineOffre", {}).get("urlOrigine")
-                    or f"https://candidat.francetravail.fr/offres/recherche/detail/{o.get('id')}",
-            })
+        range_start = 0
+        while range_start < max_results:
+            range_end = min(range_start + page_size - 1, max_results - 1)
+            r = requests.get(
+                f"{FT_SEARCH_URL}?range={range_start}-{range_end}",
+                params=params,
+                headers=headers,
+                timeout=30,
+            )
+            if r.status_code not in (200, 206):
+                print(f"[France Travail] ('{keyword}') Erreur HTTP {r.status_code} : {r.text[:300]}")
+                break
+            payload = r.json()
+            results = payload.get("resultats", [])
+            if not results:
+                break
 
-        if len(results) < page_size:
-            break
-        range_start += page_size
-        time.sleep(0.3)  # respect du rate-limit
+            for o in results:
+                job_id = f"ft-{o.get('id')}"
+                if job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                jobs.append({
+                    "id": job_id,
+                    "source": "France Travail",
+                    "title": o.get("intitule"),
+                    "company": (o.get("entreprise") or {}).get("nom", "Non précisé"),
+                    "location": (o.get("lieuTravail") or {}).get("libelle", ""),
+                    "contract": o.get("typeContratLibelle", ""),
+                    "remote": bool((o.get("teletravail") or "")),
+                    "salary": (o.get("salaire") or {}).get("libelle", ""),
+                    "published_at": o.get("dateCreation", ""),
+                    "url": o.get("origineOffre", {}).get("urlOrigine")
+                        or f"https://candidat.francetravail.fr/offres/recherche/detail/{o.get('id')}",
+                })
 
-    print(f"[France Travail] {len(jobs)} offres récupérées.")
+            if len(results) < page_size:
+                break
+            range_start += page_size
+            time.sleep(0.3)  # respect du rate-limit
+
+    print(f"[France Travail] {len(jobs)} offres récupérées (national, {len(keywords_list)} mot(s)-clé(s)).")
     return jobs
 
 
@@ -179,62 +179,73 @@ def fetch_linkedin(cfg):
     if not li_cfg.get("enabled"):
         return []
 
-    keywords = li_cfg.get("keywords", "")
+    # Un ou plusieurs mots-clés — rétrocompatible avec l'ancienne clé "keywords" (str)
+    keywords_list = li_cfg.get("keywords_list")
+    if not keywords_list:
+        keywords_list = [li_cfg["keywords"]] if li_cfg.get("keywords") else [""]
+
     location = li_cfg.get("location", "France")
     max_pages = li_cfg.get("max_pages", 2)  # 25 offres / page ; reste raisonnable
     f_tpr = li_cfg.get("published_since_seconds")  # ex: 86400 = dernières 24h
 
     jobs = []
+    seen_ids = set()
     headers = {
         "User-Agent": "Mozilla/5.0 (compatible; job-radar personal bot)",
         "Accept-Language": "fr-FR,fr;q=0.9",
     }
 
-    for page in range(max_pages):
-        params = {
-            "keywords": keywords,
-            "location": location,
-            "start": page * 25,
-        }
-        if li_cfg.get("remote_only"):
-            params["f_WT"] = "2"  # filtre "remote" LinkedIn
-        if li_cfg.get("contract_types"):
-            params["f_JT"] = ",".join(li_cfg["contract_types"])  # F,C,P,T...
-        if f_tpr:
-            params["f_TPR"] = f"r{f_tpr}"
+    for keyword in keywords_list:
+        for page in range(max_pages):
+            params = {
+                "keywords": keyword,
+                "location": location,
+                "start": page * 25,
+            }
+            if li_cfg.get("remote_only"):
+                params["f_WT"] = "2"  # filtre "remote" LinkedIn
+            if li_cfg.get("contract_types"):
+                params["f_JT"] = ",".join(li_cfg["contract_types"])  # F,C,P,T...
+            if f_tpr:
+                params["f_TPR"] = f"r{f_tpr}"
 
-        r = requests.get(LI_SEARCH_URL, params=params, headers=headers, timeout=20)
-        if r.status_code != 200 or not r.text.strip():
-            print(f"[LinkedIn] Page {page}: réponse vide ou erreur ({r.status_code}) — arrêt.")
-            break
+            r = requests.get(LI_SEARCH_URL, params=params, headers=headers, timeout=20)
+            if r.status_code != 200 or not r.text.strip():
+                print(f"[LinkedIn] ('{keyword}') Page {page}: réponse vide ou erreur ({r.status_code}) — arrêt.")
+                break
 
-        cards = re.findall(r'<li>(.*?)</li>', r.text, re.DOTALL)
-        if not cards:
-            break
+            cards = re.findall(r'<li>(.*?)</li>', r.text, re.DOTALL)
+            if not cards:
+                break
 
-        for card in cards:
-            title_m = re.search(r'class="base-search-card__title">(.*?)</h3>', card, re.DOTALL)
-            company_m = re.search(r'class="base-search-card__subtitle">.*?>(.*?)</a>', card, re.DOTALL)
-            location_m = re.search(r'class="job-search-card__location">(.*?)</span>', card, re.DOTALL)
-            link_m = re.search(r'href="([^"?]+)', card)
-            date_m = re.search(r'datetime="([^"]+)"', card)
+            for card in cards:
+                title_m = re.search(r'class="base-search-card__title">(.*?)</h3>', card, re.DOTALL)
+                company_m = re.search(r'class="base-search-card__subtitle">.*?>(.*?)</a>', card, re.DOTALL)
+                location_m = re.search(r'class="job-search-card__location">(.*?)</span>', card, re.DOTALL)
+                link_m = re.search(r'href="([^"?]+)', card)
+                date_m = re.search(r'datetime="([^"]+)"', card)
 
-            jobs.append({
-                "id": f"li-{(link_m.group(1).rstrip('/').rsplit('-',1)[-1] if link_m else len(jobs))}",
-                "source": "LinkedIn",
-                "title": _strip_tags(title_m.group(1)) if title_m else "",
-                "company": _strip_tags(company_m.group(1)) if company_m else "",
-                "location": _strip_tags(location_m.group(1)) if location_m else "",
-                "contract": "",
-                "remote": bool(li_cfg.get("remote_only")),
-                "salary": "",
-                "published_at": date_m.group(1) if date_m else "",
-                "url": link_m.group(1) if link_m else "",
-            })
+                job_id = f"li-{(link_m.group(1).rstrip('/').rsplit('-',1)[-1] if link_m else len(jobs))}"
+                if job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
 
-        time.sleep(1.5)  # espacement volontaire entre les pages
+                jobs.append({
+                    "id": job_id,
+                    "source": "LinkedIn",
+                    "title": _strip_tags(title_m.group(1)) if title_m else "",
+                    "company": _strip_tags(company_m.group(1)) if company_m else "",
+                    "location": _strip_tags(location_m.group(1)) if location_m else "",
+                    "contract": "",
+                    "remote": bool(li_cfg.get("remote_only")),
+                    "salary": "",
+                    "published_at": date_m.group(1) if date_m else "",
+                    "url": link_m.group(1) if link_m else "",
+                })
 
-    print(f"[LinkedIn] {len(jobs)} offres récupérées.")
+            time.sleep(1.5)  # espacement volontaire entre les pages/mots-clés
+
+    print(f"[LinkedIn] {len(jobs)} offres récupérées ({len(keywords_list)} mot(s)-clé(s)).")
     return jobs
 
 

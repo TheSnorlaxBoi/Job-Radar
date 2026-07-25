@@ -1,9 +1,7 @@
 {
   "france_travail": {
     "enabled": true,
-    "keywords": "développeur python",
-    "commune": "75056",
-    "rayon_km": 30,
+    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
     "contract_types": ["CDI"],
     "remote_only": false,
     "min_salary": null,
@@ -11,7 +9,7 @@
   },
   "linkedin": {
     "enabled": true,
-    "keywords": "développeur python",
+    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
     "location": "France",
     "remote_only": false,
     "contract_types": [],
