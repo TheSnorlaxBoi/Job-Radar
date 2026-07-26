@@ -1,5 +1,44 @@
 [
   {
+    "id": "li-4376796636",
+    "source": "LinkedIn",
+    "title": "Dévops (F/H)",
+    "company": "GROUPE LR TECHNOLOGIES",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-26",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9vops-f-h-at-groupe-lr-technologies-4376796636",
+    "first_seen": "2026-07-26T16:58:48.120918+00:00"
+  },
+  {
+    "id": "li-4444838952",
+    "source": "LinkedIn",
+    "title": "Consultant BI / Data",
+    "company": "Afster",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-26",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-bi-data-at-afster-4444838952",
+    "first_seen": "2026-07-26T16:58:48.120942+00:00"
+  },
+  {
+    "id": "li-4377261202",
+    "source": "LinkedIn",
+    "title": "Ingénieur développeur applications métiers F/H",
+    "company": "DGA - Direction générale de l'armement",
+    "location": "Bruz",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-26",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d%C3%A9veloppeur-applications-m%C3%A9tiers-f-h-at-dga-direction-g%C3%A9n%C3%A9rale-de-l-armement-4377261202",
+    "first_seen": "2026-07-26T16:58:48.120947+00:00"
+  },
+  {
     "id": "ft-5477925",
     "source": "France Travail",
     "title": "Developpeur Supervision (SCADA) F/H",
