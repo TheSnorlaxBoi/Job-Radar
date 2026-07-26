@@ -1,5 +1,44 @@
 [
   {
+    "id": "li-4398489702",
+    "source": "LinkedIn",
+    "title": "Agent Builder",
+    "company": "Mirakl",
+    "location": "Ville de Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-26",
+    "url": "https://fr.linkedin.com/jobs/view/agent-builder-at-mirakl-4398489702",
+    "first_seen": "2026-07-26T17:24:22.388685+00:00"
+  },
+  {
+    "id": "li-4414042272",
+    "source": "LinkedIn",
+    "title": "Ingénieur Data et IA F/H",
+    "company": "KNDS France",
+    "location": "Versailles",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-26",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-data-et-ia-f-h-at-knds-france-4414042272",
+    "first_seen": "2026-07-26T17:24:22.388721+00:00"
+  },
+  {
+    "id": "li-4315426373",
+    "source": "LinkedIn",
+    "title": "Data Analyst (F/H)",
+    "company": "BPCE Solutions informatiques",
+    "location": "Villeneuve-d'Ascq",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-26",
+    "url": "https://fr.linkedin.com/jobs/view/data-analyst-f-h-at-bpce-solutions-informatiques-4315426373",
+    "first_seen": "2026-07-26T17:24:22.388725+00:00"
+  },
+  {
     "id": "li-4376796636",
     "source": "LinkedIn",
     "title": "Dévops (F/H)",
