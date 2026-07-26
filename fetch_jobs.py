@@ -19,7 +19,7 @@ import re
 import sys
 import time
 import html
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -59,7 +59,10 @@ def get_france_travail_token(client_id, client_secret, scope):
         headers={"Content-Type": "application/x-www-form-urlencoded"},
         timeout=20,
     )
-    resp.raise_for_status()
+    if resp.status_code != 200:
+        raise RuntimeError(
+            f"{resp.status_code} {resp.reason} — réponse de l'API : {resp.text[:500]}"
+        )
     return resp.json()["access_token"]
 
 
@@ -283,10 +286,47 @@ def merge_and_dedupe(new_jobs, existing_jobs):
     return merged, fresh
 
 
+def _parse_iso(date_str):
+    if not date_str:
+        return None
+    try:
+        return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+    except (ValueError, TypeError):
+        return None
+
+
+def purge_old_jobs(jobs, max_age_days=7):
+    """Retire les offres dont la date de publication (ou, à défaut, la date
+    de première détection) dépasse max_age_days. Une offre dont la date est
+    illisible est conservée par précaution plutôt que supprimée."""
+    cutoff = datetime.now(timezone.utc) - timedelta(days=max_age_days)
+    kept = []
+    for j in jobs:
+        ref = _parse_iso(j.get("published_at")) or _parse_iso(j.get("first_seen"))
+        if ref is None:
+            kept.append(j)
+            continue
+        if ref.tzinfo is None:
+            ref = ref.replace(tzinfo=timezone.utc)
+        if ref >= cutoff:
+            kept.append(j)
+    removed = len(jobs) - len(kept)
+    if removed:
+        print(f"[Purge] {removed} offre(s) de plus de {max_age_days} jour(s) supprimée(s).")
+    return kept
+
+
 def load_existing():
     if DATA_FILE.exists():
-        with open(DATA_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(DATA_FILE, "r", encoding="utf-8") as f:
+                content = f.read().strip()
+                if not content:
+                    return []
+                return json.loads(content)
+        except json.JSONDecodeError:
+            print(f"[Avertissement] {DATA_FILE} illisible (JSON invalide) — on repart d'une liste vide.")
+            return []
     return []
 
 
@@ -298,7 +338,9 @@ def save(jobs):
 
 def main():
     cfg = load_config()
+    max_age_days = cfg.get("max_job_age_days", 7)
     existing = load_existing()
+    existing = purge_old_jobs(existing, max_age_days)
 
     all_new = []
     all_new += fetch_france_travail(cfg)
@@ -306,6 +348,7 @@ def main():
 
     all_new = apply_common_filters(all_new, cfg)
     merged, fresh = merge_and_dedupe(all_new, existing)
+    merged = purge_old_jobs(merged, max_age_days)
     save(merged)
 
     print(f"Terminé. {len(fresh)} nouvelle(s) offre(s) ajoutée(s). Total stocké : {len(merged)}.")
