@@ -1,21 +1,37 @@
 {
   "france_travail": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
-    "contract_types": ["CDI"],
+    "keywords_list": [
+      "développeur python",
+      "data engineer",
+      "ingénieur backend"
+    ],
+    "contract_types": [
+      "CDI"
+    ],
     "remote_only": false,
     "min_salary": null,
     "max_results": 150
   },
   "linkedin": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "développeur python",
+      "data engineer",
+      "ingénieur backend"
+    ],
     "location": "France",
     "remote_only": false,
-    "contract_types": ["CDI"],
+    "contract_types": [
+      "CDI"
+    ],
     "max_pages": 2,
     "published_since_seconds": 86400
   },
-  "exclude_keywords": ["stage", "alternance", "freelance"],
+  "exclude_keywords": [
+    "stage",
+    "alternance",
+    "freelance"
+  ],
   "title_must_contain": []
 }
