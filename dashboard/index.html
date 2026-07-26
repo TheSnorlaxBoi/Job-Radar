@@ -493,6 +493,33 @@
         throw new Error(`Échec de mise à jour de config.json (${putRes.status}) ${errBody.message || ""}`);
       }
 
+      statusEl.textContent = "Filtres enregistrés, remise à zéro des résultats précédents...";
+
+      // On efface les offres précédentes pour ne garder que celles qui correspondent
+      // aux nouveaux filtres. On a besoin du sha actuel de data/jobs.json pour l'écraser.
+      const jobsFileRes = await fetch(
+        `https://api.github.com/repos/${s.owner}/${s.repo}/contents/data/jobs.json`,
+        { headers: ghHeaders(s.token) }
+      );
+      if (jobsFileRes.ok) {
+        const jobsFileData = await jobsFileRes.json();
+        const resetRes = await fetch(
+          `https://api.github.com/repos/${s.owner}/${s.repo}/contents/data/jobs.json`,
+          {
+            method: "PUT",
+            headers: { ...ghHeaders(s.token), "Content-Type": "application/json" },
+            body: JSON.stringify({
+              message: "Réinitialisation des offres suite à un changement de filtres",
+              content: btoa("[]"),
+              sha: jobsFileData.sha,
+            }),
+          }
+        );
+        if (!resetRes.ok) {
+          throw new Error(`Filtres enregistrés, mais échec de la remise à zéro des offres (${resetRes.status})`);
+        }
+      }
+
       statusEl.textContent = "Filtres enregistrés, déclenchement de la collecte...";
 
       const dispatchRes = await fetch(
