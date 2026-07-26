@@ -473,7 +473,10 @@
     statusEl.textContent = "Enregistrement des filtres...";
 
     try {
-      const newConfig = buildConfigFromForm(loadedConfig || {});
+      // On recharge une version fraîche (avec le sha à jour) juste avant d'écrire,
+      // au cas où la connexion GitHub aurait été renseignée après l'ouverture du panneau.
+      const freshConfig = await fetchConfig();
+      const newConfig = buildConfigFromForm(freshConfig);
       const content = btoa(unescape(encodeURIComponent(JSON.stringify(newConfig, null, 2))));
 
       const putRes = await fetch(`https://api.github.com/repos/${s.owner}/${s.repo}/contents/config.json`, {
@@ -482,7 +485,7 @@
         body: JSON.stringify({
           message: "Mise à jour des filtres depuis le dashboard",
           content: content,
-          sha: loadedSha || undefined,
+          sha: loadedSha,
         }),
       });
       if (!putRes.ok) {
