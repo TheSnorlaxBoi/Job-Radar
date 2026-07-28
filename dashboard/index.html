@@ -159,6 +159,8 @@
     <option value="">Toutes les sources</option>
     <option value="France Travail">France Travail</option>
     <option value="LinkedIn">LinkedIn</option>
+    <option value="VDAB">VDAB (Belgique)</option>
+    <option value="Moovijob">Moovijob (Luxembourg)</option>
   </select>
   <select id="sortBy">
     <option value="first_seen">Plus récentes (ajout)</option>
@@ -188,6 +190,8 @@
       <div class="checks">
         <label><input type="checkbox" id="f_ft_enabled" /> France Travail</label>
         <label><input type="checkbox" id="f_li_enabled" /> LinkedIn</label>
+        <label><input type="checkbox" id="f_vdab_enabled" /> VDAB (Belgique)</label>
+        <label><input type="checkbox" id="f_moovijob_enabled" /> Moovijob (Luxembourg)</label>
       </div>
     </div>
 
@@ -403,9 +407,13 @@
   function fillFormFromConfig(cfg) {
     const ft = cfg.france_travail || {};
     const li = cfg.linkedin || {};
+    const vdab = cfg.vdab || {};
+    const moovijob = cfg.moovijob || {};
     document.getElementById("f_keywords").value = (ft.keywords_list || li.keywords_list || []).join("\n");
     document.getElementById("f_ft_enabled").checked = ft.enabled !== false;
     document.getElementById("f_li_enabled").checked = li.enabled !== false;
+    document.getElementById("f_vdab_enabled").checked = vdab.enabled !== false;
+    document.getElementById("f_moovijob_enabled").checked = moovijob.enabled !== false;
     document.querySelectorAll(".f_contract").forEach(cb => {
       cb.checked = (ft.contract_types || []).includes(cb.value);
     });
@@ -440,6 +448,14 @@
     cfg.linkedin.keywords_list = keywords;
     cfg.linkedin.remote_only = remoteOnly;
     delete cfg.linkedin.keywords;
+
+    cfg.vdab = cfg.vdab || {};
+    cfg.vdab.enabled = document.getElementById("f_vdab_enabled").checked;
+    cfg.vdab.keywords_list = keywords;
+
+    cfg.moovijob = cfg.moovijob || {};
+    cfg.moovijob.enabled = document.getElementById("f_moovijob_enabled").checked;
+    cfg.moovijob.keywords_list = keywords;
 
     cfg.exclude_keywords = linesToList(document.getElementById("f_exclude").value);
     cfg.title_must_contain = linesToList(document.getElementById("f_titlemust").value);
