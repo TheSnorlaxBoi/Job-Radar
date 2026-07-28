@@ -1,5 +1,83 @@
 [
   {
+    "id": "ft-211SSVX",
+    "source": "France Travail",
+    "title": "Monteur-Câbleur Testeur (H/F)",
+    "company": "A.A",
+    "location": "37 - Saint-Avertin",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 25000.0 Euros à 30000.0 Euros sur 12.0 mois",
+    "published_at": "2026-07-28T01:02:01.542Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211SSVX",
+    "first_seen": "2026-07-28T02:26:25.322703+00:00"
+  },
+  {
+    "id": "ft-5501125",
+    "source": "France Travail",
+    "title": "Technicien Test (H/F)",
+    "company": "ACTUA",
+    "location": "25 - Besançon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Mensuel de 1911.0 Euros à 2352.0 Euros",
+    "published_at": "2026-07-28T03:20:39.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5501125",
+    "first_seen": "2026-07-28T02:26:25.322706+00:00"
+  },
+  {
+    "id": "ft-5498290",
+    "source": "France Travail",
+    "title": "Technicien Test (H/F)",
+    "company": "Non précisé",
+    "location": "35 - Étrelles",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-28T03:20:30.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5498290",
+    "first_seen": "2026-07-28T02:26:25.322708+00:00"
+  },
+  {
+    "id": "ft-5496050",
+    "source": "France Travail",
+    "title": "Opérateur Test Séquence (H/F)",
+    "company": "TRANE TECHNOLOGIES",
+    "location": "88 - Golbey",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 25000.0 Euros à 30000.0 Euros sur 12.0 mois",
+    "published_at": "2026-07-28T01:01:51.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5496050",
+    "first_seen": "2026-07-28T02:26:25.322710+00:00"
+  },
+  {
+    "id": "ft-5498312",
+    "source": "France Travail",
+    "title": "Technicien d'essai sur sites (H/F)",
+    "company": "Non précisé",
+    "location": "27 - Vernon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-28T03:20:30.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5498312",
+    "first_seen": "2026-07-28T02:26:25.322718+00:00"
+  },
+  {
+    "id": "li-4445406520",
+    "source": "LinkedIn",
+    "title": "Backend Engineer",
+    "company": "Prodiges",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-27",
+    "url": "https://fr.linkedin.com/jobs/view/backend-engineer-at-prodiges-4445406520",
+    "first_seen": "2026-07-28T02:26:25.322924+00:00"
+  },
+  {
     "id": "li-4445195366",
     "source": "LinkedIn",
     "title": "QA e-commerce (h/f)",
@@ -713,19 +791,6 @@
     "published_at": "2026-07-26T19:33:51.000Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5479175",
     "first_seen": "2026-07-26T20:05:00.408152+00:00"
-  },
-  {
-    "id": "ft-5170039",
-    "source": "France Travail",
-    "title": "Développeur Commercial junior H/F - Secteur Hauts de France F/H - Preysta Nord",
-    "company": "Preysta Nord",
-    "location": "59 - Saultain",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-20T21:17:40.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5170039",
-    "first_seen": "2026-07-26T20:05:00.408166+00:00"
   },
   {
     "id": "ft-5475628",
