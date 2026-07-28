@@ -41,6 +41,21 @@ rythme modéré (toutes les 4h, 2 pages max) pour rester raisonnable. Si LinkedI
 bloque les requêtes, désactive simplement `"linkedin": {"enabled": false}`
 dans `config.json` et garde France Travail, qui est robuste et illimité.
 
+### 4. Belgique (VDAB) et Luxembourg (Moovijob)
+Aucune clé nécessaire non plus. Ces deux jobboards (les plus populaires de
+leur pays respectif) n'offrent pas d'API grand public gratuite comme France
+Travail — le script lit donc les données structurées **schema.org
+"JobPosting"** que ces sites embarquent dans leurs pages pour apparaître dans
+Google for Jobs. C'est plus stable qu'un scraping par classes CSS, mais reste
+dépendant du format du site :
+- Si un run renvoie 0 offre pour ces sources, regarde les logs : le message
+  précise si c'est parce qu'aucune donnée structurée n'a été trouvée (le site
+  a peut-être changé) ou une erreur HTTP.
+- Le nom exact du paramètre de recherche (`woord` pour VDAB, `keyword` pour
+  Moovijob) et la pagination sont des meilleures estimations à vérifier/ajuster
+  dans `config.json` si les résultats ne correspondent pas à ce qui est
+  affiché en cherchant manuellement sur le site.
+
 ### 4. Adapter tes filtres
 Modifie `config.json` :
 - `keywords` : mots-clés du poste recherché

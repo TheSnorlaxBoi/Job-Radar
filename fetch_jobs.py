@@ -177,6 +177,162 @@ def _strip_tags(s):
     return html.unescape(TAG_RE.sub("", s or "")).strip()
 
 
+# ---------------------------------------------------------------------------
+# Modules génériques pour jobboards exposant des données structurées
+# schema.org "JobPosting" (utilisé pour le référencement Google for Jobs).
+# C'est plus robuste qu'un scraping basé sur des classes CSS, qui changent
+# plus souvent que ce format standardisé. Utilisé ici pour VDAB (Belgique)
+# et Moovijob (Luxembourg), qui n'offrent pas d'API grand public gratuite.
+# ---------------------------------------------------------------------------
+
+JSONLD_RE = re.compile(
+    r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+    re.DOTALL | re.IGNORECASE,
+)
+
+
+def extract_jobpostings_from_html(page_html):
+    postings = []
+    for match in JSONLD_RE.finditer(page_html):
+        raw = match.group(1).strip()
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+
+        if isinstance(data, list):
+            candidates = data
+        elif isinstance(data, dict) and isinstance(data.get("@graph"), list):
+            candidates = data["@graph"]
+        elif isinstance(data, dict):
+            candidates = [data]
+        else:
+            candidates = []
+
+        for item in candidates:
+            if not isinstance(item, dict):
+                continue
+            item_type = item.get("@type")
+            types = item_type if isinstance(item_type, list) else [item_type]
+            if any(str(t).lower() == "jobposting" for t in types if t):
+                postings.append(item)
+    return postings
+
+
+def _jobposting_to_job(item, source_name, fallback_url):
+    title = _strip_tags(item.get("title") or "")
+
+    org = item.get("hiringOrganization")
+    company = org.get("name", "") if isinstance(org, dict) else (org or "")
+
+    location = ""
+    loc = item.get("jobLocation")
+    if isinstance(loc, list) and loc:
+        loc = loc[0]
+    if isinstance(loc, dict):
+        addr = loc.get("address")
+        if isinstance(addr, dict):
+            parts = [addr.get("addressLocality"), addr.get("addressRegion")]
+            location = ", ".join(p for p in parts if p)
+
+    contract = item.get("employmentType") or ""
+    if isinstance(contract, list):
+        contract = ", ".join(str(c) for c in contract)
+
+    salary = ""
+    sal = item.get("baseSalary")
+    if isinstance(sal, dict):
+        val = sal.get("value")
+        if isinstance(val, dict):
+            amount = val.get("value") or val.get("minValue") or ""
+            unit = val.get("unitText", "")
+            currency = sal.get("currency", "")
+            if amount:
+                salary = f"{amount} {currency}/{unit}".strip()
+
+    published = item.get("datePosted") or ""
+    url = item.get("url") or fallback_url
+    job_id_seed = url or f"{title}-{company}"
+
+    return {
+        "id": f"{source_name.lower()}-{abs(hash(job_id_seed))}",
+        "source": source_name,
+        "title": title,
+        "company": company or "Non précisé",
+        "location": location,
+        "contract": contract,
+        "remote": False,
+        "salary": salary,
+        "published_at": published,
+        "url": url,
+    }
+
+
+def fetch_generic_board(source_name, board_cfg):
+    """Récupère les offres d'un jobboard via ses données structurées JobPosting.
+
+    ⚠️ Contrairement à France Travail (API officielle), ce module dépend de la
+    présence de ce balisage sur les pages du site — s'il change de format, le
+    module renverra simplement 0 résultat (avec un message dans les logs)
+    plutôt que de faire planter la collecte. Les paramètres de recherche
+    (nom du paramètre mot-clé, pagination) sont des meilleures estimations :
+    vérifie les logs après la première exécution et ajuste au besoin.
+    """
+    if not board_cfg.get("enabled"):
+        return []
+    search_url = board_cfg.get("search_url")
+    if not search_url:
+        return []
+
+    keyword_param = board_cfg.get("keyword_param", "q")
+    keywords_list = board_cfg.get("keywords_list") or [""]
+    max_pages = board_cfg.get("max_pages", 1)
+    page_param = board_cfg.get("page_param")
+
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; job-radar personal bot)"}
+    jobs = []
+    seen_ids = set()
+
+    for keyword in keywords_list:
+        for page in range(max_pages):
+            params = {}
+            if keyword:
+                params[keyword_param] = keyword
+            if page_param and page > 0:
+                params[page_param] = page
+
+            try:
+                r = requests.get(search_url, params=params, headers=headers, timeout=20)
+            except requests.RequestException as e:
+                print(f"[{source_name}] Erreur réseau : {e}")
+                break
+
+            if r.status_code != 200:
+                print(f"[{source_name}] ('{keyword}') page {page} : HTTP {r.status_code}")
+                break
+
+            postings = extract_jobpostings_from_html(r.text)
+            if not postings:
+                if page == 0:
+                    print(f"[{source_name}] ('{keyword}') aucune donnée JobPosting trouvée — "
+                          f"le site a peut-être changé de format, ou les paramètres de recherche sont à ajuster.")
+                break
+
+            for item in postings:
+                job = _jobposting_to_job(item, source_name, search_url)
+                if job["id"] in seen_ids:
+                    continue
+                seen_ids.add(job["id"])
+                jobs.append(job)
+
+            if not page_param:
+                break  # pas de pagination connue pour ce jobboard
+            time.sleep(1.0)
+
+    print(f"[{source_name}] {len(jobs)} offre(s) récupérée(s).")
+    return jobs
+
+
 def fetch_linkedin(cfg):
     li_cfg = cfg.get("linkedin", {})
     if not li_cfg.get("enabled"):
@@ -345,6 +501,8 @@ def main():
     all_new = []
     all_new += fetch_france_travail(cfg)
     all_new += fetch_linkedin(cfg)
+    all_new += fetch_generic_board("VDAB", cfg.get("vdab", {}))
+    all_new += fetch_generic_board("Moovijob", cfg.get("moovijob", {}))
 
     all_new = apply_common_filters(all_new, cfg)
     merged, fresh = merge_and_dedupe(all_new, existing)

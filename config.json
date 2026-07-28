@@ -1,34 +1,36 @@
 {
   "france_travail": {
     "enabled": true,
-    "keywords_list": [
-      "Développeur Junior",
-      "Testeur"
-    ],
-    "contract_types": [
-      "CDI"
-    ],
+    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "contract_types": ["CDI"],
     "remote_only": false,
     "min_salary": null,
     "max_results": 150
   },
   "linkedin": {
     "enabled": true,
-    "keywords_list": [
-      "Développeur Junior",
-      "Testeur"
-    ],
+    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
     "location": "France",
     "remote_only": false,
     "contract_types": [],
     "max_pages": 2,
     "published_since_seconds": 86400
   },
-  "exclude_keywords": [
-    "stage",
-    "alternance",
-    "freelance"
-  ],
+  "vdab": {
+    "enabled": true,
+    "search_url": "https://www.vdab.be/vindeenjob/vacatures",
+    "keyword_param": "woord",
+    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "max_pages": 1
+  },
+  "moovijob": {
+    "enabled": true,
+    "search_url": "https://en.moovijob.com/job-offers/jobs-luxembourg",
+    "keyword_param": "keyword",
+    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "max_pages": 1
+  },
+  "exclude_keywords": ["stage", "alternance", "freelance"],
   "title_must_contain": [],
   "max_job_age_days": 7
 }
