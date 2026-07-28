@@ -404,12 +404,23 @@
     return await res.json();
   }
 
+  const KEYWORDS_STORAGE_KEY = "jobradar_keywords";
+
   function fillFormFromConfig(cfg) {
     const ft = cfg.france_travail || {};
     const li = cfg.linkedin || {};
     const vdab = cfg.vdab || {};
     const moovijob = cfg.moovijob || {};
-    document.getElementById("f_keywords").value = (ft.keywords_list || li.keywords_list || []).join("\n");
+
+    // Les mots-clés viennent en priorité du navigateur (localStorage), pour
+    // ne jamais revenir aux valeurs par défaut de config.json si un autre
+    // appareil ou une remise à zéro a modifié le fichier entre-temps.
+    const savedKeywords = localStorage.getItem(KEYWORDS_STORAGE_KEY);
+    const keywords = savedKeywords !== null
+      ? savedKeywords
+      : (ft.keywords_list || li.keywords_list || []).join("\n");
+    document.getElementById("f_keywords").value = keywords;
+
     document.getElementById("f_ft_enabled").checked = ft.enabled !== false;
     document.getElementById("f_li_enabled").checked = li.enabled !== false;
     document.getElementById("f_vdab_enabled").checked = vdab.enabled !== false;
@@ -432,7 +443,9 @@
     cfg.france_travail = cfg.france_travail || {};
     cfg.linkedin = cfg.linkedin || {};
 
-    const keywords = linesToList(document.getElementById("f_keywords").value);
+    const keywordsRaw = document.getElementById("f_keywords").value;
+    localStorage.setItem(KEYWORDS_STORAGE_KEY, keywordsRaw);
+    const keywords = linesToList(keywordsRaw);
     const contractTypes = Array.from(document.querySelectorAll(".f_contract:checked")).map(cb => cb.value);
     const remoteOnly = document.getElementById("f_remote").checked;
     const salary = document.getElementById("f_salary").value;
