@@ -1,5 +1,31 @@
 [
   {
+    "id": "ft-5518998",
+    "source": "France Travail",
+    "title": "Technicien d'assemblage, test et de déploiement du système optoélectronique H/F",
+    "company": "TIHIVE",
+    "location": "38 - Grenoble",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-29T01:01:53.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5518998",
+    "first_seen": "2026-07-29T02:30:27.660096+00:00"
+  },
+  {
+    "id": "ft-5521365",
+    "source": "France Travail",
+    "title": "Technicien d'essai sur sites (H/F)",
+    "company": "Non précisé",
+    "location": "27 - Vernon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-29T03:21:49.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5521365",
+    "first_seen": "2026-07-29T02:30:27.660097+00:00"
+  },
+  {
     "id": "ft-5509640",
     "source": "France Travail",
     "title": "Développeur ERP junior - (H/F)",
