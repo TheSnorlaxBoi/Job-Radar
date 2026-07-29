@@ -1,5 +1,18 @@
 [
   {
+    "id": "li-4445718113",
+    "source": "LinkedIn",
+    "title": "QA Testeur·se Automaticien·ne (H/F/X)",
+    "company": "EVERTRUST",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-28",
+    "url": "https://fr.linkedin.com/jobs/view/qa-testeur%C2%B7se-automaticien%C2%B7ne-h-f-x-at-evertrust-4445718113",
+    "first_seen": "2026-07-29T06:29:48.791379+00:00"
+  },
+  {
     "id": "ft-5518998",
     "source": "France Travail",
     "title": "Technicien d'assemblage, test et de déploiement du système optoélectronique H/F",
@@ -702,19 +715,6 @@
     "first_seen": "2026-07-28T21:29:09.190823+00:00"
   },
   {
-    "id": "ft-5226744",
-    "source": "France Travail",
-    "title": "Testeur QA (H/F)",
-    "company": "EVOLUCARE TECHNOLOGIES",
-    "location": "80 - Amiens",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 28000.0 Euros à 35000.0 Euros",
-    "published_at": "2026-07-22T04:31:28.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5226744",
-    "first_seen": "2026-07-28T21:29:09.190825+00:00"
-  },
-  {
     "id": "ft-5351207",
     "source": "France Travail",
     "title": "Ingénieur Test et Validation Logiciel embarqué F/H - Unseenlabs",
@@ -752,19 +752,6 @@
     "published_at": "2026-07-22T08:15:44.000Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5336997",
     "first_seen": "2026-07-28T21:29:09.190830+00:00"
-  },
-  {
-    "id": "ft-5227480",
-    "source": "France Travail",
-    "title": "TECHNICIEN ELECTRONIQUE MOYENS DE TEST (H/F)",
-    "company": "Randstad professional",
-    "location": "31 - Toulouse",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-22T05:00:32.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5227480",
-    "first_seen": "2026-07-28T21:29:09.190833+00:00"
   },
   {
     "id": "ft-5339114",
