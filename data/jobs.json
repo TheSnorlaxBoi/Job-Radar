@@ -1,5 +1,83 @@
 [
   {
+    "id": "li-4440757145",
+    "source": "LinkedIn",
+    "title": "Software Engineer",
+    "company": "Decathlon Digital",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/software-engineer-at-decathlon-digital-4440757145",
+    "first_seen": "2026-07-30T21:08:31.120215+00:00"
+  },
+  {
+    "id": "li-4446905863",
+    "source": "LinkedIn",
+    "title": "Développeur Full Stack-(h/f)",
+    "company": "emagine",
+    "location": "Le Mans",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-full-stack-h-f-at-emagine-4446905863",
+    "first_seen": "2026-07-30T21:08:31.120217+00:00"
+  },
+  {
+    "id": "li-4437364008",
+    "source": "LinkedIn",
+    "title": "Développeur/se Fullstack JavaScript / TypeScript confirmé(e)",
+    "company": "eXalt",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-javascript-typescript-confirm%C3%A9-e-at-exalt-4437364008",
+    "first_seen": "2026-07-30T21:08:31.120219+00:00"
+  },
+  {
+    "id": "li-4432801286",
+    "source": "LinkedIn",
+    "title": "Fullstack Engineer",
+    "company": "Entrust",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/fullstack-engineer-at-entrust-4432801286",
+    "first_seen": "2026-07-30T21:08:31.120221+00:00"
+  },
+  {
+    "id": "li-4444589920",
+    "source": "LinkedIn",
+    "title": "Functional QA Tester, Insurance - Health",
+    "company": "Alithya",
+    "location": "Sophia Antipolis",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/functional-qa-tester-insurance-health-at-alithya-4444589920",
+    "first_seen": "2026-07-30T21:08:31.120223+00:00"
+  },
+  {
+    "id": "li-4444582228",
+    "source": "LinkedIn",
+    "title": "Responsable d'essais F/H",
+    "company": "AVNIR IMT",
+    "location": "Meyzieu",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-d-essais-f-h-at-avnir-imt-4444582228",
+    "first_seen": "2026-07-30T21:08:31.120226+00:00"
+  },
+  {
     "id": "ft-5560167",
     "source": "France Travail",
     "title": "Développeur Web Junior - Python et PHP - H/F",
@@ -1051,19 +1129,6 @@
     "published_at": "2026-07-24T11:03:23.000Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5421941",
     "first_seen": "2026-07-30T17:54:32.871454+00:00"
-  },
-  {
-    "id": "ft-5391741",
-    "source": "France Travail",
-    "title": "RESPONSABLE DE TEST / TEST LEAD - H/F",
-    "company": "ATOL CONSEILS ET DEVELOPPEMENTS",
-    "location": "69 - Lyon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-23T19:33:47.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5391741",
-    "first_seen": "2026-07-30T17:54:32.871458+00:00"
   },
   {
     "id": "ft-5392305",
