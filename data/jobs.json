@@ -1,5 +1,44 @@
 [
   {
+    "id": "ft-5569652",
+    "source": "France Travail",
+    "title": "Ingénieur Fiabilité et Test Électronique (H/F)",
+    "company": "NEXTGEN RH",
+    "location": "75 - Paris",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30T04:31:38.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5569652",
+    "first_seen": "2026-07-30T06:26:39.258304+00:00"
+  },
+  {
+    "id": "li-4444510772",
+    "source": "LinkedIn",
+    "title": "Développeur CRM H/F",
+    "company": "Divalto",
+    "location": "Entzheim",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-crm-h-f-at-divalto-4444510772",
+    "first_seen": "2026-07-30T06:26:39.258584+00:00"
+  },
+  {
+    "id": "li-4444520708",
+    "source": "LinkedIn",
+    "title": "Ingénieur développement logiciel (F/H)",
+    "company": "Airbus",
+    "location": "Marseille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-07-30",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d%C3%A9veloppement-logiciel-f-h-at-airbus-4444520708",
+    "first_seen": "2026-07-30T06:26:39.258586+00:00"
+  },
+  {
     "id": "ft-5565619",
     "source": "France Travail",
     "title": "Ingénieur Test - Microcontrôleurs MCU32 (Débutant à Confirmé) H/F",
@@ -1079,19 +1118,6 @@
     "first_seen": "2026-07-28T21:29:09.190804+00:00"
   },
   {
-    "id": "ft-5361923",
-    "source": "France Travail",
-    "title": "Rédacteur de Test Labo Fnac- Informatique & Innovation F/H",
-    "company": "Non précisé",
-    "location": "94 - Créteil",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-23T05:30:54.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5361923",
-    "first_seen": "2026-07-28T21:29:09.190806+00:00"
-  },
-  {
     "id": "ft-211PVPL",
     "source": "France Travail",
     "title": "Technicien de test en électronique H/F - 092026/PST/ERZ",
@@ -1142,19 +1168,6 @@
     "published_at": "2026-07-23T16:17:04.315Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/211PSFJ",
     "first_seen": "2026-07-28T21:29:09.190818+00:00"
-  },
-  {
-    "id": "ft-5362298",
-    "source": "France Travail",
-    "title": "TECHNICIEN D'EXPÉRIMENTATION F/H",
-    "company": "Non précisé",
-    "location": "69 - Brindas",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-23T06:15:35.620Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5362298",
-    "first_seen": "2026-07-28T21:29:09.190820+00:00"
   },
   {
     "id": "li-4445760630",
