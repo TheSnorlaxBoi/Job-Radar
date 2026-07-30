@@ -1,5 +1,18 @@
 [
   {
+    "id": "ft-5565619",
+    "source": "France Travail",
+    "title": "Ingénieur Test - Microcontrôleurs MCU32 (Débutant à Confirmé) H/F",
+    "company": "MICROCHIP TECHNOLOGY Nantes",
+    "location": "44 - Nantes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 65000.0 Euros sur 12.0 mois",
+    "published_at": "2026-07-30T01:01:59.338Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5565619",
+    "first_seen": "2026-07-30T02:13:01.983082+00:00"
+  },
+  {
     "id": "li-4446073820",
     "source": "LinkedIn",
     "title": "Développeur/Développeuse",
@@ -1118,32 +1131,6 @@
     "first_seen": "2026-07-28T21:29:09.190811+00:00"
   },
   {
-    "id": "ft-5354662",
-    "source": "France Travail",
-    "title": "Technicien Test Equipements Embarques H/F",
-    "company": "LATELEC ",
-    "location": "31 - Toulouse",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-23T01:01:59.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5354662",
-    "first_seen": "2026-07-28T21:29:09.190815+00:00"
-  },
-  {
-    "id": "ft-5352634",
-    "source": "France Travail",
-    "title": "Technicien-ne test et dépannage MRO F/H",
-    "company": "Safran",
-    "location": "35 - Fougères",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-23T00:32:53.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5352634",
-    "first_seen": "2026-07-28T21:29:09.190817+00:00"
-  },
-  {
     "id": "ft-211PSFJ",
     "source": "France Travail",
     "title": "Ingénieur Système & Validation Logicielle (H/F)",
@@ -1168,19 +1155,6 @@
     "published_at": "2026-07-23T06:15:35.620Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5362298",
     "first_seen": "2026-07-28T21:29:09.190820+00:00"
-  },
-  {
-    "id": "ft-5351207",
-    "source": "France Travail",
-    "title": "Ingénieur Test et Validation Logiciel embarqué F/H - Unseenlabs",
-    "company": "Unseenlabs",
-    "location": "35 - Cesson-Sévigné",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-22T21:15:33.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5351207",
-    "first_seen": "2026-07-28T21:29:09.190827+00:00"
   },
   {
     "id": "li-4445760630",
