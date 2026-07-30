@@ -2,7 +2,8 @@
   "france_travail": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Junior",
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
       "Testeur"
     ],
     "contract_types": [
@@ -15,7 +16,8 @@
   "linkedin": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Junior",
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
       "Testeur"
     ],
     "location": "France",
@@ -29,7 +31,8 @@
     "search_url": "https://www.vdab.be/vindeenjob/vacatures",
     "keyword_param": "woord",
     "keywords_list": [
-      "Développeur Junior",
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
       "Testeur"
     ],
     "max_pages": 1
@@ -39,7 +42,8 @@
     "search_url": "https://en.moovijob.com/job-offers/jobs-luxembourg",
     "keyword_param": "keyword",
     "keywords_list": [
-      "Développeur Junior",
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
       "Testeur"
     ],
     "max_pages": 1
