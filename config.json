@@ -1,8 +1,14 @@
 {
   "france_travail": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
-    "contract_types": ["CDI"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
+    "contract_types": [
+      "CDI"
+    ],
     "remote_only": false,
     "min_salary": null,
     "commune": "",
@@ -11,7 +17,11 @@
   },
   "linkedin": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "location": "France",
     "remote_only": false,
     "contract_types": [],
@@ -20,71 +30,119 @@
   },
   "forem": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_results": 100
   },
   "vdab": {
     "enabled": true,
     "url_template": "https://www.vdab.be/vindeenjob/jobs/{slug}",
-    "keywords_list": ["python developer", "data engineer", "backend developer"]
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ]
   },
   "actiris": {
     "enabled": true,
     "search_url": "https://www.actiris.brussels/fr/citoyens/offres-d-emploi/",
     "keyword_param": "keywords",
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_pages": 1
   },
   "jobswallonie": {
     "enabled": true,
     "search_url": "https://www.jobswallonie.be/offres-d-emploi/",
     "keyword_param": "q",
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_pages": 1
   },
   "moovijob": {
     "enabled": true,
     "url_template": "https://en.moovijob.com/job-offers/jobs-luxembourg/profession-{slug}",
-    "keywords_list": ["developer", "java-developer", "web-developer"],
+    "keywords_list": [
+      "developer",
+      "java-developer",
+      "web-developer"
+    ],
     "max_pages": 1
   },
   "indeed_lu": {
     "enabled": true,
     "search_url": "https://lu.indeed.com/jobs",
     "keyword_param": "q",
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_pages": 1
   },
   "talent_be": {
     "enabled": true,
     "search_url": "https://be.talent.com/fr/jobs",
     "keyword_param": "k",
-    "extra_params": {"l": "belgium"},
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "extra_params": {
+      "l": "belgium"
+    },
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_pages": 1
   },
   "talent_lu": {
     "enabled": true,
     "search_url": "https://www.talent.com/jobs",
     "keyword_param": "k",
-    "extra_params": {"l": "luxembourg"},
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "extra_params": {
+      "l": "luxembourg"
+    },
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_pages": 1
   },
   "hellowork": {
     "enabled": true,
     "url_template": "https://www.hellowork.com/fr-fr/emploi/mot-cle_{slug}.html",
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_pages": 1
   },
   "indeed_fr": {
     "enabled": true,
     "search_url": "https://fr.indeed.com/jobs",
     "keyword_param": "q",
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "\"Développeur Junior\"",
+      "Développeur Fullstack",
+      "Testeur"
+    ],
     "max_pages": 1
   },
-  "exclude_keywords": ["stage", "alternance", "freelance"],
+  "exclude_keywords": [
+    "stage",
+    "alternance",
+    "freelance"
+  ],
   "title_must_contain": [],
   "max_job_age_days": 7
 }
