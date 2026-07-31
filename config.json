@@ -4,7 +4,8 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "contract_types": [
       "CDI"
@@ -20,7 +21,8 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "location": "France",
     "remote_only": false,
@@ -29,11 +31,12 @@
     "published_since_seconds": 86400
   },
   "forem": {
-    "enabled": true,
+    "enabled": false,
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_results": 100
   },
@@ -43,33 +46,36 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ]
   },
   "actiris": {
-    "enabled": true,
+    "enabled": false,
     "search_url": "https://www.actiris.brussels/fr/citoyens/offres-d-emploi/",
     "keyword_param": "keywords",
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_pages": 1
   },
   "jobswallonie": {
-    "enabled": true,
+    "enabled": false,
     "search_url": "https://www.jobswallonie.be/offres-d-emploi/",
     "keyword_param": "q",
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_pages": 1
   },
   "moovijob": {
-    "enabled": true,
+    "enabled": false,
     "url_template": "https://en.moovijob.com/job-offers/jobs-luxembourg/profession-{slug}",
     "keywords_list": [
       "developer",
@@ -85,7 +91,8 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_pages": 1
   },
@@ -99,7 +106,8 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_pages": 1
   },
@@ -113,7 +121,8 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_pages": 1
   },
@@ -123,7 +132,8 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_pages": 1
   },
@@ -134,7 +144,8 @@
     "keywords_list": [
       "\"Développeur Junior\"",
       "Développeur Fullstack",
-      "Testeur"
+      "Testeur",
+      "Convoyeur Automobile"
     ],
     "max_pages": 1
   },
