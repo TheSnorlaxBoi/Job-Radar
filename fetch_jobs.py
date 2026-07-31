@@ -4,7 +4,10 @@ job-radar / fetch_jobs.py
 Collecte des offres d'emploi selon des filtres définis dans config.json,
 depuis :
   - France Travail (API officielle, gratuite, OAuth2 client_credentials)
-  - LinkedIn (page publique "guest" de résultats de recherche, sans login)
+  - Le Forem, Wallonie (API open data officielle, gratuite, sans clé)
+  - VDAB, Actiris, JobsWallonie, Moovijob, Talent.com, HelloWork, Indeed,
+    LinkedIn (pages de recherche publiques, sans login — best-effort,
+    voir les avertissements dans chaque fonction et le README)
 
 Le résultat est fusionné, dédupliqué (par rapport aux offres déjà vues) et
 écrit dans data/jobs.json, qui alimente le tableau de bord (dashboard/index.html).
@@ -19,6 +22,7 @@ import re
 import sys
 import time
 import html
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -97,8 +101,12 @@ def fetch_france_travail(cfg):
         base_params["teletravail"] = "1"
     if ft_cfg.get("min_salary"):
         base_params["salaireMin"] = ft_cfg["min_salary"]
+    if ft_cfg.get("commune"):
+        base_params["commune"] = ft_cfg["commune"]
+    if ft_cfg.get("rayon_km"):
+        base_params["rayon"] = ft_cfg["rayon_km"]
     base_params["sort"] = 1  # tri par date de création décroissante
-    # Pas de "commune"/"rayon" : recherche au niveau national (toute la France)
+    # Si "commune" est vide/absent, la recherche reste nationale.
 
     headers = {"Authorization": f"Bearer {token}"}
     jobs = []
@@ -170,11 +178,180 @@ def fetch_france_travail(cfg):
 
 LI_SEARCH_URL = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
 
+import unicodedata
+
+
+def _slugify(text):
+    text = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode("ascii")
+    text = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
+    return text
+
+
+# ---------------------------------------------------------------------------
+# Le Forem (Wallonie) — vraie API open data gratuite, aucune clé nécessaire.
+# Plateforme OpenDataSoft standard ; son jeu de données inclut aussi les
+# offres VDAB traduites en français, ce qui comble une partie du besoin
+# flamand en plus de la Wallonie/Bruxelles.
+# ---------------------------------------------------------------------------
+
+FOREM_API_URL = "https://leforem-digitalwallonia.opendatasoft.com/api/explore/v2.1/catalog/datasets/offres-d-emploi-forem/records"
+
+
+def _pick_field(record, name_hints):
+    """Cherche une valeur dans un enregistrement OpenDataSoft en devinant le
+    bon champ par son nom (les noms exacts de colonnes ne sont pas garantis
+    dans le temps, donc on reste tolérant plutôt que de viser un nom fixe)."""
+    for key, val in record.items():
+        if val in (None, ""):
+            continue
+        lk = key.lower()
+        if any(h in lk for h in name_hints):
+            return val
+    return None
+
+
+def fetch_forem(cfg):
+    forem_cfg = cfg.get("forem", {})
+    if not forem_cfg.get("enabled"):
+        return []
+
+    keywords_list = forem_cfg.get("keywords_list") or [""]
+    max_results = min(forem_cfg.get("max_results", 100), 100)  # 100 = max par page côté API
+
+    jobs = []
+    seen_ids = set()
+    printed_schema_hint = False
+
+    for keyword in keywords_list:
+        params = {"limit": max_results, "offset": 0}
+        if keyword:
+            params["q"] = keyword
+
+        try:
+            r = requests.get(FOREM_API_URL, params=params, timeout=20)
+        except requests.RequestException as e:
+            print(f"[Forem] Erreur réseau : {e}")
+            continue
+        if r.status_code != 200:
+            print(f"[Forem] ('{keyword}') HTTP {r.status_code} : {r.text[:300]}")
+            continue
+
+        results = r.json().get("results", [])
+        if results and not printed_schema_hint:
+            print(f"[Forem] Champs disponibles (exemple) : {list(results[0].keys())}")
+            printed_schema_hint = True
+
+        for rec in results:
+            title = _pick_field(rec, ["intitule", "titre", "poste", "fonction"]) or ""
+            company = _pick_field(rec, ["entreprise", "employeur", "societe", "raison_sociale"]) or "Non précisé"
+            location = _pick_field(rec, ["commune", "localite", "localisation", "lieu", "ville"]) or ""
+            contract = _pick_field(rec, ["type_contrat", "contrat", "typecontrat"]) or ""
+            date_pub = _pick_field(rec, ["date_publi", "date_creation", "date_diffusion", "date_debut"]) or ""
+            url_offre = _pick_field(rec, ["url", "lien"]) or ""
+
+            job_id_seed = url_offre or f"{title}-{company}-{date_pub}"
+            job_id = f"forem-{abs(hash(job_id_seed))}"
+            if job_id in seen_ids:
+                continue
+            seen_ids.add(job_id)
+
+            jobs.append({
+                "id": job_id,
+                "source": "Forem",
+                "title": str(title),
+                "company": str(company),
+                "location": str(location),
+                "contract": str(contract),
+                "remote": False,
+                "salary": "",
+                "published_at": date_pub if isinstance(date_pub, str) else "",
+                "url": url_offre or "https://www.leforem.be/recherche-offres/resultat-recherche-offre",
+            })
+
+    print(f"[Forem] {len(jobs)} offre(s) récupérée(s).")
+    return jobs
+
+
 TAG_RE = re.compile(r"<[^>]+>")
 
 
 def _strip_tags(s):
     return html.unescape(TAG_RE.sub("", s or "")).strip()
+
+
+# ---------------------------------------------------------------------------
+# VDAB (Belgique) — pas d'API grand public gratuite, mais les pages de
+# recherche (https://www.vdab.be/vindeenjob/jobs/<mot-clé-en-slug>) sont
+# entièrement générées côté serveur, ce qui permet un scraping fiable des
+# liens canoniques de chaque offre (id numérique + slug dans l'URL).
+# ---------------------------------------------------------------------------
+
+VDAB_JOB_LINK_RE = re.compile(
+    r'<a[^>]+href="(/vindeenjob/vacatures/(\d+)/[a-z0-9\-]+)[^"]*"[^>]*>(.*?)</a>',
+    re.DOTALL,
+)
+VDAB_DATE_RE = re.compile(r"Online sinds\s+([\d]{1,2}\s+\w+\.?\s+\d{4})")
+
+
+def fetch_vdab(cfg):
+    vdab_cfg = cfg.get("vdab", {})
+    if not vdab_cfg.get("enabled"):
+        return []
+
+    keywords_list = vdab_cfg.get("keywords_list") or [""]
+    url_template = vdab_cfg.get("url_template", "https://www.vdab.be/vindeenjob/jobs/{slug}")
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; job-radar personal bot)"}
+
+    jobs = []
+    seen_ids = set()
+
+    for keyword in keywords_list:
+        slug = _slugify(keyword)
+        url = url_template.format(slug=slug)
+        try:
+            r = requests.get(url, headers=headers, timeout=20)
+        except requests.RequestException as e:
+            print(f"[VDAB] ('{keyword}') Erreur réseau : {e}")
+            continue
+        if r.status_code != 200:
+            print(f"[VDAB] ('{keyword}') HTTP {r.status_code} pour {url}")
+            continue
+
+        found_here = 0
+        for m in VDAB_JOB_LINK_RE.finditer(r.text):
+            href, job_id_num, inner = m.group(1), m.group(2), m.group(3)
+            job_id = f"vdab-{job_id_num}"
+            if job_id in seen_ids:
+                continue
+            seen_ids.add(job_id)
+
+            strongs = re.findall(r"<strong[^>]*>(.*?)</strong>", inner, re.DOTALL)
+            company = _strip_tags(strongs[0]) if len(strongs) >= 1 else ""
+            location = _strip_tags(strongs[1]) if len(strongs) >= 2 else ""
+            title = _strip_tags(inner.split("<strong", 1)[0])
+            date_m = VDAB_DATE_RE.search(_strip_tags(inner))
+
+            jobs.append({
+                "id": job_id,
+                "source": "VDAB",
+                "title": title,
+                "company": company or "Non précisé",
+                "location": location,
+                "contract": "",
+                "remote": False,
+                "salary": "",
+                "published_at": date_m.group(1) if date_m else "",
+                "url": f"https://www.vdab.be{href}",
+            })
+            found_here += 1
+
+        if found_here == 0:
+            print(f"[VDAB] ('{keyword}') aucune offre trouvée sur {url} — vérifie que ce mot-clé "
+                  f"donne bien des résultats en le tapant directement sur vdab.be.")
+        time.sleep(1.0)
+
+    print(f"[VDAB] {len(jobs)} offre(s) récupérée(s).")
+    return jobs
 
 
 # ---------------------------------------------------------------------------
@@ -268,45 +445,70 @@ def _jobposting_to_job(item, source_name, fallback_url):
     }
 
 
+def _slugify(text):
+    """Convertit 'Développeur Python' en 'developpeur-python', pour les
+    jobboards qui utilisent des URL du type /mot-cle_<slug>.html plutôt que
+    des paramètres de requête (ex: HelloWork)."""
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
+    text = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
+    return text
+
+
 def fetch_generic_board(source_name, board_cfg):
     """Récupère les offres d'un jobboard via ses données structurées JobPosting.
+
+    Deux modes d'URL possibles dans board_cfg :
+    - "url_template" avec un espace réservé {slug} : un mot-clé de
+      keywords_list est glissé dans l'URL (utile pour les jobboards qui
+      classent leurs offres par catégories fixes plutôt que par recherche
+      libre — le mot-clé doit alors correspondre exactement au nom d'une
+      catégorie existante sur le site).
+    - "search_url" + "keyword_param" : recherche classique en paramètre
+      de requête (?motclé=...).
 
     ⚠️ Contrairement à France Travail (API officielle), ce module dépend de la
     présence de ce balisage sur les pages du site — s'il change de format, le
     module renverra simplement 0 résultat (avec un message dans les logs)
-    plutôt que de faire planter la collecte. Les paramètres de recherche
-    (nom du paramètre mot-clé, pagination) sont des meilleures estimations :
-    vérifie les logs après la première exécution et ajuste au besoin.
+    plutôt que de faire planter la collecte.
     """
     if not board_cfg.get("enabled"):
         return []
-    search_url = board_cfg.get("search_url")
-    if not search_url:
-        return []
 
-    keyword_param = board_cfg.get("keyword_param", "q")
     keywords_list = board_cfg.get("keywords_list") or [""]
     max_pages = board_cfg.get("max_pages", 1)
     page_param = board_cfg.get("page_param")
+    url_template = board_cfg.get("url_template")
+    search_url = board_cfg.get("search_url")
+    keyword_param = board_cfg.get("keyword_param", "q")
+
+    if not url_template and not search_url:
+        return []
 
     headers = {"User-Agent": "Mozilla/5.0 (compatible; job-radar personal bot)"}
     jobs = []
     seen_ids = set()
 
     for keyword in keywords_list:
+        base_url = url_template.format(slug=_slugify(keyword)) if url_template else search_url
+
         for page in range(max_pages):
             params = {}
-            if keyword:
+            if not url_template and keyword:
                 params[keyword_param] = keyword
             if page_param and page > 0:
                 params[page_param] = page
+            params.update(board_cfg.get("extra_params", {}))
 
             try:
-                r = requests.get(search_url, params=params, headers=headers, timeout=20)
+                r = requests.get(base_url, params=params, headers=headers, timeout=20)
             except requests.RequestException as e:
                 print(f"[{source_name}] Erreur réseau : {e}")
                 break
 
+            if r.status_code == 404:
+                print(f"[{source_name}] ('{keyword}') page introuvable (404) à {base_url} — "
+                      f"ce mot-clé ne correspond probablement à aucune catégorie existante sur le site.")
+                break
             if r.status_code != 200:
                 print(f"[{source_name}] ('{keyword}') page {page} : HTTP {r.status_code}")
                 break
@@ -314,12 +516,12 @@ def fetch_generic_board(source_name, board_cfg):
             postings = extract_jobpostings_from_html(r.text)
             if not postings:
                 if page == 0:
-                    print(f"[{source_name}] ('{keyword}') aucune donnée JobPosting trouvée — "
-                          f"le site a peut-être changé de format, ou les paramètres de recherche sont à ajuster.")
+                    print(f"[{source_name}] ('{keyword}') aucune donnée JobPosting trouvée sur {base_url} — "
+                          f"le site a peut-être changé de format, ou n'utilise pas ce standard.")
                 break
 
             for item in postings:
-                job = _jobposting_to_job(item, source_name, search_url)
+                job = _jobposting_to_job(item, source_name, base_url)
                 if job["id"] in seen_ids:
                     continue
                 seen_ids.add(job["id"])
@@ -501,8 +703,16 @@ def main():
     all_new = []
     all_new += fetch_france_travail(cfg)
     all_new += fetch_linkedin(cfg)
-    all_new += fetch_generic_board("VDAB", cfg.get("vdab", {}))
+    all_new += fetch_forem(cfg)
+    all_new += fetch_vdab(cfg)
+    all_new += fetch_generic_board("Actiris", cfg.get("actiris", {}))
+    all_new += fetch_generic_board("JobsWallonie", cfg.get("jobswallonie", {}))
     all_new += fetch_generic_board("Moovijob", cfg.get("moovijob", {}))
+    all_new += fetch_generic_board("Talent.com Belgique", cfg.get("talent_be", {}))
+    all_new += fetch_generic_board("Talent.com Luxembourg", cfg.get("talent_lu", {}))
+    all_new += fetch_generic_board("Indeed Luxembourg", cfg.get("indeed_lu", {}))
+    all_new += fetch_generic_board("HelloWork", cfg.get("hellowork", {}))
+    all_new += fetch_generic_board("Indeed", cfg.get("indeed_fr", {}))
 
     all_new = apply_common_filters(all_new, cfg)
     merged, fresh = merge_and_dedupe(all_new, existing)
