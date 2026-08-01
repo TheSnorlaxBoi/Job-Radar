@@ -2,14 +2,7 @@
   "france_travail": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "contract_types": [
       "CDI"
@@ -23,14 +16,7 @@
   "linkedin": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "location": "France",
     "remote_only": false,
@@ -41,14 +27,7 @@
   "forem": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_results": 100
   },
@@ -57,14 +36,7 @@
     "search_url": "https://www.vdab.be/vindeenjob/vacatures",
     "keyword_param": "woord",
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ]
   },
   "actiris": {
@@ -72,14 +44,7 @@
     "search_url": "https://www.actiris.brussels/fr/citoyens/offres-d-emploi/",
     "keyword_param": "keywords",
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_pages": 1
   },
@@ -88,14 +53,7 @@
     "search_url": "https://www.jobswallonie.be/offres-d-emploi/",
     "keyword_param": "q",
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_pages": 1
   },
@@ -114,14 +72,7 @@
     "search_url": "https://lu.indeed.com/jobs",
     "keyword_param": "q",
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_pages": 1
   },
@@ -133,14 +84,7 @@
       "l": "belgium"
     },
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_pages": 1
   },
@@ -152,14 +96,7 @@
       "l": "luxembourg"
     },
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_pages": 1
   },
@@ -168,14 +105,7 @@
     "search_url": "https://www.hellowork.com/fr-fr/emploi/recherche.html",
     "keyword_param": "k",
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_pages": 1
   },
@@ -184,14 +114,7 @@
     "search_url": "https://fr.indeed.com/jobs",
     "keyword_param": "q",
     "keywords_list": [
-      "Développeur Junior",
-      "Développeur Fullstack",
-      "Testeur",
-      "Convoyeur automobile",
-      "Convoyeur de véhicules",
-      "Chauffeur convoyeur",
-      "Transfert de véhicules",
-      "Convoyage automobile"
+      "Developpeur Web"
     ],
     "max_pages": 1
   },
@@ -200,7 +123,8 @@
     "alternance",
     "freelance",
     "ingénieur",
-    "engineer"
+    "engineer",
+    "agriculture"
   ],
   "title_must_contain": [],
   "max_job_age_days": 3
