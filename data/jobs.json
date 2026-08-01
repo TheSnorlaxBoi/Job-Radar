@@ -1,5 +1,70 @@
 [
   {
+    "id": "ft-5671774",
+    "source": "France Travail",
+    "title": "Développeur Full-stack JAVA/ANGULAR F/H h/f",
+    "company": "Non précisé",
+    "location": "Île-de-France",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01T22:28:16.389Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5671774",
+    "first_seen": "2026-08-01T20:53:03.246609+00:00"
+  },
+  {
+    "id": "ft-5671789",
+    "source": "France Travail",
+    "title": "Développeur Full stack .NET/ Angular Confirmé F/H h/f",
+    "company": "Non précisé",
+    "location": "69 - Rhône",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01T22:28:19.099Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5671789",
+    "first_seen": "2026-08-01T20:53:03.246626+00:00"
+  },
+  {
+    "id": "ft-5671788",
+    "source": "France Travail",
+    "title": "Développeur Full stack .NET/ React Confirmé F/H h/f",
+    "company": "Non précisé",
+    "location": "69 - Rhône",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01T22:28:19.096Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5671788",
+    "first_seen": "2026-08-01T20:53:03.246629+00:00"
+  },
+  {
+    "id": "li-4442979896",
+    "source": "LinkedIn",
+    "title": "Développeur full-stack maintenance évolutive F/H - ONERA",
+    "company": "AEROCONTACT.COM",
+    "location": "Mauzac",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-full-stack-maintenance-%C3%A9volutive-f-h-onera-at-aerocontact-4442979896",
+    "first_seen": "2026-08-01T20:53:03.246712+00:00"
+  },
+  {
+    "id": "forem-3684332277681605449",
+    "source": "Forem",
+    "title": "Développeur IOT (H/F/X)",
+    "company": "SAFRAN AERO BOOSTERS",
+    "location": "['Province de Liège', 'Belgique', 'RÉGION WALLONNE']",
+    "contract": "Durée indéterminée",
+    "remote": false,
+    "salary": "",
+    "published_at": "",
+    "url": "https://www.leforem.be/recherche-offres/offre-detail/1951266",
+    "first_seen": "2026-08-01T20:53:03.246714+00:00"
+  },
+  {
     "id": "li-4447824070",
     "source": "LinkedIn",
     "title": "[CDI] Wex IT recherche un(e) Développeur Front-end !",
@@ -947,19 +1012,6 @@
     "published_at": "2026-07-30T03:23:13.000Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5567117",
     "first_seen": "2026-08-01T14:38:25.565391+00:00"
-  },
-  {
-    "id": "ft-211WFMH",
-    "source": "France Travail",
-    "title": "Développeur C#/.NET WPF (H/F)",
-    "company": "RESEAU TALENTS",
-    "location": "31 - Toulouse",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 45000.0 Euros à 48000.0 Euros sur 12 mois",
-    "published_at": "2026-07-29T18:28:23.725Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211WFMH",
-    "first_seen": "2026-08-01T14:38:25.565395+00:00"
   },
   {
     "id": "li-4447759049",
