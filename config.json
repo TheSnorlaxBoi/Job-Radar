@@ -2,7 +2,7 @@
   "france_travail": {
     "enabled": true,
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "contract_types": [
       "CDI"
@@ -16,7 +16,7 @@
   "linkedin": {
     "enabled": true,
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "location": "France",
     "remote_only": false,
@@ -27,7 +27,7 @@
   "forem": {
     "enabled": true,
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_results": 100
   },
@@ -36,7 +36,7 @@
     "search_url": "https://www.vdab.be/vindeenjob/vacatures",
     "keyword_param": "woord",
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ]
   },
   "actiris": {
@@ -44,7 +44,7 @@
     "search_url": "https://www.actiris.brussels/fr/citoyens/offres-d-emploi/",
     "keyword_param": "keywords",
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_pages": 1
   },
@@ -53,7 +53,7 @@
     "search_url": "https://www.jobswallonie.be/offres-d-emploi/",
     "keyword_param": "q",
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_pages": 1
   },
@@ -72,7 +72,7 @@
     "search_url": "https://lu.indeed.com/jobs",
     "keyword_param": "q",
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_pages": 1
   },
@@ -84,7 +84,7 @@
       "l": "belgium"
     },
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_pages": 1
   },
@@ -96,7 +96,7 @@
       "l": "luxembourg"
     },
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_pages": 1
   },
@@ -105,7 +105,7 @@
     "search_url": "https://www.hellowork.com/fr-fr/emploi/recherche.html",
     "keyword_param": "k",
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_pages": 1
   },
@@ -114,7 +114,7 @@
     "search_url": "https://fr.indeed.com/jobs",
     "keyword_param": "q",
     "keywords_list": [
-      "Developpeur Web"
+      "Développeur Web"
     ],
     "max_pages": 1
   },
@@ -126,6 +126,8 @@
     "engineer",
     "agriculture"
   ],
-  "title_must_contain": [],
+  "title_must_contain": [
+    "Développeur"
+  ],
   "max_job_age_days": 3
 }
