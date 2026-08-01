@@ -152,7 +152,9 @@
   "exclude_keywords": [
     "stage",
     "alternance",
-    "freelance"
+    "freelance",
+    "ingénieur",
+    "agriculture"
   ],
   "title_must_contain": [],
   "max_job_age_days": 7
