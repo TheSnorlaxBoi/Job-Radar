@@ -154,7 +154,8 @@
   "exclude_keywords": [
     "stage",
     "alternance",
-    "freelance"
+    "freelance",
+    "engineer"
   ],
   "title_must_contain": [],
   "max_job_age_days": 3
