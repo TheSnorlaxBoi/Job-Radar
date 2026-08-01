@@ -157,5 +157,5 @@
     "agriculture"
   ],
   "title_must_contain": [],
-  "max_job_age_days": 7
+  "max_job_age_days": 1
 }
