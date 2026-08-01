@@ -49,10 +49,24 @@ HTML/JSON-LD pouvant changer, ou requêtes bloquées si trop fréquentes) :
 - **HelloWork** classe ses offres par mot-clé dans l'URL
   (`/emploi/mot-cle_<slug>.html`) — un mot-clé trop spécifique ou mal
   orthographié peut renvoyer 0 résultat.
-- **Indeed** est connu pour bloquer plus agressivement les requêtes
-  automatisées que les autres sources (mesures anti-bot). S'il renvoie
-  systématiquement 0 résultat ou des erreurs HTTP, désactive-le simplement
-  (`"indeed_fr": {"enabled": false}`) et garde les autres sources.
+- **Indeed** (France et Luxembourg) : **désactivé par défaut** dans
+  `config.json` (`"enabled": false`). Les tests réels montrent qu'Indeed
+  bloque systématiquement ces requêtes (HTTP 403) — c'est une mesure
+  anti-bot volontaire de leur part, pas un bug du script, et il n'existe pas
+  de moyen propre de la contourner pour un usage personnel. Tu peux réactiver
+  la source si tu veux retenter, mais ne t'attends pas à des résultats
+  fiables.
+- **HelloWork** : URL de recherche corrigée
+  (`/emploi/recherche.html?k=<mot-clé>`) après un premier essai raté sur de
+  mauvaises pages.
+- **VDAB** : URL de recherche corrigée (`/vindeenjob/vacatures?woord=<mot-clé>`)
+  pour la même raison.
+- **Actiris, JobsWallonie, Moovijob, Talent.com** : si elles renvoient encore
+  0 résultat, les logs affichent maintenant un extrait de la page reçue et
+  sa taille — utile pour distinguer un vrai blocage (page très courte,
+  redirection) d'un site nécessitant JavaScript (auquel cas ce type de
+  script ne peut pas les récupérer sans changer d'approche, ex: navigateur
+  headless).
 
 Le workflow reste à un rythme modéré (toutes les 4h, 1-2 pages max) pour ces
 trois sources. Si l'une d'elles bloque les requêtes, désactive-la dans

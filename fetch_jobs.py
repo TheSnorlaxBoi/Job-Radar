@@ -299,22 +299,22 @@ def fetch_vdab(cfg):
         return []
 
     keywords_list = vdab_cfg.get("keywords_list") or [""]
-    url_template = vdab_cfg.get("url_template", "https://www.vdab.be/vindeenjob/jobs/{slug}")
+    search_url = vdab_cfg.get("search_url", "https://www.vdab.be/vindeenjob/vacatures")
+    keyword_param = vdab_cfg.get("keyword_param", "woord")
     headers = {"User-Agent": "Mozilla/5.0 (compatible; job-radar personal bot)"}
 
     jobs = []
     seen_ids = set()
 
     for keyword in keywords_list:
-        slug = _slugify(keyword)
-        url = url_template.format(slug=slug)
+        params = {keyword_param: keyword} if keyword else {}
         try:
-            r = requests.get(url, headers=headers, timeout=20)
+            r = requests.get(search_url, params=params, headers=headers, timeout=20)
         except requests.RequestException as e:
             print(f"[VDAB] ('{keyword}') Erreur réseau : {e}")
             continue
         if r.status_code != 200:
-            print(f"[VDAB] ('{keyword}') HTTP {r.status_code} pour {url}")
+            print(f"[VDAB] ('{keyword}') HTTP {r.status_code} pour {r.url}")
             continue
 
         found_here = 0
@@ -346,8 +346,9 @@ def fetch_vdab(cfg):
             found_here += 1
 
         if found_here == 0:
-            print(f"[VDAB] ('{keyword}') aucune offre trouvée sur {url} — vérifie que ce mot-clé "
-                  f"donne bien des résultats en le tapant directement sur vdab.be.")
+            print(f"[VDAB] ('{keyword}') aucune offre trouvée sur {r.url} "
+                  f"({len(r.text)} caractères reçus) — vérifie ce mot-clé directement sur "
+                  f"vdab.be, ou le format de la page a peut-être changé.")
         time.sleep(1.0)
 
     print(f"[VDAB] {len(jobs)} offre(s) récupérée(s).")
@@ -516,8 +517,15 @@ def fetch_generic_board(source_name, board_cfg):
             postings = extract_jobpostings_from_html(r.text)
             if not postings:
                 if page == 0:
-                    print(f"[{source_name}] ('{keyword}') aucune donnée JobPosting trouvée sur {base_url} — "
-                          f"le site a peut-être changé de format, ou n'utilise pas ce standard.")
+                    snippet = re.sub(r"\s+", " ", r.text[:200]).strip()
+                    hint = ""
+                    lower_snippet = snippet.lower()
+                    if len(r.text) < 2000:
+                        hint = " (page très courte — probablement une redirection, un blocage, ou un mur de consentement plutôt que la vraie page)"
+                    elif "enable javascript" in lower_snippet or "activer javascript" in lower_snippet:
+                        hint = " (le site nécessite JavaScript pour afficher les résultats — non récupérable par ce type de requête)"
+                    print(f"[{source_name}] ('{keyword}') aucune donnée JobPosting trouvée sur {base_url} "
+                          f"({len(r.text)} caractères reçus){hint} — début de la page reçue : \"{snippet}\"")
                 break
 
             for item in postings:
