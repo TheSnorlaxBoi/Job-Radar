@@ -88,5 +88,5 @@
   },
   "exclude_keywords": ["stage", "alternance", "freelance"],
   "title_must_contain": [],
-  "max_job_age_days": 7
+  "max_job_age_days": 3
 }
