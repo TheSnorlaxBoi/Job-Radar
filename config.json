@@ -5,7 +5,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "contract_types": [
       "CDI"
@@ -22,7 +28,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "location": "France",
     "remote_only": false,
@@ -36,7 +48,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_results": 100
   },
@@ -48,7 +66,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ]
   },
   "actiris": {
@@ -59,7 +83,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_pages": 1
   },
@@ -71,7 +101,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_pages": 1
   },
@@ -93,7 +129,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_pages": 1
   },
@@ -108,7 +150,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_pages": 1
   },
@@ -123,7 +171,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_pages": 1
   },
@@ -135,7 +189,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_pages": 1
   },
@@ -147,7 +207,13 @@
       "Développeur Junior",
       "Développeur Fullstack",
       "Testeur",
-      "Convoyeur Auto"
+      "Convoyeur automobile",
+      "Convoyeur de véhicules",
+      "Chauffeur convoyeur",
+      "Transfert de véhicules",
+      "Convoyage automobile",
+      "Conducteur VL",
+      "Conducteur de véhicules prototypes"
     ],
     "max_pages": 1
   },
@@ -155,6 +221,7 @@
     "stage",
     "alternance",
     "freelance",
+    "ingénieur",
     "engineer"
   ],
   "title_must_contain": [],
