@@ -1,5 +1,44 @@
 [
   {
+    "id": "li-3959029024",
+    "source": "LinkedIn",
+    "title": "Développeur et Lead Dev Java (H/F)",
+    "company": "Davidson consulting",
+    "location": "Metz",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-et-lead-dev-java-h-f-at-davidson-consulting-3959029024",
+    "first_seen": "2026-08-02T16:56:47.910689+00:00"
+  },
+  {
+    "id": "li-3979037323",
+    "source": "LinkedIn",
+    "title": "Développeur et Lead Dev .NET (H/F)",
+    "company": "Davidson consulting",
+    "location": "Bordeaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-et-lead-dev-net-h-f-at-davidson-consulting-3979037323",
+    "first_seen": "2026-08-02T16:56:47.910690+00:00"
+  },
+  {
+    "id": "li-4363711956",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack senior Java Angular(H/F)",
+    "company": "Solocal",
+    "location": "Le Haillan",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-senior-java-angular-h-f-at-solocal-4363711956",
+    "first_seen": "2026-08-02T16:56:47.910691+00:00"
+  },
+  {
     "id": "ft-5684606",
     "source": "France Travail",
     "title": "Développeur Front-end confirmé TS/React/Twig (H/F)",
@@ -1168,32 +1207,6 @@
     "published_at": "2026-07-31T03:23:39.000Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5599923",
     "first_seen": "2026-08-01T14:38:25.565376+00:00"
-  },
-  {
-    "id": "ft-5592626",
-    "source": "France Travail",
-    "title": "Développeur Web H/F",
-    "company": "MARTIN BELAYSOUD",
-    "location": "69 - Villeurbanne",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-30T14:35:31.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5592626",
-    "first_seen": "2026-08-01T14:38:25.565377+00:00"
-  },
-  {
-    "id": "ft-211XGDJ",
-    "source": "France Travail",
-    "title": "Développeur Fullstack - TMA (H/F)",
-    "company": "RESEAU SERVICES SOCIAUX INTERENTREPRISES",
-    "location": "69 - LYON",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-30T16:38:52.843Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211XGDJ",
-    "first_seen": "2026-08-01T14:38:25.565380+00:00"
   },
   {
     "id": "ft-5594373",
