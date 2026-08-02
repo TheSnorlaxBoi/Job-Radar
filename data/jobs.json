@@ -1,5 +1,57 @@
 [
   {
+    "id": "ft-5676614",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "94 - Mandres-les-Roses",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-02T03:23:44.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5676614",
+    "first_seen": "2026-08-02T02:38:28.903347+00:00"
+  },
+  {
+    "id": "ft-5672241",
+    "source": "France Travail",
+    "title": "Développeur Full-stack (H/F)",
+    "company": "SOCIETE AIR FRANCE",
+    "location": "31 - Haute-Garonne",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-02T03:20:58.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5672241",
+    "first_seen": "2026-08-02T02:38:28.903362+00:00"
+  },
+  {
+    "id": "ft-5671831",
+    "source": "France Travail",
+    "title": "Développeur java confirmé H/F",
+    "company": "Hays Montpellier",
+    "location": "13 - Marseille 16e Arrondissement",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 45000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-02T00:32:49.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5671831",
+    "first_seen": "2026-08-02T02:38:28.903365+00:00"
+  },
+  {
+    "id": "li-4447747995",
+    "source": "LinkedIn",
+    "title": "Développeur Java / Angular – Paris H/F",
+    "company": "Kicklox",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-angular-%E2%80%93-paris-h-f-at-kicklox-4447747995",
+    "first_seen": "2026-08-02T02:38:28.903453+00:00"
+  },
+  {
     "id": "ft-5671774",
     "source": "France Travail",
     "title": "Développeur Full-stack JAVA/ANGULAR F/H h/f",
