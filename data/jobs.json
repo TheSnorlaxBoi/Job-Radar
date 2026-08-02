@@ -1,5 +1,44 @@
 [
   {
+    "id": "li-4439306160",
+    "source": "LinkedIn",
+    "title": "Développeur Golang (H/F)",
+    "company": "Davidson consulting",
+    "location": "Rennes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-golang-h-f-at-davidson-consulting-4439306160",
+    "first_seen": "2026-08-02T06:31:57.645358+00:00"
+  },
+  {
+    "id": "li-4371405780",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java/ Angular Confirmé F/H",
+    "company": "SQLI",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-confirm%C3%A9-f-h-at-sqli-4371405780",
+    "first_seen": "2026-08-02T06:31:57.645360+00:00"
+  },
+  {
+    "id": "li-4363742862",
+    "source": "LinkedIn",
+    "title": "Développeur Java (F/H)",
+    "company": "Accenture France",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-f-h-at-accenture-france-4363742862",
+    "first_seen": "2026-08-02T06:31:57.645361+00:00"
+  },
+  {
     "id": "ft-5676614",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -845,32 +884,6 @@
     "first_seen": "2026-08-01T14:38:25.565377+00:00"
   },
   {
-    "id": "ft-5566493",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Louvres",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-07-30T03:23:10.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5566493",
-    "first_seen": "2026-08-01T14:38:25.565378+00:00"
-  },
-  {
-    "id": "ft-5566491",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "77 - Mitry-Mory",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-07-30T03:23:10.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5566491",
-    "first_seen": "2026-08-01T14:38:25.565379+00:00"
-  },
-  {
     "id": "ft-211XGDJ",
     "source": "France Travail",
     "title": "Développeur Fullstack - TMA (H/F)",
@@ -975,32 +988,6 @@
     "first_seen": "2026-08-01T14:38:25.565385+00:00"
   },
   {
-    "id": "ft-5569853",
-    "source": "France Travail",
-    "title": "Développeur JAVA (H/F)",
-    "company": "FATEC GROUP",
-    "location": "13 - Marseille 16e Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 45000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-07-30T04:31:39.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5569853",
-    "first_seen": "2026-08-01T14:38:25.565386+00:00"
-  },
-  {
-    "id": "ft-5568374",
-    "source": "France Travail",
-    "title": "Développeur Full-stack (H/F)",
-    "company": "Non précisé",
-    "location": "31 - Toulouse",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-30T03:23:18.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5568374",
-    "first_seen": "2026-08-01T14:38:25.565387+00:00"
-  },
-  {
     "id": "ft-211WSVS",
     "source": "France Travail",
     "title": "Développeur senior full-stack JavaScript - Paris (F/H) (H/F)",
@@ -1038,32 +1025,6 @@
     "published_at": "2026-07-30T07:01:10.889Z",
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5570985",
     "first_seen": "2026-08-01T14:38:25.565390+00:00"
-  },
-  {
-    "id": "ft-5570834",
-    "source": "France Travail",
-    "title": "Concepteur Développeur F/H",
-    "company": "Non précisé",
-    "location": "93 - Bobigny",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-30T05:30:56.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5570834",
-    "first_seen": "2026-08-01T14:38:25.565391+00:00"
-  },
-  {
-    "id": "ft-5567117",
-    "source": "France Travail",
-    "title": "Développeur back end (H/F)",
-    "company": "Non précisé",
-    "location": "75 - Paris 9e Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 60000.0 Euros à 90000.0 Euros",
-    "published_at": "2026-07-30T03:23:13.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5567117",
-    "first_seen": "2026-08-01T14:38:25.565391+00:00"
   },
   {
     "id": "li-4447759049",
