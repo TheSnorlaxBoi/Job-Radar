@@ -4,8 +4,9 @@ job-radar / fetch_jobs.py
 Collecte des offres d'emploi selon des filtres définis dans config.json,
 depuis :
   - France Travail (API officielle, gratuite, OAuth2 client_credentials)
+  - Jooble (API officielle, gratuite, avec clé)
   - Le Forem, Wallonie (API open data officielle, gratuite, sans clé)
-  - VDAB, Actiris, JobsWallonie, Moovijob, Talent.com, HelloWork, Indeed,
+  - VDAB, Actiris, JobsWallonie, Moovijob, Talent.com, HelloWork, APEC,
     LinkedIn (pages de recherche publiques, sans login — best-effort,
     voir les avertissements dans chaque fonction et le README)
 
@@ -153,6 +154,11 @@ def fetch_france_travail(cfg):
                     "published_at": o.get("dateCreation", ""),
                     "url": o.get("origineOffre", {}).get("urlOrigine")
                         or f"https://candidat.francetravail.fr/offres/recherche/detail/{o.get('id')}",
+                    "description": o.get("description", ""),
+                    # France Travail donne un champ structuré pour l'expérience :
+                    # "D" = débutant accepté, "S" = souhaitée, "E" = exigée.
+                    # Plus fiable qu'une détection par mots-clés — utilisé en priorité.
+                    "experience_code": o.get("experienceExige"),
                 })
 
             if len(results) < page_size:
@@ -248,6 +254,7 @@ def fetch_forem(cfg):
             contract = _pick_field(rec, ["type_contrat", "contrat", "typecontrat"]) or ""
             date_pub = _pick_field(rec, ["date_publi", "date_creation", "date_diffusion", "date_debut"]) or ""
             url_offre = _pick_field(rec, ["url", "lien"]) or ""
+            description = _pick_field(rec, ["description", "descriptif", "resume", "texte"]) or ""
 
             job_id_seed = url_offre or f"{title}-{company}-{date_pub}"
             job_id = f"forem-{abs(hash(job_id_seed))}"
@@ -266,6 +273,7 @@ def fetch_forem(cfg):
                 "salary": "",
                 "published_at": date_pub if isinstance(date_pub, str) else "",
                 "url": url_offre or "https://www.leforem.be/recherche-offres/resultat-recherche-offre",
+                "description": str(description),
             })
 
     print(f"[Forem] {len(jobs)} offre(s) récupérée(s).")
@@ -431,6 +439,7 @@ def _jobposting_to_job(item, source_name, fallback_url):
     published = item.get("datePosted") or ""
     url = item.get("url") or fallback_url
     job_id_seed = url or f"{title}-{company}"
+    description = _strip_tags(item.get("description") or "")[:2000]
 
     return {
         "id": f"{source_name.lower()}-{abs(hash(job_id_seed))}",
@@ -443,6 +452,7 @@ def _jobposting_to_job(item, source_name, fallback_url):
         "salary": salary,
         "published_at": published,
         "url": url,
+        "description": description,
     }
 
 
@@ -619,8 +629,132 @@ def fetch_linkedin(cfg):
 
 
 # ---------------------------------------------------------------------------
+# Détection du niveau d'expérience requis
+#
+# France Travail fournit un champ structuré fiable ("experienceExige" : D =
+# débutant accepté, S = souhaitée, E = exigée), utilisé en priorité. Pour les
+# autres sources, on retombe sur une détection par mots-clés dans le titre et
+# la description — moins fiable, et d'autant plus faible que la source ne
+# fournit pas de description (VDAB, LinkedIn, Moovijob actuellement : la
+# détection s'y limite au titre, donc beaucoup d'offres finiront en
+# "indéterminé" faute d'information).
+# ---------------------------------------------------------------------------
+
+NO_EXPERIENCE_PATTERNS = [
+    r"sans exp[ée]rience", r"aucune exp[ée]rience", r"d[ée]butants?\s+accept[ée]s?",
+    r"d[ée]butants?\s+bienvenus?", r"pas d'exp[ée]rience", r"0\s*an[s]?\s+d'exp[ée]rience",
+    r"exp[ée]rience non requise", r"exp[ée]rience non exig[ée]e", r"ouvert(?:e)? aux d[ée]butants?",
+    r"premier emploi accept[ée]", r"formation assur[ée]e", r"sans qualification",
+]
+EXPERIENCE_REQUIRED_PATTERNS = [
+    r"\d+\s*(?:à|-|/)?\s*\d*\s*ans?\s+d'exp[ée]rience", r"exp[ée]rience\s+(?:requise|exig[ée]e|indispensable|obligatoire)",
+    r"minimum\s+\d+\s*ans?", r"profil\s+confirm[ée]", r"exp[ée]riment[ée]e?\s", r"\bsenior\b",
+]
+
+
+def _detect_experience_from_text(text):
+    t = (text or "").lower()
+    if any(re.search(p, t) for p in NO_EXPERIENCE_PATTERNS):
+        return "none_required"
+    if any(re.search(p, t) for p in EXPERIENCE_REQUIRED_PATTERNS):
+        return "required"
+    return "unknown"
+
+
+FT_EXPERIENCE_CODE_MAP = {"D": "none_required", "S": "desired", "E": "required"}
+
+
+def tag_experience(jobs):
+    """Ajoute un champ 'experience_detected' à chaque offre :
+    'none_required' | 'desired' | 'required' | 'unknown'."""
+    for j in jobs:
+        code = j.get("experience_code")
+        if code in FT_EXPERIENCE_CODE_MAP:
+            j["experience_detected"] = FT_EXPERIENCE_CODE_MAP[code]
+        else:
+            text = f"{j.get('title', '')} {j.get('description', '')}"
+            j["experience_detected"] = _detect_experience_from_text(text)
+    return jobs
+
+
+def filter_by_experience(jobs, cfg):
+    exp_cfg = cfg.get("experience_filter", {})
+    if not exp_cfg.get("enabled"):
+        return jobs
+    keep_unknown = exp_cfg.get("keep_if_not_mentioned", True)
+    keep_desired = exp_cfg.get("keep_if_desired_only", False)
+
+    kept = []
+    for j in jobs:
+        level = j.get("experience_detected", "unknown")
+        if level == "none_required":
+            kept.append(j)
+        elif level == "unknown" and keep_unknown:
+            kept.append(j)
+        elif level == "desired" and keep_desired:
+            kept.append(j)
+    removed = len(jobs) - len(kept)
+    if removed:
+        print(f"[Filtre expérience] {removed} offre(s) exclue(s) (expérience requise détectée).")
+    return kept
+
+
+# ---------------------------------------------------------------------------
 # Filtrage additionnel (mots-clés à exclure, titre, etc.) commun aux sources
 # ---------------------------------------------------------------------------
+
+def _normalize_text(s):
+    s = (s or "").lower()
+    replacements = {"é": "e", "è": "e", "ê": "e", "ë": "e", "à": "a", "â": "a",
+                    "ù": "u", "û": "u", "ô": "o", "î": "i", "ï": "i", "ç": "c"}
+    for a, b in replacements.items():
+        s = s.replace(a, b)
+    return s
+
+
+def _collect_keyword_pool(cfg):
+    """Rassemble tous les mots-clés de recherche configurés (toutes sources
+    confondues, sauf Moovijob qui utilise des catégories fixes plutôt que des
+    mots-clés libres) pour servir de référence au filtre strict ci-dessous."""
+    pool = set()
+    source_keys = [
+        "france_travail", "linkedin", "vdab", "forem", "actiris", "jobswallonie",
+        "hellowork", "apec", "jooble", "talent_be", "talent_lu",
+    ]
+    for key in source_keys:
+        for kw in (cfg.get(key, {}) or {}).get("keywords_list", []) or []:
+            if kw:
+                pool.add(kw)
+    return pool
+
+
+def _title_matches_keyword_pool(title, keyword_pool):
+    """Une offre est gardée si son titre contient TOUS les mots d'au moins un
+    des mots-clés configurés (accents ignorés, ordre des mots indifférent).
+    Ça évite qu'un moteur de recherche de jobboard élargisse la recherche à
+    des offres qui n'ont rien à voir avec le mot-clé demandé."""
+    if not keyword_pool:
+        return True
+    norm_title = _normalize_text(title)
+    for kw in keyword_pool:
+        words = [w for w in re.split(r"\s+", _normalize_text(kw)) if w]
+        if words and all(w in norm_title for w in words):
+            return True
+    return False
+
+
+def apply_strict_keyword_filter(jobs, cfg):
+    if not cfg.get("strict_keyword_match", True):
+        return jobs
+    pool = _collect_keyword_pool(cfg)
+    if not pool:
+        return jobs
+    kept = [j for j in jobs if _title_matches_keyword_pool(j.get("title", ""), pool)]
+    removed = len(jobs) - len(kept)
+    if removed:
+        print(f"[Filtre mots-clés] {removed} offre(s) exclue(s) (titre ne correspondant à aucun mot-clé demandé).")
+    return kept
+
 
 def apply_common_filters(jobs, cfg):
     exclude_keywords = [k.lower() for k in cfg.get("exclude_keywords", [])]
@@ -702,6 +836,78 @@ def save(jobs):
         json.dump(jobs, f, ensure_ascii=False, indent=2)
 
 
+# ---------------------------------------------------------------------------
+# Jooble — agrégateur d'offres (69 pays, dont la France). Vraie API gratuite
+# avec clé (pas de scraping) : inscription en 1 minute sur jooble.org/api/about,
+# aucune carte bancaire requise. Contrairement à Indeed, elle ne bloque pas
+# les requêtes automatisées puisqu'elle est justement conçue pour ça.
+# ---------------------------------------------------------------------------
+
+def fetch_jooble(cfg):
+    j_cfg = cfg.get("jooble", {})
+    if not j_cfg.get("enabled"):
+        return []
+
+    api_key = os.environ.get("JOOBLE_API_KEY")
+    if not api_key:
+        print("[Jooble] Clé API manquante (JOOBLE_API_KEY) — étape ignorée.")
+        return []
+
+    keywords_list = j_cfg.get("keywords_list") or [""]
+    location = j_cfg.get("location", "France")
+    max_pages = j_cfg.get("max_pages", 1)
+    url = f"https://jooble.org/api/{api_key}"
+    headers = {"Content-Type": "application/json"}
+
+    jobs = []
+    seen_ids = set()
+
+    for keyword in keywords_list:
+        for page in range(1, max_pages + 1):
+            body = {"keywords": keyword, "location": location, "page": str(page)}
+            try:
+                r = requests.post(url, json=body, headers=headers, timeout=20)
+            except requests.RequestException as e:
+                print(f"[Jooble] ('{keyword}') Erreur réseau : {e}")
+                break
+            if r.status_code != 200:
+                print(f"[Jooble] ('{keyword}') page {page} : HTTP {r.status_code} : {r.text[:200]}")
+                break
+
+            payload = r.json()
+            results = payload.get("jobs", [])
+            if not results:
+                break
+
+            for o in results:
+                link = o.get("link", "")
+                seed = link or f"{o.get('title','')}-{o.get('company','')}"
+                job_id = f"jooble-{abs(hash(seed))}"
+                if job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                jobs.append({
+                    "id": job_id,
+                    "source": "Jooble",
+                    "title": o.get("title", ""),
+                    "company": o.get("company", "") or "Non précisé",
+                    "location": o.get("location", ""),
+                    "contract": o.get("type", "") or "",
+                    "remote": False,
+                    "salary": o.get("salary", "") or "",
+                    "published_at": o.get("updated", ""),
+                    "url": link,
+                    "description": o.get("snippet", ""),
+                })
+
+            if len(results) < 20:  # taille de page habituelle de Jooble
+                break
+            time.sleep(0.5)
+
+    print(f"[Jooble] {len(jobs)} offre(s) récupérée(s).")
+    return jobs
+
+
 def main():
     cfg = load_config()
     max_age_days = cfg.get("max_job_age_days", 7)
@@ -711,6 +917,9 @@ def main():
     all_new = []
     all_new += fetch_france_travail(cfg)
     all_new += fetch_linkedin(cfg)
+    all_new += fetch_jooble(cfg)
+    all_new += fetch_generic_board("APEC", cfg.get("apec", {}))
+    all_new += fetch_generic_board("HelloWork", cfg.get("hellowork", {}))
     all_new += fetch_forem(cfg)
     all_new += fetch_vdab(cfg)
     all_new += fetch_generic_board("Actiris", cfg.get("actiris", {}))
@@ -718,11 +927,15 @@ def main():
     all_new += fetch_generic_board("Moovijob", cfg.get("moovijob", {}))
     all_new += fetch_generic_board("Talent.com Belgique", cfg.get("talent_be", {}))
     all_new += fetch_generic_board("Talent.com Luxembourg", cfg.get("talent_lu", {}))
-    all_new += fetch_generic_board("Indeed Luxembourg", cfg.get("indeed_lu", {}))
-    all_new += fetch_generic_board("HelloWork", cfg.get("hellowork", {}))
-    all_new += fetch_generic_board("Indeed", cfg.get("indeed_fr", {}))
 
     all_new = apply_common_filters(all_new, cfg)
+    all_new = apply_strict_keyword_filter(all_new, cfg)
+    all_new = tag_experience(all_new)
+    all_new = filter_by_experience(all_new, cfg)
+    for j in all_new:
+        j.pop("description", None)
+        j.pop("experience_code", None)
+
     merged, fresh = merge_and_dedupe(all_new, existing)
     merged = purge_old_jobs(merged, max_age_days)
     save(merged)
