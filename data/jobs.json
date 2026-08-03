@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4448189034",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-03",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4448189034",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-03T17:49:49.320691+00:00"
+  },
+  {
+    "id": "li-4448177239",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Crosne",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-03",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4448177239",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-03T17:49:49.320707+00:00"
+  },
+  {
+    "id": "li-4448183121",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Écouen",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-03",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4448183121",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-03T17:49:49.320710+00:00"
+  },
+  {
     "id": "ft-5687556",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
