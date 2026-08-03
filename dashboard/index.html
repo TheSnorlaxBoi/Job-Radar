@@ -80,6 +80,7 @@
   .job-meta span::before { content: "•"; margin-right: 6px; color: var(--border); }
   .job-meta span:first-child::before { content: ""; margin-right: 0; }
   .new-tag { color: var(--good); font-weight: 600; }
+  .exp-tag { color: var(--good); font-weight: 500; font-size: 12px; }
 
   .job.visited { opacity: 0.55; }
   .job.visited .job-title a { color: var(--muted); }
@@ -163,7 +164,8 @@
     <option value="">Toutes les sources</option>
     <option value="France Travail">France Travail</option>
     <option value="HelloWork">HelloWork</option>
-    <option value="Indeed">Indeed</option>
+    <option value="APEC">APEC</option>
+    <option value="Jooble">Jooble</option>
     <option value="LinkedIn">LinkedIn</option>
     <option value="Forem">Forem (Wallonie)</option>
     <option value="JobsWallonie">JobsWallonie (Wallonie)</option>
@@ -171,7 +173,6 @@
     <option value="Actiris">Actiris (Belgique)</option>
     <option value="Talent.com Belgique">Talent.com (Belgique)</option>
     <option value="Moovijob">Moovijob (Luxembourg)</option>
-    <option value="Indeed Luxembourg">Indeed (Luxembourg)</option>
     <option value="Talent.com Luxembourg">Talent.com (Luxembourg)</option>
   </select>
   <select id="sortBy">
@@ -202,14 +203,14 @@
       <div class="checks">
         <label><input type="checkbox" id="f_ft_enabled" /> France Travail</label>
         <label><input type="checkbox" id="f_hellowork_enabled" /> HelloWork</label>
-        <label><input type="checkbox" id="f_indeed_fr_enabled" /> Indeed (France)</label>
+        <label><input type="checkbox" id="f_apec_enabled" /> APEC</label>
+        <label><input type="checkbox" id="f_jooble_enabled" /> Jooble</label>
         <label><input type="checkbox" id="f_li_enabled" /> LinkedIn</label>
         <label><input type="checkbox" id="f_vdab_enabled" /> VDAB (Belgique)</label>
         <label><input type="checkbox" id="f_forem_enabled" /> Forem (Wallonie)</label>
         <label><input type="checkbox" id="f_jobswallonie_enabled" /> JobsWallonie (Wallonie)</label>
         <label><input type="checkbox" id="f_actiris_enabled" /> Actiris (Belgique)</label>
         <label><input type="checkbox" id="f_moovijob_enabled" /> Moovijob (Luxembourg)</label>
-        <label><input type="checkbox" id="f_indeed_lu_enabled" /> Indeed (Luxembourg)</label>
         <label><input type="checkbox" id="f_talent_be_enabled" /> Talent.com (Belgique)</label>
         <label><input type="checkbox" id="f_talent_lu_enabled" /> Talent.com (Luxembourg)</label>
       </div>
@@ -237,6 +238,11 @@
 
     <div class="field">
       <label><input type="checkbox" id="f_remote" /> Télétravail uniquement</label>
+    </div>
+
+    <div class="field">
+      <label><input type="checkbox" id="f_no_exp" /> N'afficher que les offres sans expérience requise (best-effort)</label>
+      <p class="hint">Détection par mots-clés (et champ officiel pour France Travail). Les offres qui ne mentionnent pas du tout l'expérience sont gardées par défaut — désactive ça dans config.json (<code>keep_if_not_mentioned</code>) si tu veux être plus strict.</p>
     </div>
 
     <div class="field">
@@ -351,6 +357,7 @@
           <div class="job-title">
             <a class="job-link" data-id="${j.id}" href="${j.url}" target="_blank" rel="noopener">${j.title || "(sans titre)"}</a>
             ${isRecent(j.first_seen) ? '<span class="new-tag"> ● nouveau</span>' : ''}
+            ${j.experience_detected === 'none_required' ? '<span class="exp-tag"> · 🌱 sans expérience requise</span>' : ''}
             ${clickedIds.has(j.id) ? '<span class="visited-tag"> · déjà consulté</span>' : ''}
           </div>
           <span class="badge">${j.source}</span>
@@ -494,13 +501,14 @@
     document.getElementById("f_jobswallonie_enabled").checked = (cfg.jobswallonie || {}).enabled !== false;
     document.getElementById("f_talent_be_enabled").checked = (cfg.talent_be || {}).enabled !== false;
     document.getElementById("f_talent_lu_enabled").checked = (cfg.talent_lu || {}).enabled !== false;
-    document.getElementById("f_indeed_lu_enabled").checked = (cfg.indeed_lu || {}).enabled !== false;
     document.getElementById("f_hellowork_enabled").checked = (cfg.hellowork || {}).enabled !== false;
-    document.getElementById("f_indeed_fr_enabled").checked = (cfg.indeed_fr || {}).enabled !== false;
+    document.getElementById("f_apec_enabled").checked = (cfg.apec || {}).enabled !== false;
+    document.getElementById("f_jooble_enabled").checked = (cfg.jooble || {}).enabled !== false;
     document.querySelectorAll(".f_contract").forEach(cb => {
       cb.checked = (ft.contract_types || []).includes(cb.value);
     });
     document.getElementById("f_remote").checked = !!ft.remote_only || !!li.remote_only;
+    document.getElementById("f_no_exp").checked = !!(cfg.experience_filter || {}).enabled;
     document.getElementById("f_salary").value = ft.min_salary || "";
     document.getElementById("f_commune").value = ft.commune || "";
     document.getElementById("f_rayon").value = ft.rayon_km || "";
@@ -569,17 +577,25 @@
     cfg.jobswallonie.enabled = document.getElementById("f_jobswallonie_enabled").checked;
     cfg.jobswallonie.keywords_list = keywords;
 
-    cfg.indeed_lu = cfg.indeed_lu || {};
-    cfg.indeed_lu.enabled = document.getElementById("f_indeed_lu_enabled").checked;
-    cfg.indeed_lu.keywords_list = keywords;
-
     cfg.hellowork = cfg.hellowork || {};
     cfg.hellowork.enabled = document.getElementById("f_hellowork_enabled").checked;
     cfg.hellowork.keywords_list = keywords;
 
-    cfg.indeed_fr = cfg.indeed_fr || {};
-    cfg.indeed_fr.enabled = document.getElementById("f_indeed_fr_enabled").checked;
-    cfg.indeed_fr.keywords_list = keywords;
+    cfg.apec = cfg.apec || {};
+    cfg.apec.enabled = document.getElementById("f_apec_enabled").checked;
+    cfg.apec.keywords_list = keywords;
+
+    cfg.jooble = cfg.jooble || {};
+    cfg.jooble.enabled = document.getElementById("f_jooble_enabled").checked;
+    cfg.jooble.keywords_list = keywords;
+
+    delete cfg.indeed_fr;
+    delete cfg.indeed_lu;
+
+    cfg.experience_filter = cfg.experience_filter || {};
+    cfg.experience_filter.enabled = document.getElementById("f_no_exp").checked;
+    if (cfg.experience_filter.keep_if_not_mentioned === undefined) cfg.experience_filter.keep_if_not_mentioned = true;
+    if (cfg.experience_filter.keep_if_desired_only === undefined) cfg.experience_filter.keep_if_desired_only = false;
 
     cfg.exclude_keywords = linesToList(document.getElementById("f_exclude").value);
     cfg.title_must_contain = linesToList(document.getElementById("f_titlemust").value);
