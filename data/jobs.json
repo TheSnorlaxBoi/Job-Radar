@@ -1,5 +1,70 @@
 [
   {
+    "id": "ft-5687556",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "77 - Roissy-en-Brie",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-03T03:22:51.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687556",
+    "first_seen": "2026-08-03T02:40:20.358609+00:00"
+  },
+  {
+    "id": "ft-5687550",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Montlignon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-03T03:22:51.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687550",
+    "first_seen": "2026-08-03T02:40:20.358625+00:00"
+  },
+  {
+    "id": "ft-5687281",
+    "source": "France Travail",
+    "title": "Développeur back end (H/F)",
+    "company": "PHD CONSULTING",
+    "location": "31 - Colomiers",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-03T03:20:10.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687281",
+    "first_seen": "2026-08-03T02:40:20.358628+00:00"
+  },
+  {
+    "id": "li-4448106865",
+    "source": "LinkedIn",
+    "title": "Développeur Java / .NET",
+    "company": "jolyet.ai",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-net-at-jolyet-ai-4448106865",
+    "first_seen": "2026-08-03T02:40:20.358701+00:00"
+  },
+  {
+    "id": "forem-6822427414160703180",
+    "source": "Forem",
+    "title": "Développeur IOT (H/F/X)",
+    "company": "SAFRAN AERO BOOSTERS",
+    "location": "['Province de Liège', 'Belgique', 'RÉGION WALLONNE']",
+    "contract": "Durée indéterminée",
+    "remote": false,
+    "salary": "",
+    "published_at": "",
+    "url": "https://www.leforem.be/recherche-offres/offre-detail/1951266",
+    "first_seen": "2026-08-03T02:40:20.358703+00:00"
+  },
+  {
     "id": "forem-5797216069642443059",
     "source": "Forem",
     "title": "Développeur IOT (H/F/X)",
@@ -1222,19 +1287,6 @@
     "first_seen": "2026-08-01T14:38:25.565376+00:00"
   },
   {
-    "id": "ft-5594373",
-    "source": "France Travail",
-    "title": "Développeur Fullstack PHP / Vue.js Confirmé (F/H)",
-    "company": "Externatic",
-    "location": "33 - Bordeaux",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 35000.0 Euros à 38000.0 Euros",
-    "published_at": "2026-07-30T23:01:27.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5594373",
-    "first_seen": "2026-08-01T14:38:25.565381+00:00"
-  },
-  {
     "id": "li-4447759049",
     "source": "LinkedIn",
     "title": "Développeur PHP / Symfony / Flutter (F/H)",
@@ -1246,19 +1298,6 @@
     "published_at": "2026-08-01",
     "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-php-symfony-flutter-f-h-at-versusmind-4447759049",
     "first_seen": "2026-08-01T14:38:25.565433+00:00"
-  },
-  {
-    "id": "li-4445516670",
-    "source": "LinkedIn",
-    "title": "Développeur Webservice Front end et Back end",
-    "company": "Free-Work",
-    "location": "Charenton-le-Pont",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-31",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-webservice-front-end-et-back-end-at-free-work-4445516670",
-    "first_seen": "2026-08-01T14:38:25.565434+00:00"
   },
   {
     "id": "li-4445596261",
@@ -1287,19 +1326,6 @@
     "first_seen": "2026-08-01T14:38:25.565435+00:00"
   },
   {
-    "id": "li-4445529817",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java F/H",
-    "company": "Atos",
-    "location": "Pessac",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-31",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-f-h-at-atos-4445529817",
-    "first_seen": "2026-08-01T14:38:25.565436+00:00"
-  },
-  {
     "id": "li-4447745916",
     "source": "LinkedIn",
     "title": "Développeur Java (H/F)",
@@ -1311,19 +1337,6 @@
     "published_at": "2026-08-01",
     "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-h-f-at-versusmind-4447745916",
     "first_seen": "2026-08-01T14:38:25.565437+00:00"
-  },
-  {
-    "id": "li-4447196021",
-    "source": "LinkedIn",
-    "title": "Développeur PHP / Symfony confirmé – CDI - H/F",
-    "company": "Tetris Assurance",
-    "location": "Dardilly",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-31",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-php-symfony-confirm%C3%A9-%E2%80%93-cdi-h-f-at-tetris-assurance-4447196021",
-    "first_seen": "2026-08-01T14:38:25.565438+00:00"
   },
   {
     "id": "li-4447464678",
@@ -1350,19 +1363,6 @@
     "published_at": "2026-08-01",
     "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-multi-technologies-f-h-at-bpce-solutions-informatiques-4362262723",
     "first_seen": "2026-08-01T14:38:25.565440+00:00"
-  },
-  {
-    "id": "li-4439072219",
-    "source": "LinkedIn",
-    "title": "Développeur (se) Full Stack Java/Angular H/F",
-    "company": "ACT-ON TECHNOLOGY",
-    "location": "Neuilly-sur-Seine",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-31",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-full-stack-java-angular-h-f-at-act-on-technology-4439072219",
-    "first_seen": "2026-08-01T14:38:25.565441+00:00"
   },
   {
     "id": "forem-1132635117530129389",
