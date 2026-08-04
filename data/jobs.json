@@ -292,19 +292,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5523233",
     "experience_detected": "required",
     "first_seen": "2026-08-03T09:40:02.873615+00:00"
-  },
-  {
-    "id": "ft-5501249",
-    "source": "France Travail",
-    "title": "Développeur / Développeuse web (H/F)",
-    "company": "NEW NET 3D",
-    "location": "92 - Plessis-Robinson",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-28T03:20:39.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5501249",
-    "experience_detected": "required",
-    "first_seen": "2026-08-03T09:40:02.873617+00:00"
   }
 ]
