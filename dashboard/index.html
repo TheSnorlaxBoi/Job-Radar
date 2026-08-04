@@ -164,7 +164,6 @@
     <option value="">Toutes les sources</option>
     <option value="France Travail">France Travail</option>
     <option value="HelloWork">HelloWork</option>
-    <option value="APEC">APEC</option>
     <option value="Jooble">Jooble</option>
     <option value="LinkedIn">LinkedIn</option>
     <option value="Forem">Forem (Wallonie)</option>
@@ -203,7 +202,6 @@
       <div class="checks">
         <label><input type="checkbox" id="f_ft_enabled" /> France Travail</label>
         <label><input type="checkbox" id="f_hellowork_enabled" /> HelloWork</label>
-        <label><input type="checkbox" id="f_apec_enabled" /> APEC</label>
         <label><input type="checkbox" id="f_jooble_enabled" /> Jooble</label>
         <label><input type="checkbox" id="f_li_enabled" /> LinkedIn</label>
         <label><input type="checkbox" id="f_vdab_enabled" /> VDAB (Belgique)</label>
@@ -224,6 +222,12 @@
     <div class="field">
       <label>Rayon en km autour de la commune (optionnel)</label>
       <input type="number" id="f_rayon" placeholder="ex: 30" />
+    </div>
+
+    <div class="field">
+      <label>Ancienneté maximale des offres (en jours)</label>
+      <input type="number" id="f_max_age" placeholder="ex: 7" min="1" />
+      <p class="hint">Les offres plus anciennes que ça sont automatiquement supprimées à chaque collecte.</p>
     </div>
 
     <div class="field">
@@ -502,7 +506,6 @@
     document.getElementById("f_talent_be_enabled").checked = (cfg.talent_be || {}).enabled !== false;
     document.getElementById("f_talent_lu_enabled").checked = (cfg.talent_lu || {}).enabled !== false;
     document.getElementById("f_hellowork_enabled").checked = (cfg.hellowork || {}).enabled !== false;
-    document.getElementById("f_apec_enabled").checked = (cfg.apec || {}).enabled !== false;
     document.getElementById("f_jooble_enabled").checked = (cfg.jooble || {}).enabled !== false;
     document.querySelectorAll(".f_contract").forEach(cb => {
       cb.checked = (ft.contract_types || []).includes(cb.value);
@@ -512,6 +515,7 @@
     document.getElementById("f_salary").value = ft.min_salary || "";
     document.getElementById("f_commune").value = ft.commune || "";
     document.getElementById("f_rayon").value = ft.rayon_km || "";
+    document.getElementById("f_max_age").value = cfg.max_job_age_days || 7;
     document.getElementById("f_exclude").value = (cfg.exclude_keywords || []).join("\n");
     document.getElementById("f_titlemust").value = (cfg.title_must_contain || []).join("\n");
   }
@@ -581,16 +585,16 @@
     cfg.hellowork.enabled = document.getElementById("f_hellowork_enabled").checked;
     cfg.hellowork.keywords_list = keywords;
 
-    cfg.apec = cfg.apec || {};
-    cfg.apec.enabled = document.getElementById("f_apec_enabled").checked;
-    cfg.apec.keywords_list = keywords;
-
     cfg.jooble = cfg.jooble || {};
     cfg.jooble.enabled = document.getElementById("f_jooble_enabled").checked;
     cfg.jooble.keywords_list = keywords;
 
     delete cfg.indeed_fr;
     delete cfg.indeed_lu;
+    delete cfg.apec;
+
+    const maxAgeVal = document.getElementById("f_max_age").value;
+    cfg.max_job_age_days = maxAgeVal ? Number(maxAgeVal) : 7;
 
     cfg.experience_filter = cfg.experience_filter || {};
     cfg.experience_filter.enabled = document.getElementById("f_no_exp").checked;
