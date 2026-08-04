@@ -6,7 +6,7 @@ depuis :
   - France Travail (API officielle, gratuite, OAuth2 client_credentials)
   - Jooble (API officielle, gratuite, avec clé)
   - Le Forem, Wallonie (API open data officielle, gratuite, sans clé)
-  - VDAB, Actiris, JobsWallonie, Moovijob, Talent.com, HelloWork, APEC,
+  - VDAB, Actiris, JobsWallonie, Moovijob, Talent.com, HelloWork,
     LinkedIn (pages de recherche publiques, sans login — best-effort,
     voir les avertissements dans chaque fonction et le README)
 
@@ -248,13 +248,19 @@ def fetch_forem(cfg):
             printed_schema_hint = True
 
         for rec in results:
-            title = _pick_field(rec, ["intitule", "titre", "poste", "fonction"]) or ""
-            company = _pick_field(rec, ["entreprise", "employeur", "societe", "raison_sociale"]) or "Non précisé"
-            location = _pick_field(rec, ["commune", "localite", "localisation", "lieu", "ville"]) or ""
-            contract = _pick_field(rec, ["type_contrat", "contrat", "typecontrat"]) or ""
-            date_pub = _pick_field(rec, ["date_publi", "date_creation", "date_diffusion", "date_debut"]) or ""
+            # Noms de champs confirmés par un run réel (voir "[Forem] Champs
+            # disponibles" dans les logs) — gardés en tête de liste, avec les
+            # anciennes suppositions en repli si le schéma change un jour.
+            title = _pick_field(rec, ["titreoffre", "intitule", "titre", "poste", "fonction"]) or ""
+            company = _pick_field(rec, ["nomemployeur", "entreprise", "employeur", "societe", "raison_sociale"]) or "Non précisé"
+            location = _pick_field(rec, ["lieuxtravaillocalite", "commune", "localite", "localisation", "lieu", "ville"]) or ""
+            contract = _pick_field(rec, ["typecontrat", "type_contrat", "contrat"]) or ""
+            date_pub = _pick_field(rec, ["datedebutdiffusion", "date_publi", "date_creation", "date_diffusion", "date_debut"]) or ""
             url_offre = _pick_field(rec, ["url", "lien"]) or ""
-            description = _pick_field(rec, ["description", "descriptif", "resume", "texte"]) or ""
+            # Ce jeu de données ne fournit pas de texte de description libre,
+            # mais un champ structuré sur l'expérience — bien plus fiable
+            # qu'une détection par mots-clés, réutilisé tel quel.
+            experience_text = _pick_field(rec, ["experiencerequise"]) or ""
 
             job_id_seed = url_offre or f"{title}-{company}-{date_pub}"
             job_id = f"forem-{abs(hash(job_id_seed))}"
@@ -273,7 +279,7 @@ def fetch_forem(cfg):
                 "salary": "",
                 "published_at": date_pub if isinstance(date_pub, str) else "",
                 "url": url_offre or "https://www.leforem.be/recherche-offres/resultat-recherche-offre",
-                "description": str(description),
+                "description": str(experience_text),
             })
 
     print(f"[Forem] {len(jobs)} offre(s) récupérée(s).")
@@ -643,8 +649,9 @@ def fetch_linkedin(cfg):
 NO_EXPERIENCE_PATTERNS = [
     r"sans exp[ée]rience", r"aucune exp[ée]rience", r"d[ée]butants?\s+accept[ée]s?",
     r"d[ée]butants?\s+bienvenus?", r"pas d'exp[ée]rience", r"0\s*an[s]?\s+d'exp[ée]rience",
-    r"exp[ée]rience non requise", r"exp[ée]rience non exig[ée]e", r"ouvert(?:e)? aux d[ée]butants?",
-    r"premier emploi accept[ée]", r"formation assur[ée]e", r"sans qualification",
+    r"exp[ée]rience non requise", r"exp[ée]rience non exig[ée]e", r"non exig[ée]e?\b",
+    r"ouvert(?:e)? aux d[ée]butants?", r"premier emploi accept[ée]", r"formation assur[ée]e",
+    r"sans qualification",
 ]
 EXPERIENCE_REQUIRED_PATTERNS = [
     r"\d+\s*(?:à|-|/)?\s*\d*\s*ans?\s+d'exp[ée]rience", r"exp[ée]rience\s+(?:requise|exig[ée]e|indispensable|obligatoire)",
@@ -719,7 +726,7 @@ def _collect_keyword_pool(cfg):
     pool = set()
     source_keys = [
         "france_travail", "linkedin", "vdab", "forem", "actiris", "jobswallonie",
-        "hellowork", "apec", "jooble", "talent_be", "talent_lu",
+        "hellowork", "jooble", "talent_be", "talent_lu",
     ]
     for key in source_keys:
         for kw in (cfg.get(key, {}) or {}).get("keywords_list", []) or []:
@@ -918,8 +925,6 @@ def main():
     all_new += fetch_france_travail(cfg)
     all_new += fetch_linkedin(cfg)
     all_new += fetch_jooble(cfg)
-    all_new += fetch_generic_board("APEC", cfg.get("apec", {}))
-    all_new += fetch_generic_board("HelloWork", cfg.get("hellowork", {}))
     all_new += fetch_forem(cfg)
     all_new += fetch_vdab(cfg)
     all_new += fetch_generic_board("Actiris", cfg.get("actiris", {}))
