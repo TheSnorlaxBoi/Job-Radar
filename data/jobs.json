@@ -1,5 +1,75 @@
 [
   {
+    "id": "li-4447356451",
+    "source": "LinkedIn",
+    "title": "Python Developer",
+    "company": "Overt Minds",
+    "location": "Job",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-05",
+    "url": "https://fr.linkedin.com/jobs/view/python-developer-at-overt-minds-4447356451",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-05T06:27:27.296594+00:00"
+  },
+  {
+    "id": "li-4447343948",
+    "source": "LinkedIn",
+    "title": "Senior Python Developer",
+    "company": "Overt Minds",
+    "location": "Job",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-05",
+    "url": "https://fr.linkedin.com/jobs/view/senior-python-developer-at-overt-minds-4447343948",
+    "experience_detected": "required",
+    "first_seen": "2026-08-05T06:27:27.296596+00:00"
+  },
+  {
+    "id": "li-4449052932",
+    "source": "LinkedIn",
+    "title": "Responsable technique – Développeur full stack Angular/Python",
+    "company": "ToolLive",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-04",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-technique-%E2%80%93-d%C3%A9veloppeur-full-stack-angular-python-at-toollive-4449052932",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-05T06:27:27.296597+00:00"
+  },
+  {
+    "id": "li-4447362081",
+    "source": "LinkedIn",
+    "title": "Junior AI & Data Engineer",
+    "company": "Overt Minds",
+    "location": "Job",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-05",
+    "url": "https://fr.linkedin.com/jobs/view/junior-ai-data-engineer-at-overt-minds-4447362081",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-05T06:27:27.296599+00:00"
+  },
+  {
+    "id": "li-4448261979",
+    "source": "LinkedIn",
+    "title": "Data Engineer F/H",
+    "company": "Oney",
+    "location": "Croix",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-04",
+    "url": "https://fr.linkedin.com/jobs/view/data-engineer-f-h-at-oney-4448261979",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-05T06:27:27.296601+00:00"
+  },
+  {
     "id": "li-4438808444",
     "source": "LinkedIn",
     "title": "Développeur Java Python, Liquidity Data Platform H/F",
@@ -558,34 +628,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5550783",
     "experience_detected": "required",
     "first_seen": "2026-08-04T17:48:01.124991+00:00"
-  },
-  {
-    "id": "ft-5524177",
-    "source": "France Travail",
-    "title": "Data Engineer DBT Snowflake H/F",
-    "company": "JEMS",
-    "location": "92 - Levallois-Perret",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 45000.0 Euros à 60000.0 Euros",
-    "published_at": "2026-07-29T04:31:34.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5524177",
-    "experience_detected": "required",
-    "first_seen": "2026-08-04T17:48:01.124993+00:00"
-  },
-  {
-    "id": "ft-5520430",
-    "source": "France Travail",
-    "title": "Lead Data Engineer (H/F)",
-    "company": "DOMINO RH ACADEMY",
-    "location": "75 - Paris 9e Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 45000.0 Euros à 60000.0 Euros",
-    "published_at": "2026-07-29T03:21:46.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5520430",
-    "experience_detected": "required",
-    "first_seen": "2026-08-04T17:48:01.124994+00:00"
   },
   {
     "id": "li-4446262914",
@@ -1188,19 +1230,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5560167",
     "experience_detected": "required",
     "first_seen": "2026-08-03T09:40:02.873614+00:00"
-  },
-  {
-    "id": "ft-5523233",
-    "source": "France Travail",
-    "title": "Développeur / Développeuse web (H/F)",
-    "company": "NEW NET 3D",
-    "location": "59 - Lille",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-29T03:21:56.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5523233",
-    "experience_detected": "required",
-    "first_seen": "2026-08-03T09:40:02.873615+00:00"
   }
 ]
