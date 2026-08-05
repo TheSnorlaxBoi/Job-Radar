@@ -1,9 +1,9 @@
 # Job Radar
 
-Automatise la recherche d'offres d'emploi en France, Belgique et au
-Luxembourg, selon des filtres précis, et affiche le résultat dans un petit
-tableau de bord web. 100 % gratuit : GitHub Actions (planification) +
-GitHub Pages (dashboard).
+Automatise la recherche d'offres d'emploi en France et en Wallonie (Belgique),
+selon des filtres précis, et affiche le résultat dans un petit tableau de
+bord web. 100 % gratuit : GitHub Actions (planification) + GitHub Pages
+(dashboard).
 
 ## Comment ça marche
 
@@ -13,21 +13,40 @@ GitHub Actions (cron, toutes les 4h)
         ▼
   fetch_jobs.py  ──►  France Travail (API officielle)      [France]
         │        ──►  Jooble (API officielle)               [France]
-        │        ──►  APEC (données structurées)             [France]
-        │        ──►  HelloWork (données structurées)        [France]
         │        ──►  LinkedIn (page publique)               [multi-pays]
         │        ──►  Forem (API open data officielle)      [Wallonie]
-        │        ──►  JobsWallonie (données structurées)     [Wallonie]
-        │        ──►  VDAB (recherche publique)             [Flandre/Belgique]
-        │        ──►  Actiris (données structurées)          [Bruxelles]
-        │        ──►  Moovijob (données structurées)         [Luxembourg]
-        │        ──►  Talent.com (données structurées)       [BE + LU]
         ▼
   data/jobs.json  (dédupliqué, historisé, committé dans le repo)
         │
         ▼
   dashboard/index.html  (lu tel quel via GitHub Pages)
 ```
+
+Quatre sources, toutes fiables : trois vraies API officielles (France
+Travail, Jooble, Forem) et une page de recherche publique qui fonctionne de
+façon stable (LinkedIn).
+
+## Sources testées puis retirées
+
+Plusieurs autres jobboards ont été essayés (VDAB, Actiris, JobsWallonie,
+Moovijob, Talent.com, HelloWork, APEC, Indeed) mais retirés après vérification
+en conditions réelles, pour deux raisons possibles :
+- **Protection anti-bot active** (Indeed, APEC) : les requêtes sont
+  bloquées (HTTP 403, ou détection Datadome), sans contournement propre
+  possible pour un usage personnel.
+- **Rendu par JavaScript côté client** (VDAB, Actiris, JobsWallonie,
+  Moovijob, Talent.com, HelloWork) : la page reçue est complète mais ne
+  contient aucune donnée d'offre exploitable — le contenu réel n'apparaît
+  qu'après exécution de JavaScript dans un navigateur, ce qu'une simple
+  requête HTTP ne peut pas déclencher. Vérifié en cherchant un titre
+  d'offre affiché à l'écran directement dans le code source de la page :
+  absent dans tous ces cas.
+
+Si tu veux un jour ajouter une de ces sources (ou une autre), la seule
+façon fiable de contourner ce blocage est un navigateur headless
+(Playwright/Selenium) — une approche plus lourde, plus lente, et souvent
+détectée par les mêmes systèmes anti-bot. Pas ajouté ici pour rester simple
+et gratuit à faire tourner sur GitHub Actions.
 
 ## Mise en place (10-15 minutes)
 
@@ -44,102 +63,67 @@ Crée un nouveau dépôt (public ou privé) et pousse-y ces fichiers.
 
 ### 3. Obtenir une clé Jooble (gratuit)
 Jooble est un agrégateur d'offres présent dans 69 pays (dont la France), avec
-une vraie API gratuite — contrairement à Indeed, elle est faite pour être
-appelée automatiquement et ne bloque donc rien.
+une vraie API gratuite — conçue pour être appelée automatiquement, elle ne
+bloque donc rien.
 1. Va sur https://jooble.org/api/about, remplis le formulaire (nom, email,
    site web).
 2. Une clé est générée immédiatement, aucune carte bancaire requise.
 3. Ajoute-la en secret GitHub : `JOOBLE_API_KEY`.
 
-Si tu ne renseignes pas cette clé, le script l'indique simplement dans les
-logs et continue sans cette source (comme pour France Travail).
+Si tu ne renseignes pas cette clé, le script l'indique dans les logs et
+continue sans cette source (comme pour France Travail).
 
-### 4. LinkedIn, HelloWork, APEC (France) — sans clé
-Aucune clé nécessaire pour ces trois-là.
-⚠️ Il n'existe pas d'API gratuite officielle pour la recherche d'offres côté
-particulier sur ces sites — ces modules restent donc plus fragiles (structure
-HTML/JSON-LD pouvant changer, ou requêtes bloquées si trop fréquentes) que
-France Travail et Jooble :
-- **HelloWork** : recherche libre par mot-clé
-  (`/emploi/recherche.html?k=<mot-clé>`).
-- **APEC** : jobboard de référence pour les postes cadres en France,
-  recherche libre par mot-clé (`motsCles`) — best-effort comme HelloWork.
-- **LinkedIn** : page de recherche publique "guest", sans login.
+### 4. LinkedIn — sans clé
+Aucune clé nécessaire. Pas d'API gratuite officielle pour la recherche
+d'offres LinkedIn côté particulier — ce module reste donc plus fragile
+(structure HTML pouvant changer, ou requêtes bloquées si trop fréquentes)
+que France Travail, Jooble et Forem. Le workflow reste à un rythme modéré
+(toutes les 4h, 2 pages max). S'il bloque les requêtes, désactive-le dans
+`config.json` et garde les trois autres sources.
 
-Le workflow reste à un rythme modéré (toutes les 4h, 1-2 pages max) pour ces
-trois sources. Si l'une d'elles bloque les requêtes, désactive-la dans
-`config.json` et garde France Travail + Jooble, qui sont robustes.
-
-**Indeed a été retiré du projet** : les tests réels montraient un blocage
-systématique (HTTP 403) — c'est une mesure anti-bot volontaire de leur part,
-sans moyen propre de la contourner pour un usage personnel. Jooble et APEC
-le remplacent.
-
-### 5. Belgique et Luxembourg
-Aucune clé nécessaire pour aucune de ces sources, mais elles ne fonctionnent
-pas toutes de la même façon :
-
-- **Forem** (Wallonie) : vraie API open data officielle et gratuite
-  (plateforme OpenDataSoft), aucune inscription requise. Recherche libre par
-  mot-clé (`q`). Son jeu de données inclut aussi une partie des offres VDAB
-  traduites en français — un bon complément côté flamand.
-- **JobsWallonie** (Wallonie) : jobboard commercial spécifiquement centré sur
-  la Wallonie, lu via ses données structurées (recherche par mot-clé `q`,
-  best-effort comme les sources ci-dessous).
-- **VDAB** (Flandre) : pas d'API grand public — recherche libre par mot-clé
-  (`/vindeenjob/vacatures?woord=<mot-clé>`, une vraie page de recherche du
-  site, générée côté serveur).
-- **Actiris** (Bruxelles) : lu via les données structurées schema.org
-  "JobPosting" de ses pages de recherche (`?keywords=...`).
-- **Moovijob** (Luxembourg) : le site classe ses offres par **catégories
-  fixes** dans l'URL (`profession-developer`, `profession-java-developer`,
-  `profession-web-developer`...), pas par recherche libre. Un mot-clé qui ne
-  correspond pas exactement au nom d'une catégorie existante renverra 0
-  résultat. Pour trouver les bons mots-clés : va sur
-  https://en.moovijob.com, filtre par métier, et reprends le mot après
-  `profession-` dans l'URL obtenue.
-- **Talent.com** (Belgique et Luxembourg) : gros agrégateur international,
-  recherche libre par mot-clé (`k`), lu via ses données structurées.
-
-Ces sources (sauf Forem) restent dépendantes du format HTML/structuré du site
-plutôt que d'une API stable garantie dans le temps :
-- Si un run renvoie 0 offre pour l'une d'elles, regarde les logs : le message
-  précise la cause (mot-clé/catégorie sans résultat, ou changement de format
-  du site — avec un extrait de la page reçue pour diagnostiquer).
-- ⚠️ Le mot-clé partagé dans le panneau de filtres du dashboard convient à la
-  recherche libre (France Travail, Jooble, HelloWork, APEC, LinkedIn, Forem,
-  JobsWallonie, VDAB, Actiris, Talent.com), mais pas à Moovijob (catégories
-  fixes) — inclus-y aussi le nom exact d'une catégorie Moovijob si tu veux
-  des résultats de cette source.
+### 5. Forem (Wallonie) — sans clé
+Vraie API open data officielle et gratuite (plateforme OpenDataSoft), aucune
+inscription requise. Recherche libre par mot-clé.
 
 ### 6. Adapter tes filtres
 Modifie `config.json` (ou le panneau ⚙️ Filtres du dashboard) :
 - `keywords_list` : mots-clés du poste recherché (un ou plusieurs, par source)
-- `strict_keyword_match` (`true` par défaut) : n'garde que les offres dont le
-  **titre** contient réellement un des mots-clés demandés. Beaucoup de
+- `strict_keyword_match` (`true` par défaut) : ne garde que les offres dont
+  le **titre** contient réellement un des mots-clés demandés. Beaucoup de
   jobboards élargissent leur propre recherche interne (fautes de frappe,
   synonymes, mots isolés de la phrase...), ce qui remontait des offres sans
   rapport — ce filtre les retire après-coup. Désactive-le si tu préfères une
   recherche plus large.
 - `contract_types` : `CDI`, `CDD`, `MIS` (intérim), etc. (France Travail)
 - `remote_only` : `true`/`false`
-- `commune` / `rayon_km` (France Travail, optionnel) : code INSEE ou code
-  postal + rayon en km pour restreindre à une zone précise. Laisser `commune`
-  vide garde une recherche nationale (comportement par défaut).
+- `commune` / `rayon_km` (optionnel, s'applique à toutes les sources actives) :
+  restreint la recherche à une zone précise au lieu du national par défaut.
+  - **France Travail** : utilise `commune` comme code INSEE/postal et
+    `rayon_km` comme vrai rayon géographique — le plus précis des quatre.
+  - **Jooble** : utilise `commune` comme texte de localisation et `rayon_km`
+    comme rayon (paramètre documenté par leur API).
+  - **Forem** : utilise `commune` comme recherche textuelle sur la localité
+    de l'offre — pas de notion de rayon dans ce jeu de données.
+  - **LinkedIn** : utilise `commune` comme texte de localisation — pas de
+    rayon disponible sur cet endpoint public.
+
+  Un **code postal** (ex: `69003`) est le meilleur compromis : il fonctionne
+  correctement pour France Travail (qui veut un code) et reste compréhensible
+  comme texte pour les trois autres. Un **nom de ville** (ex: `Lyon`)
+  fonctionne mieux pour LinkedIn/Jooble/Forem mais n'est pas interprété par
+  France Travail, qui a besoin d'un code. Laisser `commune` vide garde une
+  recherche nationale sur toutes les sources (comportement par défaut).
 - `exclude_keywords` : mots à bannir (ex: "stage", "alternance")
 - `max_job_age_days` : purge automatique des offres au-delà de cette
-  ancienneté (7 par défaut)
+  ancienneté (7 par défaut), modifiable directement depuis le panneau
+  ⚙️ Filtres du dashboard.
 - `experience_filter.enabled` : si `true`, exclut les offres où une
-  expérience est détectée comme requise. France Travail fournit un champ
-  officiel fiable pour ça ; les autres sources utilisent une détection par
-  mots-clés dans le titre (et la description quand la source la fournit —
-  Jooble, APEC, Forem, Actiris, JobsWallonie, Moovijob, Talent.com). **VDAB
-  et LinkedIn ne fournissent pas de description**, donc la détection s'y
-  limite au titre et ratera beaucoup de mentions d'expérience situées dans
-  le corps de l'annonce — à activer en connaissance de cause.
-  `keep_if_not_mentioned` (`true` par défaut) garde les offres qui ne
-  mentionnent l'expérience nulle part plutôt que de les exclure par excès de
-  prudence.
+  expérience est détectée comme requise. France Travail et Forem fournissent
+  chacun un champ officiel fiable pour ça ; LinkedIn n'a pas de description
+  disponible, donc la détection s'y limite au titre — à activer en
+  connaissance de cause. `keep_if_not_mentioned` (`true` par défaut) garde
+  les offres qui ne mentionnent l'expérience nulle part plutôt que de les
+  exclure par excès de prudence.
 
 ### 7. Activer GitHub Pages
 **Settings → Pages** → Source : `Deploy from a branch` → Branch : `main` / `/(root)`.
@@ -159,13 +143,11 @@ dashboard affiche les résultats.
   ne pas committer `data/jobs.json` dans git.
 
 ## Limites à connaître
-- **LinkedIn, HelloWork, APEC, VDAB, Actiris, JobsWallonie, Moovijob,
-  Talent.com** : le scraping de pages publiques est une zone grise vis-à-vis
-  de leurs conditions d'utilisation. Usage strictement personnel, volume
-  raisonnable, pas de revente de données — c'est ce que fait ce script, mais
-  la prudence reste de mise (possible blocage d'IP après usage intensif).
+- **LinkedIn** : le scraping d'une page publique est une zone grise
+  vis-à-vis des conditions d'utilisation. Usage strictement personnel,
+  volume raisonnable, pas de revente de données — c'est ce que fait ce
+  script, mais la prudence reste de mise (possible blocage d'IP après usage
+  intensif).
 - **France Travail, Forem et Jooble** : usage réglementé par leurs CGU API
   respectives (gratuit, mais quotas de requêtes — largement suffisants pour
   un usage personnel).
-- **Indeed** a été délibérément retiré : ses mesures anti-bot bloquent
-  systématiquement ce type de requête, sans contournement propre possible.

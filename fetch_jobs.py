@@ -6,9 +6,14 @@ depuis :
   - France Travail (API officielle, gratuite, OAuth2 client_credentials)
   - Jooble (API officielle, gratuite, avec clé)
   - Le Forem, Wallonie (API open data officielle, gratuite, sans clé)
-  - VDAB, Actiris, JobsWallonie, Moovijob, Talent.com, HelloWork,
-    LinkedIn (pages de recherche publiques, sans login — best-effort,
-    voir les avertissements dans chaque fonction et le README)
+  - LinkedIn (page de recherche publique, sans login — best-effort, voir les
+    avertissements dans la fonction et le README)
+
+D'autres jobboards (VDAB, Actiris, JobsWallonie, Moovijob, Talent.com,
+HelloWork, APEC, Indeed) ont été testés puis retirés : soit bloqués par des
+protections anti-bot (Indeed, APEC), soit générant leur liste d'offres via
+JavaScript côté client, ce qu'une simple requête HTTP ne peut pas récupérer
+(les autres). Voir le README pour le détail.
 
 Le résultat est fusionné, dédupliqué (par rapport aux offres déjà vues) et
 écrit dans data/jobs.json, qui alimente le tableau de bord (dashboard/index.html).
@@ -188,6 +193,9 @@ import unicodedata
 
 
 def _slugify(text):
+    """Convertit 'Développeur Python' en 'developpeur-python', pour les
+    jobboards qui utilisent des URL du type /mot-cle_<slug>.html plutôt que
+    des paramètres de requête libres."""
     text = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode("ascii")
     text = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
     return text
@@ -195,9 +203,7 @@ def _slugify(text):
 
 # ---------------------------------------------------------------------------
 # Le Forem (Wallonie) — vraie API open data gratuite, aucune clé nécessaire.
-# Plateforme OpenDataSoft standard ; son jeu de données inclut aussi les
-# offres VDAB traduites en français, ce qui comble une partie du besoin
-# flamand en plus de la Wallonie/Bruxelles.
+# Plateforme OpenDataSoft standard, données mises à jour en temps réel.
 # ---------------------------------------------------------------------------
 
 FOREM_API_URL = "https://leforem-digitalwallonia.opendatasoft.com/api/explore/v2.1/catalog/datasets/offres-d-emploi-forem/records"
@@ -223,6 +229,11 @@ def fetch_forem(cfg):
 
     keywords_list = forem_cfg.get("keywords_list") or [""]
     max_results = min(forem_cfg.get("max_results", 100), 100)  # 100 = max par page côté API
+    # Commune partagée avec France Travail (un seul champ dans le dashboard).
+    # Pas de rayon ici : le jeu de données Forem n'expose pas de recherche par
+    # distance sans géocoder la commune au préalable — recherche textuelle
+    # sur la localité uniquement.
+    shared_commune = (cfg.get("france_travail", {}) or {}).get("commune", "").strip()
 
     jobs = []
     seen_ids = set()
@@ -232,6 +243,8 @@ def fetch_forem(cfg):
         params = {"limit": max_results, "offset": 0}
         if keyword:
             params["q"] = keyword
+        if shared_commune:
+            params["where"] = f'search(lieuxtravaillocalite, "{shared_commune}")'
 
         try:
             r = requests.get(FOREM_API_URL, params=params, timeout=20)
@@ -294,87 +307,10 @@ def _strip_tags(s):
 
 
 # ---------------------------------------------------------------------------
-# VDAB (Belgique) — pas d'API grand public gratuite, mais les pages de
-# recherche (https://www.vdab.be/vindeenjob/jobs/<mot-clé-en-slug>) sont
-# entièrement générées côté serveur, ce qui permet un scraping fiable des
-# liens canoniques de chaque offre (id numérique + slug dans l'URL).
-# ---------------------------------------------------------------------------
-
-VDAB_JOB_LINK_RE = re.compile(
-    r'<a[^>]+href="(/vindeenjob/vacatures/(\d+)/[a-z0-9\-]+)[^"]*"[^>]*>(.*?)</a>',
-    re.DOTALL,
-)
-VDAB_DATE_RE = re.compile(r"Online sinds\s+([\d]{1,2}\s+\w+\.?\s+\d{4})")
-
-
-def fetch_vdab(cfg):
-    vdab_cfg = cfg.get("vdab", {})
-    if not vdab_cfg.get("enabled"):
-        return []
-
-    keywords_list = vdab_cfg.get("keywords_list") or [""]
-    search_url = vdab_cfg.get("search_url", "https://www.vdab.be/vindeenjob/vacatures")
-    keyword_param = vdab_cfg.get("keyword_param", "woord")
-    headers = {"User-Agent": "Mozilla/5.0 (compatible; job-radar personal bot)"}
-
-    jobs = []
-    seen_ids = set()
-
-    for keyword in keywords_list:
-        params = {keyword_param: keyword} if keyword else {}
-        try:
-            r = requests.get(search_url, params=params, headers=headers, timeout=20)
-        except requests.RequestException as e:
-            print(f"[VDAB] ('{keyword}') Erreur réseau : {e}")
-            continue
-        if r.status_code != 200:
-            print(f"[VDAB] ('{keyword}') HTTP {r.status_code} pour {r.url}")
-            continue
-
-        found_here = 0
-        for m in VDAB_JOB_LINK_RE.finditer(r.text):
-            href, job_id_num, inner = m.group(1), m.group(2), m.group(3)
-            job_id = f"vdab-{job_id_num}"
-            if job_id in seen_ids:
-                continue
-            seen_ids.add(job_id)
-
-            strongs = re.findall(r"<strong[^>]*>(.*?)</strong>", inner, re.DOTALL)
-            company = _strip_tags(strongs[0]) if len(strongs) >= 1 else ""
-            location = _strip_tags(strongs[1]) if len(strongs) >= 2 else ""
-            title = _strip_tags(inner.split("<strong", 1)[0])
-            date_m = VDAB_DATE_RE.search(_strip_tags(inner))
-
-            jobs.append({
-                "id": job_id,
-                "source": "VDAB",
-                "title": title,
-                "company": company or "Non précisé",
-                "location": location,
-                "contract": "",
-                "remote": False,
-                "salary": "",
-                "published_at": date_m.group(1) if date_m else "",
-                "url": f"https://www.vdab.be{href}",
-            })
-            found_here += 1
-
-        if found_here == 0:
-            print(f"[VDAB] ('{keyword}') aucune offre trouvée sur {r.url} "
-                  f"({len(r.text)} caractères reçus) — vérifie ce mot-clé directement sur "
-                  f"vdab.be, ou le format de la page a peut-être changé.")
-        time.sleep(1.0)
-
-    print(f"[VDAB] {len(jobs)} offre(s) récupérée(s).")
-    return jobs
-
-
-# ---------------------------------------------------------------------------
 # Modules génériques pour jobboards exposant des données structurées
 # schema.org "JobPosting" (utilisé pour le référencement Google for Jobs).
 # C'est plus robuste qu'un scraping basé sur des classes CSS, qui changent
-# plus souvent que ce format standardisé. Utilisé ici pour VDAB (Belgique)
-# et Moovijob (Luxembourg), qui n'offrent pas d'API grand public gratuite.
+# plus souvent que ce format standardisé.
 # ---------------------------------------------------------------------------
 
 JSONLD_RE = re.compile(
@@ -460,15 +396,6 @@ def _jobposting_to_job(item, source_name, fallback_url):
         "url": url,
         "description": description,
     }
-
-
-def _slugify(text):
-    """Convertit 'Développeur Python' en 'developpeur-python', pour les
-    jobboards qui utilisent des URL du type /mot-cle_<slug>.html plutôt que
-    des paramètres de requête (ex: HelloWork)."""
-    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
-    text = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
-    return text
 
 
 def fetch_generic_board(source_name, board_cfg):
@@ -569,7 +496,10 @@ def fetch_linkedin(cfg):
     if not keywords_list:
         keywords_list = [li_cfg["keywords"]] if li_cfg.get("keywords") else [""]
 
-    location = li_cfg.get("location", "France")
+    # La commune est partagée avec France Travail (un seul champ dans le
+    # dashboard) — utilisée ici comme texte de localisation si renseignée.
+    shared_commune = (cfg.get("france_travail", {}) or {}).get("commune", "").strip()
+    location = shared_commune or li_cfg.get("location", "France")
     max_pages = li_cfg.get("max_pages", 2)  # 25 offres / page ; reste raisonnable
     f_tpr = li_cfg.get("published_since_seconds")  # ex: 86400 = dernières 24h
 
@@ -641,9 +571,9 @@ def fetch_linkedin(cfg):
 # débutant accepté, S = souhaitée, E = exigée), utilisé en priorité. Pour les
 # autres sources, on retombe sur une détection par mots-clés dans le titre et
 # la description — moins fiable, et d'autant plus faible que la source ne
-# fournit pas de description (VDAB, LinkedIn, Moovijob actuellement : la
-# détection s'y limite au titre, donc beaucoup d'offres finiront en
-# "indéterminé" faute d'information).
+# fournit pas de description (LinkedIn actuellement : la détection s'y limite
+# au titre, donc beaucoup d'offres finiront en "indéterminé" faute
+# d'information).
 # ---------------------------------------------------------------------------
 
 NO_EXPERIENCE_PATTERNS = [
@@ -721,13 +651,9 @@ def _normalize_text(s):
 
 def _collect_keyword_pool(cfg):
     """Rassemble tous les mots-clés de recherche configurés (toutes sources
-    confondues, sauf Moovijob qui utilise des catégories fixes plutôt que des
-    mots-clés libres) pour servir de référence au filtre strict ci-dessous."""
+    confondues) pour servir de référence au filtre strict ci-dessous."""
     pool = set()
-    source_keys = [
-        "france_travail", "linkedin", "vdab", "forem", "actiris", "jobswallonie",
-        "hellowork", "jooble", "talent_be", "talent_lu",
-    ]
+    source_keys = ["france_travail", "linkedin", "jooble", "forem"]
     for key in source_keys:
         for kw in (cfg.get(key, {}) or {}).get("keywords_list", []) or []:
             if kw:
@@ -861,7 +787,10 @@ def fetch_jooble(cfg):
         return []
 
     keywords_list = j_cfg.get("keywords_list") or [""]
-    location = j_cfg.get("location", "France")
+    # Commune/rayon partagés avec France Travail (un seul champ dans le dashboard).
+    shared_commune = (cfg.get("france_travail", {}) or {}).get("commune", "").strip()
+    shared_rayon = (cfg.get("france_travail", {}) or {}).get("rayon_km")
+    location = shared_commune or j_cfg.get("location", "France")
     max_pages = j_cfg.get("max_pages", 1)
     url = f"https://jooble.org/api/{api_key}"
     headers = {"Content-Type": "application/json"}
@@ -872,6 +801,8 @@ def fetch_jooble(cfg):
     for keyword in keywords_list:
         for page in range(1, max_pages + 1):
             body = {"keywords": keyword, "location": location, "page": str(page)}
+            if shared_rayon:
+                body["radius"] = shared_rayon  # rayon en km, documenté dans l'API Jooble
             try:
                 r = requests.post(url, json=body, headers=headers, timeout=20)
             except requests.RequestException as e:
@@ -926,12 +857,6 @@ def main():
     all_new += fetch_linkedin(cfg)
     all_new += fetch_jooble(cfg)
     all_new += fetch_forem(cfg)
-    all_new += fetch_vdab(cfg)
-    all_new += fetch_generic_board("Actiris", cfg.get("actiris", {}))
-    all_new += fetch_generic_board("JobsWallonie", cfg.get("jobswallonie", {}))
-    all_new += fetch_generic_board("Moovijob", cfg.get("moovijob", {}))
-    all_new += fetch_generic_board("Talent.com Belgique", cfg.get("talent_be", {}))
-    all_new += fetch_generic_board("Talent.com Luxembourg", cfg.get("talent_lu", {}))
 
     all_new = apply_common_filters(all_new, cfg)
     all_new = apply_strict_keyword_filter(all_new, cfg)
