@@ -2,7 +2,9 @@
   "france_travail": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Web"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto"
     ],
     "contract_types": [
       "CDI"
@@ -16,7 +18,9 @@
   "linkedin": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Web"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto"
     ],
     "location": "France",
     "remote_only": false,
@@ -27,14 +31,18 @@
   "forem": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Web"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto"
     ],
     "max_results": 100
   },
   "jooble": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Web"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto"
     ],
     "location": "France",
     "max_pages": 1
@@ -45,7 +53,7 @@
     "freelance"
   ],
   "title_must_contain": [],
-  "max_job_age_days": 2,
+  "max_job_age_days": 3,
   "strict_keyword_match": true,
   "experience_filter": {
     "enabled": false,
