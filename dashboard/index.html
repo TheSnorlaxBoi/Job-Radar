@@ -163,16 +163,9 @@
   <select id="sourceFilter">
     <option value="">Toutes les sources</option>
     <option value="France Travail">France Travail</option>
-    <option value="HelloWork">HelloWork</option>
     <option value="Jooble">Jooble</option>
     <option value="LinkedIn">LinkedIn</option>
     <option value="Forem">Forem (Wallonie)</option>
-    <option value="JobsWallonie">JobsWallonie (Wallonie)</option>
-    <option value="VDAB">VDAB (Belgique)</option>
-    <option value="Actiris">Actiris (Belgique)</option>
-    <option value="Talent.com Belgique">Talent.com (Belgique)</option>
-    <option value="Moovijob">Moovijob (Luxembourg)</option>
-    <option value="Talent.com Luxembourg">Talent.com (Luxembourg)</option>
   </select>
   <select id="sortBy">
     <option value="first_seen">Plus récentes (ajout)</option>
@@ -201,27 +194,22 @@
       <label>Sources actives</label>
       <div class="checks">
         <label><input type="checkbox" id="f_ft_enabled" /> France Travail</label>
-        <label><input type="checkbox" id="f_hellowork_enabled" /> HelloWork</label>
         <label><input type="checkbox" id="f_jooble_enabled" /> Jooble</label>
         <label><input type="checkbox" id="f_li_enabled" /> LinkedIn</label>
-        <label><input type="checkbox" id="f_vdab_enabled" /> VDAB (Belgique)</label>
         <label><input type="checkbox" id="f_forem_enabled" /> Forem (Wallonie)</label>
-        <label><input type="checkbox" id="f_jobswallonie_enabled" /> JobsWallonie (Wallonie)</label>
-        <label><input type="checkbox" id="f_actiris_enabled" /> Actiris (Belgique)</label>
-        <label><input type="checkbox" id="f_moovijob_enabled" /> Moovijob (Luxembourg)</label>
-        <label><input type="checkbox" id="f_talent_be_enabled" /> Talent.com (Belgique)</label>
-        <label><input type="checkbox" id="f_talent_lu_enabled" /> Talent.com (Luxembourg)</label>
       </div>
     </div>
 
     <div class="field">
-      <label>Commune (France Travail, optionnel — code INSEE ou code postal)</label>
-      <input type="text" id="f_commune" placeholder="ex: 75056 (laisser vide = recherche nationale)" />
+      <label>Commune (optionnel — s'applique à toutes les sources actives)</label>
+      <input type="text" id="f_commune" placeholder="ex: Lyon ou 69003 (laisser vide = recherche nationale)" />
+      <p class="hint">Pour France Travail, un <strong>code postal ou code INSEE</strong> fonctionne le mieux. Pour LinkedIn, Jooble et Forem, un <strong>nom de ville</strong> (ex: "Lyon") donne de meilleurs résultats qu'un code — ils font une recherche textuelle, pas géographique. Un code postal reste un bon compromis pour toutes les sources.</p>
     </div>
 
     <div class="field">
       <label>Rayon en km autour de la commune (optionnel)</label>
       <input type="number" id="f_rayon" placeholder="ex: 30" />
+      <p class="hint">Pris en compte par France Travail et Jooble. LinkedIn et Forem n'ont pas de recherche par distance — seule la commune s'y applique.</p>
     </div>
 
     <div class="field">
@@ -484,8 +472,6 @@
   function fillFormFromConfig(cfg) {
     const ft = cfg.france_travail || {};
     const li = cfg.linkedin || {};
-    const vdab = cfg.vdab || {};
-    const moovijob = cfg.moovijob || {};
 
     // Les mots-clés viennent en priorité du navigateur (localStorage), pour
     // ne jamais revenir aux valeurs par défaut de config.json si un autre
@@ -498,14 +484,7 @@
 
     document.getElementById("f_ft_enabled").checked = ft.enabled !== false;
     document.getElementById("f_li_enabled").checked = li.enabled !== false;
-    document.getElementById("f_vdab_enabled").checked = vdab.enabled !== false;
-    document.getElementById("f_moovijob_enabled").checked = moovijob.enabled !== false;
     document.getElementById("f_forem_enabled").checked = (cfg.forem || {}).enabled !== false;
-    document.getElementById("f_actiris_enabled").checked = (cfg.actiris || {}).enabled !== false;
-    document.getElementById("f_jobswallonie_enabled").checked = (cfg.jobswallonie || {}).enabled !== false;
-    document.getElementById("f_talent_be_enabled").checked = (cfg.talent_be || {}).enabled !== false;
-    document.getElementById("f_talent_lu_enabled").checked = (cfg.talent_lu || {}).enabled !== false;
-    document.getElementById("f_hellowork_enabled").checked = (cfg.hellowork || {}).enabled !== false;
     document.getElementById("f_jooble_enabled").checked = (cfg.jooble || {}).enabled !== false;
     document.querySelectorAll(".f_contract").forEach(cb => {
       cb.checked = (ft.contract_types || []).includes(cb.value);
@@ -551,47 +530,27 @@
     cfg.linkedin.remote_only = remoteOnly;
     delete cfg.linkedin.keywords;
 
-    cfg.vdab = cfg.vdab || {};
-    cfg.vdab.enabled = document.getElementById("f_vdab_enabled").checked;
-    cfg.vdab.keywords_list = keywords;
-
-    cfg.moovijob = cfg.moovijob || {};
-    cfg.moovijob.enabled = document.getElementById("f_moovijob_enabled").checked;
-    // Pas de cfg.moovijob.keywords_list ici : Moovijob classe ses offres par
-    // catégories fixes (ex: "developer", "java-developer"), pas par texte
-    // libre. Sa liste se gère directement dans config.json.
-
     cfg.forem = cfg.forem || {};
     cfg.forem.enabled = document.getElementById("f_forem_enabled").checked;
     cfg.forem.keywords_list = keywords;
-
-    cfg.actiris = cfg.actiris || {};
-    cfg.actiris.enabled = document.getElementById("f_actiris_enabled").checked;
-    cfg.actiris.keywords_list = keywords;
-
-    cfg.talent_be = cfg.talent_be || {};
-    cfg.talent_be.enabled = document.getElementById("f_talent_be_enabled").checked;
-    cfg.talent_be.keywords_list = keywords;
-
-    cfg.talent_lu = cfg.talent_lu || {};
-    cfg.talent_lu.enabled = document.getElementById("f_talent_lu_enabled").checked;
-    cfg.talent_lu.keywords_list = keywords;
-
-    cfg.jobswallonie = cfg.jobswallonie || {};
-    cfg.jobswallonie.enabled = document.getElementById("f_jobswallonie_enabled").checked;
-    cfg.jobswallonie.keywords_list = keywords;
-
-    cfg.hellowork = cfg.hellowork || {};
-    cfg.hellowork.enabled = document.getElementById("f_hellowork_enabled").checked;
-    cfg.hellowork.keywords_list = keywords;
 
     cfg.jooble = cfg.jooble || {};
     cfg.jooble.enabled = document.getElementById("f_jooble_enabled").checked;
     cfg.jooble.keywords_list = keywords;
 
+    // Sources testées puis retirées (bloquées par anti-bot ou rendues en
+    // JavaScript, donc non récupérables par ce type de script) : on nettoie
+    // ces clés si elles traînent encore dans une config existante.
     delete cfg.indeed_fr;
     delete cfg.indeed_lu;
     delete cfg.apec;
+    delete cfg.vdab;
+    delete cfg.actiris;
+    delete cfg.jobswallonie;
+    delete cfg.moovijob;
+    delete cfg.talent_be;
+    delete cfg.talent_lu;
+    delete cfg.hellowork;
 
     const maxAgeVal = document.getElementById("f_max_age").value;
     cfg.max_job_age_days = maxAgeVal ? Number(maxAgeVal) : 7;
