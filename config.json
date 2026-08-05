@@ -1,8 +1,12 @@
 {
   "france_travail": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
-    "contract_types": ["CDI"],
+    "keywords_list": [
+      "Développeur Web"
+    ],
+    "contract_types": [
+      "CDI"
+    ],
     "remote_only": false,
     "min_salary": null,
     "commune": "",
@@ -11,7 +15,9 @@
   },
   "linkedin": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "Développeur Web"
+    ],
     "location": "France",
     "remote_only": false,
     "contract_types": [],
@@ -20,18 +26,26 @@
   },
   "forem": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "Développeur Web"
+    ],
     "max_results": 100
   },
   "jooble": {
     "enabled": true,
-    "keywords_list": ["développeur python", "data engineer", "ingénieur backend"],
+    "keywords_list": [
+      "Développeur Web"
+    ],
     "location": "France",
     "max_pages": 1
   },
-  "exclude_keywords": ["stage", "alternance", "freelance"],
+  "exclude_keywords": [
+    "stage",
+    "alternance",
+    "freelance"
+  ],
   "title_must_contain": [],
-  "max_job_age_days": 7,
+  "max_job_age_days": 2,
   "strict_keyword_match": true,
   "experience_filter": {
     "enabled": false,
