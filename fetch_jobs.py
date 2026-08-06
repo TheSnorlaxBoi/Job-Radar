@@ -710,14 +710,23 @@ def apply_common_filters(jobs, cfg):
     exclude_keywords = [k.lower() for k in cfg.get("exclude_keywords", [])]
     include_title_keywords = [k.lower() for k in cfg.get("title_must_contain", [])]
 
+    excluded_count = 0
+    title_rejected_count = 0
     filtered = []
     for j in jobs:
         text = f"{j.get('title','')} {j.get('company','')}".lower()
         if exclude_keywords and any(k in text for k in exclude_keywords):
+            excluded_count += 1
             continue
         if include_title_keywords and not any(k in (j.get("title") or "").lower() for k in include_title_keywords):
+            title_rejected_count += 1
             continue
         filtered.append(j)
+
+    if excluded_count:
+        print(f"[Filtre exclude_keywords] {excluded_count} offre(s) exclue(s) (mot banni trouvé, config actuelle : {cfg.get('exclude_keywords', [])}).")
+    if title_rejected_count:
+        print(f"[Filtre title_must_contain] {title_rejected_count} offre(s) exclue(s) (titre sans le(s) mot(s) requis, config actuelle : {cfg.get('title_must_contain', [])}).")
     return filtered
 
 
@@ -866,6 +875,9 @@ def fetch_jooble(cfg):
 
 def main():
     cfg = load_config()
+    print(f"[Config] title_must_contain={cfg.get('title_must_contain', [])} | "
+          f"exclude_keywords={cfg.get('exclude_keywords', [])} | "
+          f"strict_keyword_match={cfg.get('strict_keyword_match', True)}")
     max_age_days = cfg.get("max_job_age_days", 7)
     existing = load_existing()
     existing = purge_old_jobs(existing, max_age_days)
