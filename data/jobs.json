@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4450236663",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Méry-sur-Oise",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4450236663",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-06T14:04:45.839323+00:00"
+  },
+  {
+    "id": "li-4442587428",
+    "source": "LinkedIn",
+    "title": "Développeur Java Fullstack (H/F)",
+    "company": "we+ France",
+    "location": "Vannes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-h-f-at-we%2B-4442587428",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-06T14:04:45.839324+00:00"
+  },
+  {
     "id": "ft-211ZTCX",
     "source": "France Travail",
     "title": "Ingénieur Développeur Full-Stack - Junior (H/F)",
