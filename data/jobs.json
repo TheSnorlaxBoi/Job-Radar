@@ -238,34 +238,6 @@
     "first_seen": "2026-08-05T21:04:10.042649+00:00"
   },
   {
-    "id": "ft-5687556",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "77 - Roissy-en-Brie",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-03T03:22:51.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687556",
-    "experience_detected": "required",
-    "first_seen": "2026-08-05T21:04:10.042650+00:00"
-  },
-  {
-    "id": "ft-5687550",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Montlignon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-03T03:22:51.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687550",
-    "experience_detected": "required",
-    "first_seen": "2026-08-05T21:04:10.042651+00:00"
-  },
-  {
     "id": "li-4448022850",
     "source": "LinkedIn",
     "title": "Développeur Python / Angular Junior – IA & Automatisation",
