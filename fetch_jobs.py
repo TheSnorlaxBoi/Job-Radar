@@ -164,6 +164,10 @@ def fetch_france_travail(cfg):
                     # "D" = débutant accepté, "S" = souhaitée, "E" = exigée.
                     # Plus fiable qu'une détection par mots-clés — utilisé en priorité.
                     "experience_code": o.get("experienceExige"),
+                    # Le mot-clé exact ayant produit cette offre, pour que le
+                    # filtre strict ne compare jamais une offre au mauvais
+                    # mot-clé (recherche indépendante, sans mélange).
+                    "_search_keyword": keyword,
                 })
 
             if len(results) < page_size:
@@ -293,6 +297,7 @@ def fetch_forem(cfg):
                 "published_at": date_pub if isinstance(date_pub, str) else "",
                 "url": url_offre or "https://www.leforem.be/recherche-offres/resultat-recherche-offre",
                 "description": str(experience_text),
+                "_search_keyword": keyword,
             })
 
     print(f"[Forem] {len(jobs)} offre(s) récupérée(s).")
@@ -556,6 +561,7 @@ def fetch_linkedin(cfg):
                     "salary": "",
                     "published_at": date_m.group(1) if date_m else "",
                     "url": link_m.group(1) if link_m else "",
+                    "_search_keyword": keyword,
                 })
 
             time.sleep(1.5)  # espacement volontaire entre les pages/mots-clés
@@ -679,13 +685,24 @@ def _title_matches_keyword_pool(title, keyword_pool):
 def apply_strict_keyword_filter(jobs, cfg):
     if not cfg.get("strict_keyword_match", True):
         return jobs
-    pool = _collect_keyword_pool(cfg)
-    if not pool:
-        return jobs
-    kept = [j for j in jobs if _title_matches_keyword_pool(j.get("title", ""), pool)]
+    global_pool = _collect_keyword_pool(cfg)
+
+    kept = []
+    for j in jobs:
+        own_keyword = j.get("_search_keyword")
+        # Recherche indépendante par mot-clé : une offre n'est comparée qu'au
+        # mot-clé exact qui l'a produite, jamais aux autres mots-clés
+        # configurés (même pour d'autres sources) — pas de mélange possible.
+        if own_keyword:
+            pool = {own_keyword}
+        else:
+            pool = global_pool  # repli si la source ne fournit pas cette info
+        if not pool or _title_matches_keyword_pool(j.get("title", ""), pool):
+            kept.append(j)
+
     removed = len(jobs) - len(kept)
     if removed:
-        print(f"[Filtre mots-clés] {removed} offre(s) exclue(s) (titre ne correspondant à aucun mot-clé demandé).")
+        print(f"[Filtre mots-clés] {removed} offre(s) exclue(s) (titre ne correspondant pas au mot-clé qui l'a trouvée).")
     return kept
 
 
@@ -836,6 +853,7 @@ def fetch_jooble(cfg):
                     "published_at": o.get("updated", ""),
                     "url": link,
                     "description": o.get("snippet", ""),
+                    "_search_keyword": keyword,
                 })
 
             if len(results) < 20:  # taille de page habituelle de Jooble
@@ -865,6 +883,7 @@ def main():
     for j in all_new:
         j.pop("description", None)
         j.pop("experience_code", None)
+        j.pop("_search_keyword", None)
 
     merged, fresh = merge_and_dedupe(all_new, existing)
     merged = purge_old_jobs(merged, max_age_days)

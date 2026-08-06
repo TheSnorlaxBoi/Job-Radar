@@ -87,13 +87,18 @@ inscription requise. Recherche libre par mot-clé.
 
 ### 6. Adapter tes filtres
 Modifie `config.json` (ou le panneau ⚙️ Filtres du dashboard) :
-- `keywords_list` : mots-clés du poste recherché (un ou plusieurs, par source)
+- `keywords_list` : mots-clés du poste recherché (un ou plusieurs, par
+  source). Chaque mot-clé déclenche sa **propre requête indépendante** auprès
+  de chaque source — les résultats ne sont jamais combinés en une seule
+  recherche mêlant plusieurs mots-clés.
 - `strict_keyword_match` (`true` par défaut) : ne garde que les offres dont
-  le **titre** contient réellement un des mots-clés demandés. Beaucoup de
-  jobboards élargissent leur propre recherche interne (fautes de frappe,
-  synonymes, mots isolés de la phrase...), ce qui remontait des offres sans
-  rapport — ce filtre les retire après-coup. Désactive-le si tu préfères une
-  recherche plus large.
+  le **titre** contient réellement le mot-clé qui l'a précisément trouvée
+  (pas n'importe lequel de ta liste — chaque offre est comparée uniquement
+  au mot-clé de la recherche qui l'a produite, pour éviter tout mélange
+  entre mots-clés différents). Beaucoup de jobboards élargissent leur propre
+  recherche interne (fautes de frappe, synonymes, mots isolés de la
+  phrase...), ce qui remontait des offres sans rapport — ce filtre les
+  retire après-coup. Désactive-le si tu préfères une recherche plus large.
 - `contract_types` : `CDI`, `CDD`, `MIS` (intérim), etc. (France Travail)
 - `remote_only` : `true`/`false`
 - `commune` / `rayon_km` (optionnel, s'applique à toutes les sources actives) :
