@@ -53,7 +53,7 @@
     "freelance"
   ],
   "title_must_contain": [],
-  "max_job_age_days": 3,
+  "max_job_age_days": 7,
   "strict_keyword_match": true,
   "experience_filter": {
     "enabled": false,
