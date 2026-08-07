@@ -39,11 +39,10 @@
   },
   "exclude_keywords": [
     "stage",
-    "freelance"
+    "freelance",
+    "super lourds"
   ],
-  "title_must_contain": [
-    "Super Lourds"
-  ],
+  "title_must_contain": [],
   "max_job_age_days": 7,
   "strict_keyword_match": true,
   "experience_filter": {
