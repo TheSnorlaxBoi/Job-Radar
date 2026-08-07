@@ -99,12 +99,20 @@ Modifie `config.json` (ou le panneau ⚙️ Filtres du dashboard) :
   recherche interne (fautes de frappe, synonymes, mots isolés de la
   phrase...), ce qui remontait des offres sans rapport — ce filtre les
   retire après-coup. Désactive-le si tu préfères une recherche plus large.
-- `contract_types` : `CDI`, `CDD`, `MIS` (intérim), etc. (France Travail)
+- `contract_types` : `CDI`, `CDD`, `MIS` (intérim), `SAI` (saisonnier), ou
+  `"Alternance"` (France Travail). L'alternance n'est pas un vrai type de
+  contrat côté API — c'est géré en interne par une requête séparée
+  (`natureContrat=E1`), donc tu peux cocher Alternance en même temps que
+  CDI/CDD sans que ça restreigne les autres résultats.
 - `remote_only` : `true`/`false`
 - `commune` / `rayon_km` (optionnel, s'applique à toutes les sources actives) :
   restreint la recherche à une zone précise au lieu du national par défaut.
-  - **France Travail** : utilise `commune` comme code INSEE/postal et
-    `rayon_km` comme vrai rayon géographique — le plus précis des quatre.
+  - **France Travail** : utilise `commune` comme code INSEE, et `rayon_km`
+    comme vrai rayon géographique — le plus précis des quatre. Si tu entres
+    un **code postal** (ex: `75015`), il est automatiquement résolu en code
+    INSEE (ex: `75115`) via l'API officielle et gratuite geo.api.gouv.fr —
+    les deux diffèrent souvent (ex: Paris, Lyon, Marseille par
+    arrondissement), et l'API refuse une valeur incorrecte (erreur 400).
   - **Jooble** : utilise `commune` comme texte de localisation et `rayon_km`
     comme rayon (paramètre documenté par leur API).
   - **Forem** : utilise `commune` comme recherche textuelle sur la localité
@@ -112,12 +120,12 @@ Modifie `config.json` (ou le panneau ⚙️ Filtres du dashboard) :
   - **LinkedIn** : utilise `commune` comme texte de localisation — pas de
     rayon disponible sur cet endpoint public.
 
-  Un **code postal** (ex: `69003`) est le meilleur compromis : il fonctionne
-  correctement pour France Travail (qui veut un code) et reste compréhensible
-  comme texte pour les trois autres. Un **nom de ville** (ex: `Lyon`)
-  fonctionne mieux pour LinkedIn/Jooble/Forem mais n'est pas interprété par
-  France Travail, qui a besoin d'un code. Laisser `commune` vide garde une
-  recherche nationale sur toutes les sources (comportement par défaut).
+  Un **code postal** (ex: `69003`) reste le meilleur compromis unique : il
+  est résolu proprement pour France Travail et reste compréhensible comme
+  texte pour les trois autres. Un **nom de ville** (ex: `Lyon`) fonctionne
+  mieux pour LinkedIn/Jooble/Forem mais n'est pas interprété par France
+  Travail (qui a toujours besoin d'un code). Laisser `commune` vide garde
+  une recherche nationale sur toutes les sources (comportement par défaut).
 - `exclude_keywords` : mots à bannir (ex: "stage", "alternance")
 - `max_job_age_days` : purge automatique des offres au-delà de cette
   ancienneté (7 par défaut), modifiable directement depuis le panneau

@@ -56,6 +56,43 @@ def load_config():
 FT_TOKEN_URL = "https://entreprise.francetravail.fr/connexion/oauth2/access_token?realm=/partenaire"
 FT_SEARCH_URL = "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search"
 
+# API officielle et gratuite de l'État français (aucune clé requise) pour
+# résoudre un code postal en code INSEE. Le paramètre "commune" de France
+# Travail veut STRICTEMENT un code INSEE, qui diffère souvent du code postal
+# (ex: le 15e arrondissement de Paris est en code postal 75015 mais en code
+# INSEE 75115) — saisir un code postal tel quel provoque une erreur HTTP 400.
+GEO_API_URL = "https://geo.api.gouv.fr/communes"
+
+
+def _resolve_insee_code(commune_value):
+    """Si commune_value ressemble à un code postal (5 chiffres), tente de le
+    résoudre en code INSEE via l'API officielle. En cas d'échec ou si ce
+    n'est pas un code postal reconnaissable, renvoie la valeur telle quelle
+    (elle sera peut-être déjà un code INSEE valide)."""
+    commune_value = (commune_value or "").strip()
+    if not commune_value:
+        return ""
+    if not re.fullmatch(r"\d{5}", commune_value):
+        return commune_value  # pas un format de code postal/INSEE à 5 chiffres — on laisse tel quel
+
+    try:
+        r = requests.get(
+            GEO_API_URL,
+            params={"codePostal": commune_value, "fields": "code,nom", "boost": "population"},
+            timeout=10,
+        )
+        if r.status_code == 200:
+            results = r.json()
+            if results:
+                insee = results[0].get("code")
+                if insee and insee != commune_value:
+                    print(f"[France Travail] Code postal {commune_value} résolu en code INSEE {insee} ({results[0].get('nom')}).")
+                return insee or commune_value
+    except requests.RequestException as e:
+        print(f"[France Travail] Résolution du code postal {commune_value} impossible ({e}) — utilisation telle quelle.")
+
+    return commune_value
+
 
 def get_france_travail_token(client_id, client_secret, scope):
     resp = requests.post(
@@ -100,19 +137,33 @@ def fetch_france_travail(cfg):
         keywords_list = [ft_cfg["keywords"]] if ft_cfg.get("keywords") else [""]
 
     base_params = {}
-    if ft_cfg.get("contract_types"):
-        # ex: CDI, CDD, MIS, SAI...
-        base_params["typeContrat"] = ",".join(ft_cfg["contract_types"])
     if ft_cfg.get("remote_only"):
         base_params["teletravail"] = "1"
     if ft_cfg.get("min_salary"):
         base_params["salaireMin"] = ft_cfg["min_salary"]
-    if ft_cfg.get("commune"):
-        base_params["commune"] = ft_cfg["commune"]
+    resolved_commune = _resolve_insee_code(ft_cfg.get("commune", ""))
+    if resolved_commune:
+        base_params["commune"] = resolved_commune
     if ft_cfg.get("rayon_km"):
         base_params["rayon"] = ft_cfg["rayon_km"]
     base_params["sort"] = 1  # tri par date de création décroissante
     # Si "commune" est vide/absent, la recherche reste nationale.
+
+    # L'alternance n'est PAS une valeur de "typeContrat" côté France Travail —
+    # c'est un paramètre séparé ("natureContrat=E1", contrat d'apprentissage).
+    # Le combiner avec typeContrat=CDI,CDD,... dans une même requête donnerait
+    # un ET logique (quasi aucun résultat), donc on fait une requête à part
+    # pour l'alternance et on fusionne les résultats.
+    contract_types = [c for c in (ft_cfg.get("contract_types") or []) if c != "Alternance"]
+    want_alternance = "Alternance" in (ft_cfg.get("contract_types") or [])
+
+    variants = []
+    if contract_types:
+        variants.append({"typeContrat": ",".join(contract_types)})
+    if want_alternance:
+        variants.append({"natureContrat": "E1"})
+    if not variants:
+        variants.append({})  # aucun filtre de contrat : tout type
 
     headers = {"Authorization": f"Bearer {token}"}
     jobs = []
@@ -121,59 +172,61 @@ def fetch_france_travail(cfg):
     page_size = 150
 
     for keyword in keywords_list:
-        params = dict(base_params)
-        if keyword:
-            params["motsCles"] = keyword
+        for variant in variants:
+            params = dict(base_params)
+            params.update(variant)
+            if keyword:
+                params["motsCles"] = keyword
 
-        range_start = 0
-        while range_start < max_results:
-            range_end = min(range_start + page_size - 1, max_results - 1)
-            r = requests.get(
-                f"{FT_SEARCH_URL}?range={range_start}-{range_end}",
-                params=params,
-                headers=headers,
-                timeout=30,
-            )
-            if r.status_code not in (200, 206):
-                print(f"[France Travail] ('{keyword}') Erreur HTTP {r.status_code} : {r.text[:300]}")
-                break
-            payload = r.json()
-            results = payload.get("resultats", [])
-            if not results:
-                break
+            range_start = 0
+            while range_start < max_results:
+                range_end = min(range_start + page_size - 1, max_results - 1)
+                r = requests.get(
+                    f"{FT_SEARCH_URL}?range={range_start}-{range_end}",
+                    params=params,
+                    headers=headers,
+                    timeout=30,
+                )
+                if r.status_code not in (200, 206):
+                    print(f"[France Travail] ('{keyword}', {variant or 'tous contrats'}) Erreur HTTP {r.status_code} : {r.text[:300]}")
+                    break
+                payload = r.json()
+                results = payload.get("resultats", [])
+                if not results:
+                    break
 
-            for o in results:
-                job_id = f"ft-{o.get('id')}"
-                if job_id in seen_ids:
-                    continue
-                seen_ids.add(job_id)
-                jobs.append({
-                    "id": job_id,
-                    "source": "France Travail",
-                    "title": o.get("intitule"),
-                    "company": (o.get("entreprise") or {}).get("nom", "Non précisé"),
-                    "location": (o.get("lieuTravail") or {}).get("libelle", ""),
-                    "contract": o.get("typeContratLibelle", ""),
-                    "remote": bool((o.get("teletravail") or "")),
-                    "salary": (o.get("salaire") or {}).get("libelle", ""),
-                    "published_at": o.get("dateCreation", ""),
-                    "url": o.get("origineOffre", {}).get("urlOrigine")
-                        or f"https://candidat.francetravail.fr/offres/recherche/detail/{o.get('id')}",
-                    "description": o.get("description", ""),
-                    # France Travail donne un champ structuré pour l'expérience :
-                    # "D" = débutant accepté, "S" = souhaitée, "E" = exigée.
-                    # Plus fiable qu'une détection par mots-clés — utilisé en priorité.
-                    "experience_code": o.get("experienceExige"),
-                    # Le mot-clé exact ayant produit cette offre, pour que le
-                    # filtre strict ne compare jamais une offre au mauvais
-                    # mot-clé (recherche indépendante, sans mélange).
-                    "_search_keyword": keyword,
-                })
+                for o in results:
+                    job_id = f"ft-{o.get('id')}"
+                    if job_id in seen_ids:
+                        continue
+                    seen_ids.add(job_id)
+                    jobs.append({
+                        "id": job_id,
+                        "source": "France Travail",
+                        "title": o.get("intitule"),
+                        "company": (o.get("entreprise") or {}).get("nom", "Non précisé"),
+                        "location": (o.get("lieuTravail") or {}).get("libelle", ""),
+                        "contract": o.get("typeContratLibelle", ""),
+                        "remote": bool((o.get("teletravail") or "")),
+                        "salary": (o.get("salaire") or {}).get("libelle", ""),
+                        "published_at": o.get("dateCreation", ""),
+                        "url": o.get("origineOffre", {}).get("urlOrigine")
+                            or f"https://candidat.francetravail.fr/offres/recherche/detail/{o.get('id')}",
+                        "description": o.get("description", ""),
+                        # France Travail donne un champ structuré pour l'expérience :
+                        # "D" = débutant accepté, "S" = souhaitée, "E" = exigée.
+                        # Plus fiable qu'une détection par mots-clés — utilisé en priorité.
+                        "experience_code": o.get("experienceExige"),
+                        # Le mot-clé exact ayant produit cette offre, pour que le
+                        # filtre strict ne compare jamais une offre au mauvais
+                        # mot-clé (recherche indépendante, sans mélange).
+                        "_search_keyword": keyword,
+                    })
 
-            if len(results) < page_size:
-                break
-            range_start += page_size
-            time.sleep(0.3)  # respect du rate-limit
+                if len(results) < page_size:
+                    break
+                range_start += page_size
+                time.sleep(0.3)  # respect du rate-limit
 
     print(f"[France Travail] {len(jobs)} offres récupérées (national, {len(keywords_list)} mot(s)-clé(s)).")
     return jobs
