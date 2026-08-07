@@ -2,21 +2,35 @@
   "france_travail": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Fullstack"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto",
+      "Chauffeur de convoyage",
+      "Conducteur de véhicules",
+      "Livreur automobile",
+      "Chauffeur-livreur",
+      "Coursier automobile"
     ],
     "contract_types": [
-      "Alternance"
+      "CDI"
     ],
     "remote_only": false,
     "min_salary": null,
-    "commune": "67000",
+    "commune": "",
     "rayon_km": 10,
     "max_results": 150
   },
   "linkedin": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Fullstack"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto",
+      "Chauffeur de convoyage",
+      "Conducteur de véhicules",
+      "Livreur automobile",
+      "Chauffeur-livreur",
+      "Coursier automobile"
     ],
     "location": "France",
     "remote_only": false,
@@ -27,14 +41,28 @@
   "forem": {
     "enabled": false,
     "keywords_list": [
-      "Développeur Fullstack"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto",
+      "Chauffeur de convoyage",
+      "Conducteur de véhicules",
+      "Livreur automobile",
+      "Chauffeur-livreur",
+      "Coursier automobile"
     ],
     "max_results": 100
   },
   "jooble": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Fullstack"
+      "Développeur Junior",
+      "Développeur FullStack",
+      "Convoyeur Auto",
+      "Chauffeur de convoyage",
+      "Conducteur de véhicules",
+      "Livreur automobile",
+      "Chauffeur-livreur",
+      "Coursier automobile"
     ],
     "location": "France",
     "max_pages": 1
