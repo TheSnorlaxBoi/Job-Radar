@@ -203,7 +203,7 @@
     <div class="field">
       <label>Commune (optionnel — s'applique à toutes les sources actives)</label>
       <input type="text" id="f_commune" placeholder="ex: Lyon ou 69003 (laisser vide = recherche nationale)" />
-      <p class="hint">Pour France Travail, un <strong>code postal ou code INSEE</strong> fonctionne le mieux. Pour LinkedIn, Jooble et Forem, un <strong>nom de ville</strong> (ex: "Lyon") donne de meilleurs résultats qu'un code — ils font une recherche textuelle, pas géographique. Un code postal reste un bon compromis pour toutes les sources.</p>
+      <p class="hint">Pour France Travail, un <strong>code postal ou code INSEE</strong> fonctionne (le code postal est automatiquement résolu en code INSEE). Pour LinkedIn, Jooble et Forem, un <strong>nom de ville</strong> (ex: "Lyon") donne de meilleurs résultats qu'un code — ils font une recherche textuelle, pas géographique. Un code postal reste un bon compromis pour toutes les sources.</p>
     </div>
 
     <div class="field">
@@ -219,12 +219,13 @@
     </div>
 
     <div class="field">
-      <label>Types de contrat (France Travail)</label>
+      <label>Types de contrat (France Travail) — plusieurs choix possibles</label>
       <div class="checks">
         <label><input type="checkbox" value="CDI" class="f_contract" /> CDI</label>
         <label><input type="checkbox" value="CDD" class="f_contract" /> CDD</label>
         <label><input type="checkbox" value="MIS" class="f_contract" /> Intérim</label>
         <label><input type="checkbox" value="SAI" class="f_contract" /> Saisonnier</label>
+        <label><input type="checkbox" value="Alternance" class="f_contract" /> Alternance</label>
       </div>
     </div>
 
