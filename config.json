@@ -9,7 +9,7 @@
     ],
     "remote_only": false,
     "min_salary": null,
-    "commune": "Strasbourg",
+    "commune": "67000",
     "rayon_km": 10,
     "max_results": 150
   },
@@ -25,7 +25,7 @@
     "published_since_seconds": 86400
   },
   "forem": {
-    "enabled": true,
+    "enabled": false,
     "keywords_list": [
       "Développeur Fullstack"
     ],
