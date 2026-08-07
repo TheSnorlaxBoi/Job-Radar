@@ -2,19 +2,21 @@
   "france_travail": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Alternance"
+      "Développeur Fullstack"
     ],
-    "contract_types": [],
+    "contract_types": [
+      "Alternance"
+    ],
     "remote_only": false,
     "min_salary": null,
-    "commune": "67000",
-    "rayon_km": 5,
+    "commune": "Strasbourg",
+    "rayon_km": 10,
     "max_results": 150
   },
   "linkedin": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Alternance"
+      "Développeur Fullstack"
     ],
     "location": "France",
     "remote_only": false,
@@ -25,14 +27,14 @@
   "forem": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Alternance"
+      "Développeur Fullstack"
     ],
     "max_results": 100
   },
   "jooble": {
     "enabled": true,
     "keywords_list": [
-      "Développeur Alternance"
+      "Développeur Fullstack"
     ],
     "location": "France",
     "max_pages": 1
