@@ -1,5 +1,19 @@
 [
   {
+    "id": "li-4450302683",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "Amiltone",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-amiltone-4450302683",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-07T20:39:33.672170+00:00"
+  },
+  {
     "id": "ft-212FCRS",
     "source": "France Travail",
     "title": "Développeur Java Junior avec Compétences DevOps/Cloud (H/F)",
@@ -698,20 +712,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/211YRJH",
     "experience_detected": "none_required",
     "first_seen": "2026-08-07T16:28:55.273054+00:00"
-  },
-  {
-    "id": "ft-211YPBN",
-    "source": "France Travail",
-    "title": "Conducteur / Conductrice de véhicules légers (H/F)",
-    "company": "AUTOCARS JACQUET",
-    "location": "74 - MARNAZ",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-07-31T18:44:33.738Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211YPBN",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-07T16:28:55.273072+00:00"
   },
   {
     "id": "ft-212GGMW",
