@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4450388547",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack Ruby/React (H/F)",
+    "company": "MyUnisoft",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-ruby-react-h-f-at-myunisoft-4450388547",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-08T16:31:47.662378+00:00"
+  },
+  {
+    "id": "li-3959022838",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack .NET/ANGULAR (H/F)",
+    "company": "Davidson consulting",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-08",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-net-angular-h-f-at-davidson-consulting-3959022838",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-08T16:31:47.662380+00:00"
+  },
+  {
     "id": "ft-5853147",
     "source": "France Travail",
     "title": "Lead Développeur(euse)/Développeur Fullstack Java/Angular- Bordeaux H/F",
