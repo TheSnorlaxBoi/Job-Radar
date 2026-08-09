@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-5860346",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "94 - Chennevières-sur-Marne",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-09T03:20:23.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5860346",
+    "experience_detected": "required",
+    "first_seen": "2026-08-09T01:37:57.555745+00:00"
+  },
+  {
+    "id": "li-4423501727",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack - Angular / Node (H/F)",
+    "company": "Scalian",
+    "location": "Montpellier",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-08",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-angular-node-h-f-at-scalian-4423501727",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-09T01:37:57.555891+00:00"
+  },
+  {
     "id": "ft-212GQBB",
     "source": "France Travail",
     "title": "Chauffeur-livreur / Chauffeuse-livreuse (H/F)",
