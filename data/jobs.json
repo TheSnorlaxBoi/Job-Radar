@@ -1,5 +1,19 @@
 [
   {
+    "id": "li-4451347525",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Bois-d'Arcy",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-09",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4451347525",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-09T12:46:42.722016+00:00"
+  },
+  {
     "id": "ft-5860346",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -572,48 +586,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687550",
     "experience_detected": "required",
     "first_seen": "2026-08-07T16:28:55.272915+00:00"
-  },
-  {
-    "id": "ft-5683483",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java/Angular-Vue.JS H/F",
-    "company": "Non précisé",
-    "location": "35 - Rennes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-02T11:50:12.994Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5683483",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-07T16:28:55.272916+00:00"
-  },
-  {
-    "id": "ft-5683353",
-    "source": "France Travail",
-    "title": "Lead Développeur Fullstack H/F",
-    "company": "Non précisé",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-02T11:50:08.309Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5683353",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-07T16:28:55.272918+00:00"
-  },
-  {
-    "id": "ft-5683137",
-    "source": "France Travail",
-    "title": "Developpeur FullStack (F/H)",
-    "company": "Non précisé",
-    "location": "42 - Veauche",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-02T11:50:00.242Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5683137",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-07T16:28:55.272919+00:00"
   },
   {
     "id": "ft-212GGMW",
