@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-212GQTH",
+    "source": "France Travail",
+    "title": "Vendeur Livreur pièces automobile (H/F)",
+    "company": "Non précisé",
+    "location": "74 - Annecy",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Mensuel de 2267.0 Euros à 3000.0 Euros sur 12.0 mois",
+    "published_at": "2026-08-09T18:40:19.519Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GQTH",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-09T20:30:48.847462+00:00"
+  },
+  {
+    "id": "ft-212GQXK",
+    "source": "France Travail",
+    "title": "Chauffeur-livreur / Chauffeuse-livreuse VL (H/F)",
+    "company": "Non précisé",
+    "location": "46 - Figeac",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Horaire de 12.45 Euros sur 12.0 mois",
+    "published_at": "2026-08-09T21:57:52.867Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GQXK",
+    "experience_detected": "required",
+    "first_seen": "2026-08-09T20:30:48.847465+00:00"
+  },
+  {
+    "id": "ft-212GQWH",
+    "source": "France Travail",
+    "title": "Chauffeur-livreur / Chauffeuse-livreuse (H/F)",
+    "company": "TRANSPORT DONALD",
+    "location": "94 - FRESNES",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Mensuel de 1867.02 Euros sur 12.0 mois",
+    "published_at": "2026-08-09T20:11:54.947Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GQWH",
+    "experience_detected": "required",
+    "first_seen": "2026-08-09T20:30:48.847466+00:00"
+  },
+  {
     "id": "li-4215393568",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Java/Angular et/ou AngularJS (H/F)",
