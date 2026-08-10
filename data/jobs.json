@@ -1,5 +1,61 @@
 [
   {
+    "id": "ft-5880009",
+    "source": "France Travail",
+    "title": "Développeur Web Fullstack Confirmé F/H - IONIS Group",
+    "company": "IONIS Group",
+    "location": "75 - Paris",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-10T21:15:17.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5880009",
+    "experience_detected": "required",
+    "first_seen": "2026-08-10T20:41:05.870397+00:00"
+  },
+  {
+    "id": "ft-212HSJC",
+    "source": "France Travail",
+    "title": "Chauffeur-livreur (H/F)",
+    "company": "Non précisé",
+    "location": "63 - CLERMONT FERRAND",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Horaire de 12.36 Euros à 12.37 Euros sur 12.0 mois",
+    "published_at": "2026-08-10T22:34:54.997Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212HSJC",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-10T20:41:05.870529+00:00"
+  },
+  {
+    "id": "li-4449815825",
+    "source": "LinkedIn",
+    "title": "Développeur(se) Fullstack Java/Javascript F/H",
+    "company": "CGI",
+    "location": "Brest et périphérie",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-10",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-java-javascript-f-h-at-cgi-4449815825",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-10T20:41:05.870530+00:00"
+  },
+  {
+    "id": "li-4451826390",
+    "source": "LinkedIn",
+    "title": "Développeur Web Fullstack Confirmé F/H",
+    "company": "IONIS Education Group",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-10",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-confirm%C3%A9-f-h-at-ionis-education-group-4451826390",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-10T20:41:05.870532+00:00"
+  },
+  {
     "id": "ft-212HMRK",
     "source": "France Travail",
     "title": "Chauffeur-livreur préparateur / Chauffeuse-livreuse préparatrice  (H/F)",
@@ -670,20 +726,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212FCRS",
     "experience_detected": "required",
     "first_seen": "2026-08-07T16:28:55.272855+00:00"
-  },
-  {
-    "id": "ft-211ZTCX",
-    "source": "France Travail",
-    "title": "Ingénieur Développeur Full-Stack - Junior (H/F)",
-    "company": "CONFLUENCE PARTENAIRES",
-    "location": "69 - Lyon 3e Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 35000.0 Euros sur 12 mois",
-    "published_at": "2026-08-03T17:36:40.302Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211ZTCX",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-07T16:28:55.272867+00:00"
   },
   {
     "id": "ft-212GFNK",
