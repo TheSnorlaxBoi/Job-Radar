@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-5872561",
+    "source": "France Travail",
+    "title": " Développeur/se confirmé - Fullstack Java/Angular - Services Financiers - Lyon (H/F)",
+    "company": "Non précisé",
+    "location": "69 - Lyon 1er Arrondissement",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-10T05:30:58.000Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5872561",
+    "experience_detected": "required",
+    "first_seen": "2026-08-10T05:25:43.151561+00:00"
+  },
+  {
     "id": "ft-5871659",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -670,34 +684,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5699385",
     "experience_detected": "required",
     "first_seen": "2026-08-07T16:28:55.272911+00:00"
-  },
-  {
-    "id": "ft-5687556",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "77 - Roissy-en-Brie",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-03T03:22:51.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687556",
-    "experience_detected": "required",
-    "first_seen": "2026-08-07T16:28:55.272913+00:00"
-  },
-  {
-    "id": "ft-5687550",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Montlignon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-03T03:22:51.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5687550",
-    "experience_detected": "required",
-    "first_seen": "2026-08-07T16:28:55.272915+00:00"
   },
   {
     "id": "ft-212GGMW",
