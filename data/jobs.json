@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4445914284",
+    "source": "LinkedIn",
+    "title": "Développeur Java Fullstack React/Angular - Services Financiers - Orléans",
+    "company": "Sopra Steria",
+    "location": "Orléans",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-react-angular-services-financiers-orl%C3%A9ans-at-sopra-steria-4445914284",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-12T16:55:58.364994+00:00"
+  },
+  {
+    "id": "li-4445908457",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java React - Services Financiers - Ile-De-France",
+    "company": "Sopra Steria",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-services-financiers-ile-de-france-at-sopra-steria-4445908457",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-12T16:55:58.364995+00:00"
+  },
+  {
+    "id": "li-4453127354",
+    "source": "LinkedIn",
+    "title": "Développeur(euse) confirmé(e) Fullstack - Services Financiers – Tours",
+    "company": "Sopra Steria",
+    "location": "Tours",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-euse-confirm%C3%A9-e-fullstack-services-financiers-%E2%80%93-tours-at-sopra-steria-4453127354",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-12T16:55:58.364996+00:00"
+  },
+  {
     "id": "li-4443568066",
     "source": "LinkedIn",
     "title": "Développeur Web Fullstack - confirmé ( H/F)",
@@ -418,34 +460,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5740537",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096388+00:00"
-  },
-  {
-    "id": "ft-5716027",
-    "source": "France Travail",
-    "title": "Développeur(se) Fullstack Java/Jahia h/f (H/F)",
-    "company": "Non précisé",
-    "location": "Île-de-France",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-05T13:49:44.007Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5716027",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096397+00:00"
-  },
-  {
-    "id": "ft-5710531",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille H/F",
-    "company": "Non précisé",
-    "location": "67 - Nordheim",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-05T13:37:39.373Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5710531",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-12T09:27:17.096403+00:00"
   },
   {
     "id": "ft-212JYFS",
