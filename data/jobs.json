@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4452728655",
+    "source": "LinkedIn",
+    "title": "Développeur Python Junior – Service Migration (H/F)",
+    "company": "Arche | Immobilier & Services",
+    "location": "Tours",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-python-junior-%E2%80%93-service-migration-h-f-at-arche-immobilier-services-4452728655",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-12T20:42:14.029877+00:00"
+  },
+  {
+    "id": "li-4315333852",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Node.js Vue.js (H/F)",
+    "company": "Davidson consulting",
+    "location": "Rennes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-vue-js-h-f-at-davidson-consulting-4315333852",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-12T20:42:14.029879+00:00"
+  },
+  {
     "id": "li-4445914284",
     "source": "LinkedIn",
     "title": "Développeur Java Fullstack React/Angular - Services Financiers - Orléans",
