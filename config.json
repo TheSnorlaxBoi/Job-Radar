@@ -72,7 +72,7 @@
   "max_job_age_days": 7,
   "strict_keyword_match": true,
   "experience_filter": {
-    "enabled": true,
+    "enabled": false,
     "keep_if_not_mentioned": true,
     "keep_if_desired_only": false
   }
