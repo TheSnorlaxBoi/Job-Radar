@@ -8,7 +8,6 @@
       "Chauffeur de convoyage",
       "Conducteur de véhicules",
       "Livreur automobile",
-      "Chauffeur-livreur",
       "Coursier automobile"
     ],
     "contract_types": [
@@ -29,7 +28,6 @@
       "Chauffeur de convoyage",
       "Conducteur de véhicules",
       "Livreur automobile",
-      "Chauffeur-livreur",
       "Coursier automobile"
     ],
     "location": "France",
@@ -47,7 +45,6 @@
       "Chauffeur de convoyage",
       "Conducteur de véhicules",
       "Livreur automobile",
-      "Chauffeur-livreur",
       "Coursier automobile"
     ],
     "max_results": 100
@@ -61,7 +58,6 @@
       "Chauffeur de convoyage",
       "Conducteur de véhicules",
       "Livreur automobile",
-      "Chauffeur-livreur",
       "Coursier automobile"
     ],
     "location": "France",
@@ -76,7 +72,7 @@
   "max_job_age_days": 7,
   "strict_keyword_match": true,
   "experience_filter": {
-    "enabled": false,
+    "enabled": true,
     "keep_if_not_mentioned": true,
     "keep_if_desired_only": false
   }
