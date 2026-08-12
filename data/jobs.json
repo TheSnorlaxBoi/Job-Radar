@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4453042933",
+    "source": "LinkedIn",
+    "title": "Alternance – Développeur(se) web junior",
+    "company": "SCHOLIA",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-12",
+    "url": "https://fr.linkedin.com/jobs/view/alternance-%E2%80%93-d%C3%A9veloppeur-se-web-junior-at-scholia-4453042933",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-12T05:37:10.454718+00:00"
+  },
+  {
+    "id": "li-4452346763",
+    "source": "LinkedIn",
+    "title": "Développeur / Développeuse Fullstack Java& JavaScript (React | Vue | Angular)",
+    "company": "Agixis",
+    "location": "Villeurbanne",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-d%C3%A9veloppeuse-fullstack-java-javascript-react-vue-angular-at-agixis-4452346763",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-12T05:37:10.454720+00:00"
+  },
+  {
     "id": "ft-5913595",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
