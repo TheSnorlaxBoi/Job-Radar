@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4450468395",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack React/NestJs",
+    "company": "TEAMPIFY",
+    "location": "Tourcoing",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-react-nestjs-at-teampify-4450468395",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T16:55:19.038523+00:00"
+  },
+  {
+    "id": "li-4365799661",
+    "source": "LinkedIn",
+    "title": "Développeur(se) informatique Fullstack F/H",
+    "company": "Société des grands projets",
+    "location": "Saint-Denis",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-informatique-fullstack-f-h-at-soci%C3%A9t%C3%A9-des-grands-projets-4365799661",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T16:55:19.038524+00:00"
+  },
+  {
+    "id": "li-4452989542",
+    "source": "LinkedIn",
+    "title": "Finaxys recrute un Développeur Fullstack Java / Angular H/F",
+    "company": "FINAXYS",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/finaxys-recrute-un-d%C3%A9veloppeur-fullstack-java-angular-h-f-at-finaxys-4452989542",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T16:55:19.038526+00:00"
+  },
+  {
     "id": "li-4448158882",
     "source": "LinkedIn",
     "title": "Développeur Java junior (H/F)",
@@ -250,20 +292,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212HHDV",
     "experience_detected": "none_required",
     "first_seen": "2026-08-12T09:27:17.096324+00:00"
-  },
-  {
-    "id": "ft-212FCRS",
-    "source": "France Travail",
-    "title": "Développeur Java Junior avec Compétences DevOps/Cloud (H/F)",
-    "company": "Non précisé",
-    "location": "38 - Meylan",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-06T15:56:41.800Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212FCRS",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096337+00:00"
   },
   {
     "id": "ft-5913595",
