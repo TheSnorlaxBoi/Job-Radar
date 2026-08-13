@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-5943063",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "92 - Meudon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-13T03:24:52.250Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5943063",
+    "experience_detected": "required",
+    "first_seen": "2026-08-13T01:51:11.916403+00:00"
+  },
+  {
+    "id": "ft-5943059",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "91 - Ulis",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-13T03:24:50.342Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5943059",
+    "experience_detected": "required",
+    "first_seen": "2026-08-13T01:51:11.916405+00:00"
+  },
+  {
+    "id": "ft-5940791",
+    "source": "France Travail",
+    "title": "Développeur fullstack C# / Angular - H/F",
+    "company": "Seyos",
+    "location": "44 - Nantes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 45000.0 Euros",
+    "published_at": "2026-08-12T23:01:11.127Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5940791",
+    "experience_detected": "required",
+    "first_seen": "2026-08-13T01:51:11.916407+00:00"
+  },
+  {
     "id": "li-4452728655",
     "source": "LinkedIn",
     "title": "Développeur Python Junior – Service Migration (H/F)",
