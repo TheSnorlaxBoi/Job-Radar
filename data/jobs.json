@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4448158882",
+    "source": "LinkedIn",
+    "title": "Développeur Java junior (H/F)",
+    "company": "Groupe SII",
+    "location": "Brest",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-junior-h-f-at-groupe-sii-4448158882",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T13:06:52.319242+00:00"
+  },
+  {
+    "id": "li-4445923790",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / VueJS (H/F)",
+    "company": "Groupe SII",
+    "location": "Brest",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-vuejs-h-f-at-groupe-sii-4445923790",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T13:06:52.319244+00:00"
+  },
+  {
     "id": "ft-212KVWT",
     "source": "France Travail",
     "title": "Chauffeur livreur pièces automobile (H/F)",
