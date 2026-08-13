@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-212KVWT",
+    "source": "France Travail",
+    "title": "Chauffeur livreur pièces automobile (H/F)",
+    "company": "SMILE DELIVERY",
+    "location": "69 - Chassieu",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Mensuel de 1900.0 Euros à 2100.0 Euros sur 12 mois",
+    "published_at": "2026-08-13T08:33:21.165Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212KVWT",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-13T09:10:36.483316+00:00"
+  },
+  {
+    "id": "li-4450473331",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack, Front-End ou Back-End H/F",
+    "company": "PRIME ENGINEERING",
+    "location": "Île-de-France, France",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-front-end-ou-back-end-h-f-at-prime-engineering-france-4450473331",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T09:10:36.483319+00:00"
+  },
+  {
+    "id": "li-4450472536",
+    "source": "LinkedIn",
+    "title": "Lead Développeur / Développeuse Fullstack",
+    "company": "Ministère de la Justice",
+    "location": "Ville de Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/lead-d%C3%A9veloppeur-d%C3%A9veloppeuse-fullstack-at-minist%C3%A8re-de-la-justice-4450472536",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T09:10:36.483320+00:00"
+  },
+  {
     "id": "ft-5943063",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
