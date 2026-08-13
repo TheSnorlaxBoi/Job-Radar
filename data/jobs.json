@@ -1,5 +1,19 @@
 [
   {
+    "id": "li-4454007745",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Le Pecq",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4454007745",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-13T20:40:51.857219+00:00"
+  },
+  {
     "id": "li-4450468395",
     "source": "LinkedIn",
     "title": "Développeur Fullstack React/NestJs",
@@ -572,34 +586,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5797600",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096382+00:00"
-  },
-  {
-    "id": "ft-5787888",
-    "source": "France Travail",
-    "title": "Développeur Fullstack (React / Symfony) (H/F)",
-    "company": "Sami",
-    "location": "75 - Paris",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 50000.0 Euros à 60000.0 Euros",
-    "published_at": "2026-08-06T18:31:18.468Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5787888",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096384+00:00"
-  },
-  {
-    "id": "ft-5787619",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Ruby on Rails () (H/F)",
-    "company": "Kuartz",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 27000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-06T18:31:09.074Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5787619",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096385+00:00"
   },
   {
     "id": "ft-212JYFS",
