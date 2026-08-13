@@ -504,34 +504,6 @@
     "first_seen": "2026-08-12T09:27:17.096385+00:00"
   },
   {
-    "id": "ft-5740647",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "94 - Créteil",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-06T03:20:06.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5740647",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096387+00:00"
-  },
-  {
-    "id": "ft-5740537",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "91 - Paray-Vieille-Poste",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-06T03:20:06.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5740537",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096388+00:00"
-  },
-  {
     "id": "ft-212JYFS",
     "source": "France Travail",
     "title": "Conducteur / Conductrice de véhicules SPL H/F",
