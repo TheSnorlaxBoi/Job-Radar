@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-5974316",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille (H/F)",
+    "company": "Non précisé",
+    "location": "59 - Lezennes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14T05:30:59.940Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5974316",
+    "experience_detected": "required",
+    "first_seen": "2026-08-14T05:37:24.334831+00:00"
+  },
+  {
     "id": "ft-5967694",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -586,34 +600,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5819128",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096379+00:00"
-  },
-  {
-    "id": "ft-5801800",
-    "source": "France Travail",
-    "title": "Développeur(euse) Fullstack Java/Angular Confirmé/e - Industrie - Le Plessis Robinson (H/F)",
-    "company": "Non précisé",
-    "location": "92 - Nanterre",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-07T05:30:53.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5801800",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096381+00:00"
-  },
-  {
-    "id": "ft-5797600",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Méry-sur-Oise",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-07T03:21:30.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5797600",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096382+00:00"
   },
   {
     "id": "ft-212JYFS",
