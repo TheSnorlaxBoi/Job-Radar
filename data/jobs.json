@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4419647657",
+    "source": "LinkedIn",
+    "title": "Développeur(se) Fullstack Javascript - Node.js / React.js - Lille",
+    "company": "SII Group Romania",
+    "location": "Arleux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-javascript-node-js-react-js-lille-at-sii-group-romania-4419647657",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-14T16:51:21.646696+00:00"
+  },
+  {
+    "id": "li-4454529234",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Herblay",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4454529234",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-14T16:51:21.646698+00:00"
+  },
+  {
+    "id": "li-4454556138",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack C++/Angular",
+    "company": "NEO2 Digital",
+    "location": "Montpellier",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-c%2B%2B-angular-at-neo2-digital-4454556138",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-14T16:51:21.646699+00:00"
+  },
+  {
     "id": "ft-212LPPP",
     "source": "France Travail",
     "title": "Un(e) CONDUCTEUR(TRICE) de véhicules super-Lourd (H/F)",
@@ -614,20 +656,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GMRZ",
     "experience_detected": "none_required",
     "first_seen": "2026-08-12T09:27:17.096376+00:00"
-  },
-  {
-    "id": "ft-212GFNK",
-    "source": "France Travail",
-    "title": "Développeur/se Expert - Java Fullstack - Orléans (H/F)",
-    "company": "SOPRA STERIA GROUP",
-    "location": "45 - Orléans",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Mensuel de 3000.0 Euros sur 12 mois",
-    "published_at": "2026-08-07T15:37:19.837Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GFNK",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096378+00:00"
   },
   {
     "id": "ft-212JYFS",
