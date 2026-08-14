@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-212LPPP",
+    "source": "France Travail",
+    "title": "Un(e) CONDUCTEUR(TRICE) de véhicules super-Lourd (H/F)",
+    "company": "OLANO SERVICES",
+    "location": "62 - Carvin",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-13T17:22:28.055Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212LPPP",
+    "experience_detected": "required",
+    "first_seen": "2026-08-14T13:03:08.556388+00:00"
+  },
+  {
+    "id": "li-4454396804",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "Amiltone",
+    "location": "Niort",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-amiltone-4454396804",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-14T13:03:08.556390+00:00"
+  },
+  {
+    "id": "li-4454389807",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "Amiltone",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-amiltone-4454389807",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-14T13:03:08.556391+00:00"
+  },
+  {
     "id": "ft-5974316",
     "source": "France Travail",
     "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille (H/F)",
@@ -586,20 +628,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GFNK",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096378+00:00"
-  },
-  {
-    "id": "ft-5819128",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java VueJS (H/F)",
-    "company": "Act Digital France",
-    "location": "59 - Lille",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-07T11:21:27.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5819128",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096379+00:00"
   },
   {
     "id": "ft-212JYFS",
