@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4375782108",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java/React - F/H",
+    "company": "VISEO",
+    "location": "Boulogne-Billancourt",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-15",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-f-h-at-viseo-4375782108",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T12:34:06.305232+00:00"
+  },
+  {
+    "id": "li-4243677076",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Confirmé (JS) H/F",
+    "company": "Extia",
+    "location": "Brest",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-15",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-confirm%C3%A9-js-h-f-at-extia-4243677076",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T12:34:06.305233+00:00"
+  },
+  {
     "id": "ft-6003648",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -712,20 +740,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5860346",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096372+00:00"
-  },
-  {
-    "id": "ft-5853147",
-    "source": "France Travail",
-    "title": "Lead Développeur(euse)/Développeur Fullstack Java/Angular- Bordeaux H/F",
-    "company": "Non précisé",
-    "location": "08 - Girondelle",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-08T11:51:17.281Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5853147",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-12T09:27:17.096373+00:00"
   },
   {
     "id": "ft-212JYFS",
