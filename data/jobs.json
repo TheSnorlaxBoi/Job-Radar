@@ -1,5 +1,61 @@
 [
   {
+    "id": "li-4441519789",
+    "source": "LinkedIn",
+    "title": "Développeur full stack junior (H/F)",
+    "company": "Atos",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-full-stack-junior-h-f-at-atos-4441519789",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T01:08:14.516597+00:00"
+  },
+  {
+    "id": "li-4039342661",
+    "source": "LinkedIn",
+    "title": "Développeur Java Junior (H/F)",
+    "company": "Extia",
+    "location": "Metz",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-junior-h-f-at-extia-4039342661",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T01:08:14.516599+00:00"
+  },
+  {
+    "id": "li-4370679328",
+    "source": "LinkedIn",
+    "title": "Développeur Java/Angular Junior - H/F",
+    "company": "Extia",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-angular-junior-h-f-at-extia-4370679328",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T01:08:14.516601+00:00"
+  },
+  {
+    "id": "li-4444932652",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack Confirmé H/F",
+    "company": "KAIZEN Solutions (KZS)",
+    "location": "Lyon et périphérie",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-h-f-at-kaizen-solutions-kzs-4444932652",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T01:08:14.516602+00:00"
+  },
+  {
     "id": "li-4454561288",
     "source": "LinkedIn",
     "title": "Développeur Fullstack JAVA - F/H/X",
@@ -656,20 +712,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5831084",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096375+00:00"
-  },
-  {
-    "id": "ft-212GMRZ",
-    "source": "France Travail",
-    "title": "Développeur(se) Fullstack d'applications (H/F)",
-    "company": "BPCE SOLUTIONS INFORMATIQUES",
-    "location": "59 - Villeneuve-d'Ascq",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 38000.0 Euros à 39000.0 Euros sur 12 mois",
-    "published_at": "2026-08-07T21:08:59.377Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GMRZ",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-12T09:27:17.096376+00:00"
   },
   {
     "id": "ft-212JYFS",
