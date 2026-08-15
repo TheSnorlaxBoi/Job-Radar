@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6003648",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Bezons",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-15T03:27:48.984Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6003648",
+    "experience_detected": "required",
+    "first_seen": "2026-08-15T04:29:05.092732+00:00"
+  },
+  {
+    "id": "ft-6003622",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Herblay-sur-Seine",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-15T03:27:45.528Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6003622",
+    "experience_detected": "required",
+    "first_seen": "2026-08-15T04:29:05.092733+00:00"
+  },
+  {
     "id": "li-4441519789",
     "source": "LinkedIn",
     "title": "Développeur full stack junior (H/F)",
@@ -698,20 +726,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5853147",
     "experience_detected": "none_required",
     "first_seen": "2026-08-12T09:27:17.096373+00:00"
-  },
-  {
-    "id": "ft-5831084",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Maisons-Laffitte",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-08T03:20:40.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5831084",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096375+00:00"
   },
   {
     "id": "ft-212JYFS",
