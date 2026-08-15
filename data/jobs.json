@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4436714229",
+    "source": "LinkedIn",
+    "title": "Développeur Junior Fullstack (ReactJS / C#)",
+    "company": "TotalEnergies",
+    "location": "Labastide-Beauvoir",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-15",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-junior-fullstack-reactjs-c%23-at-totalenergies-4436714229",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T20:20:47.419680+00:00"
+  },
+  {
+    "id": "li-4444984564",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java - Angular - Grenoble H/F",
+    "company": "KAIZEN Solutions (KZS)",
+    "location": "Grenoble",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-15",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-grenoble-h-f-at-kaizen-solutions-kzs-4444984564",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-15T20:20:47.419681+00:00"
+  },
+  {
     "id": "li-4383948926",
     "source": "LinkedIn",
     "title": "Développeur C#.Net Junior H/F",
