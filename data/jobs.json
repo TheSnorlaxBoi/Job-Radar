@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6030163",
+    "source": "France Travail",
+    "title": "Développeur/se confirmé - Fullstack Java/Angular - Services Financiers - Lyon (H/F)",
+    "company": "Forums Talents Handicap",
+    "location": "69 - Lyon 1er Arrondissement",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-16T05:00:55.784Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6030163",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-16T04:34:43.375833+00:00"
+  },
+  {
+    "id": "li-4445216001",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java – Solutions IA & Automatisation H/F",
+    "company": "Inetum",
+    "location": "La Chapelle-sur-Erdre",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-15",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-%E2%80%93-solutions-ia-automatisation-h-f-at-inetum-4445216001",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-16T04:34:43.375993+00:00"
+  },
+  {
     "id": "li-4436714229",
     "source": "LinkedIn",
     "title": "Développeur Junior Fullstack (ReactJS / C#)",
@@ -810,20 +838,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5871652",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096370+00:00"
-  },
-  {
-    "id": "ft-5860346",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "94 - Chennevières-sur-Marne",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-09T03:20:23.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5860346",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096372+00:00"
   },
   {
     "id": "ft-212JYFS",
