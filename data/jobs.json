@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-6039666",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "91 - Bièvres",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-17T03:27:34.385Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6039666",
+    "experience_detected": "required",
+    "first_seen": "2026-08-17T04:40:15.448003+00:00"
+  },
+  {
+    "id": "ft-6039628",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Sannois",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-17T03:27:30.059Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6039628",
+    "experience_detected": "required",
+    "first_seen": "2026-08-17T04:40:15.448004+00:00"
+  },
+  {
+    "id": "li-4412070824",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack Java Angular (H/F)",
+    "company": "Prosol",
+    "location": "Chaponnay",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-16",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-prosol-4412070824",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-17T04:40:15.448132+00:00"
+  },
+  {
     "id": "li-4433197208",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Java & React/ Angular (H/F)",
@@ -880,34 +922,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5880009",
     "experience_detected": "required",
     "first_seen": "2026-08-12T09:27:17.096367+00:00"
-  },
-  {
-    "id": "ft-5871659",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Bois-d'Arcy",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-10T03:19:28.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5871659",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096368+00:00"
-  },
-  {
-    "id": "ft-5871652",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "91 - Longjumeau",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-10T03:19:28.000Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5871652",
-    "experience_detected": "required",
-    "first_seen": "2026-08-12T09:27:17.096370+00:00"
   },
   {
     "id": "ft-212JYFS",
