@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-212MVKL",
+    "source": "France Travail",
+    "title": "Développeur API Junior Java/SpringBoot (H/F)",
+    "company": "SO-API CONSULTING",
+    "location": "75 - PARIS",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 46000.0 Euros sur 12 mois",
+    "published_at": "2026-08-16T16:52:24.255Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212MVKL",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-18T12:41:57.369049+00:00"
+  },
+  {
+    "id": "li-4437408022",
+    "source": "LinkedIn",
+    "title": "Développeur/se – Java Fullstack - Services Financiers - Nantes",
+    "company": "Sopra Steria",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-18",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-%E2%80%93-java-fullstack-services-financiers-nantes-at-sopra-steria-4437408022",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-18T12:41:57.369204+00:00"
+  },
+  {
+    "id": "li-4249291844",
+    "source": "LinkedIn",
+    "title": "Développeur GO Fullstack (H/F)",
+    "company": "Davidson consulting",
+    "location": "Sophia Antipolis",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-17",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-go-fullstack-h-f-at-davidson-consulting-4249291844",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-18T12:41:57.369205+00:00"
+  },
+  {
     "id": "ft-6062702",
     "source": "France Travail",
     "title": "Développeur Fullstack Java/React H/F",
