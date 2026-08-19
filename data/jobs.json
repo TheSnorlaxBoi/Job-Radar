@@ -1,5 +1,75 @@
 [
   {
+    "id": "ft-6109608",
+    "source": "France Travail",
+    "title": "Développeur/Développeur(euse) Sénior Fullstack .NET H/F",
+    "company": "Non précisé",
+    "location": "75 - Paris",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19T12:09:35.446Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6109608",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-19T12:42:50.246888+00:00"
+  },
+  {
+    "id": "ft-6109604",
+    "source": "France Travail",
+    "title": "Développeur/Développeur(euse) Fullstack Java H/F",
+    "company": "Non précisé",
+    "location": "75 - Paris",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19T12:09:35.448Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6109604",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-19T12:42:50.246890+00:00"
+  },
+  {
+    "id": "ft-6109571",
+    "source": "France Travail",
+    "title": "Développeur(se) Fullstack Java & Cloud - Aéroline - Bordeaux H/F",
+    "company": "Non précisé",
+    "location": "08 - Girondelle",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19T12:09:33.933Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6109571",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-19T12:42:50.246891+00:00"
+  },
+  {
+    "id": "li-4442015823",
+    "source": "LinkedIn",
+    "title": "Développeur Java fullstack (H/F)",
+    "company": "Aleysia",
+    "location": "Aix-en-Provence",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-18",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-h-f-at-aleysia-4442015823",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-19T12:42:50.246992+00:00"
+  },
+  {
+    "id": "li-4443954104",
+    "source": "LinkedIn",
+    "title": "Développeur(se) Fullstack Java Spring / Vue.js - Lille",
+    "company": "Groupe SII",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-java-spring-vue-js-lille-at-groupe-sii-4443954104",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-19T12:42:50.246993+00:00"
+  },
+  {
     "id": "ft-212QKLG",
     "source": "France Travail",
     "title": "Conducteur / Conductrice de véhicules SPL de chantier (H/F)",
@@ -1062,19 +1132,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5940791",
     "experience_detected": "required",
     "first_seen": "2026-08-13T01:51:11.916407+00:00"
-  },
-  {
-    "id": "ft-212JYFS",
-    "source": "France Travail",
-    "title": "Conducteur / Conductrice de véhicules SPL H/F",
-    "company": "G.E.I.Q TRANSPORT-AVENIR EMPLOI RHONE AL",
-    "location": "69 - ST PRIEST",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Horaire de 12.31 Euros sur 12 mois",
-    "published_at": "2026-08-12T09:33:26.119Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212JYFS",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-12T09:27:17.096532+00:00"
   }
 ]
