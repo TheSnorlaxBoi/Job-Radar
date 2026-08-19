@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4456358188",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack H/F",
+    "company": "Cegedim Santé",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-h-f-at-cegedim-sant%C3%A9-4456358188",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-19T20:25:24.051024+00:00"
+  },
+  {
+    "id": "li-4329046704",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java/Angular Confirmé - F/H",
+    "company": "Onepoint",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-confirm%C3%A9-f-h-at-onepoint-4329046704",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-19T20:25:24.051025+00:00"
+  },
+  {
+    "id": "li-4452862497",
+    "source": "LinkedIn",
+    "title": "Scrum Master/ Développeur FullStack Java H/F",
+    "company": "Free-Work",
+    "location": "Rennes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-18",
+    "url": "https://fr.linkedin.com/jobs/view/scrum-master-d%C3%A9veloppeur-fullstack-java-h-f-at-free-work-4452862497",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-19T20:25:24.051026+00:00"
+  },
+  {
     "id": "ft-212RHGW",
     "source": "France Travail",
     "title": "Développeur(se) Fullstack - JAVA ANGULAR - Bordeaux (H/F)",
