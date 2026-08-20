@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4408181995",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack F/H - Studio KINEXO",
+    "company": "Onepoint",
+    "location": "Rennes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-20",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-f-h-studio-kinexo-at-onepoint-4408181995",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-20T20:26:47.496841+00:00"
+  },
+  {
+    "id": "li-4446099365",
+    "source": "LinkedIn",
+    "title": "Analyste développeur fullstack - Outils de gestion de la sécurité (H/F)",
+    "company": "Euro-Information",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-20",
+    "url": "https://fr.linkedin.com/jobs/view/analyste-d%C3%A9veloppeur-fullstack-outils-de-gestion-de-la-s%C3%A9curit%C3%A9-h-f-at-euro-information-developpements-eid-4446099365",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-20T20:26:47.496842+00:00"
+  },
+  {
+    "id": "li-4446737871",
+    "source": "LinkedIn",
+    "title": "Conducteur de Véhicules et Engins F/H",
+    "company": "Groupe ADP",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-20",
+    "url": "https://fr.linkedin.com/jobs/view/conducteur-de-v%C3%A9hicules-et-engins-f-h-at-groupe-adp-4446737871",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-20T20:26:47.496844+00:00"
+  },
+  {
     "id": "li-4456491006",
     "source": "LinkedIn",
     "title": "Développeuse/Développeur Fullstack",
@@ -1160,20 +1202,6 @@
     "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-c%2B%2B-angular-at-neo2-digital-4454556138",
     "experience_detected": "unknown",
     "first_seen": "2026-08-14T16:51:21.646699+00:00"
-  },
-  {
-    "id": "ft-212LPPP",
-    "source": "France Travail",
-    "title": "Un(e) CONDUCTEUR(TRICE) de véhicules super-Lourd (H/F)",
-    "company": "OLANO SERVICES",
-    "location": "62 - Carvin",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13T17:22:28.055Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212LPPP",
-    "experience_detected": "required",
-    "first_seen": "2026-08-14T13:03:08.556388+00:00"
   },
   {
     "id": "li-4454396804",
