@@ -1,5 +1,19 @@
 [
   {
+    "id": "li-4456329631",
+    "source": "LinkedIn",
+    "title": "Développeur GO Fullstack (H/F)",
+    "company": "Davidson consulting",
+    "location": "Sophia Antipolis",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-go-fullstack-h-f-at-davidson-consulting-4456329631",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-20T01:08:15.639217+00:00"
+  },
+  {
     "id": "li-4456358188",
     "source": "LinkedIn",
     "title": "Développeur fullstack H/F",
@@ -1092,90 +1106,6 @@
     "first_seen": "2026-08-14T01:48:42.916089+00:00"
   },
   {
-    "id": "li-4454007745",
-    "source": "LinkedIn",
-    "title": "Développeur web fullstack H/F",
-    "company": "Leihia",
-    "location": "Le Pecq",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4454007745",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T20:40:51.857219+00:00"
-  },
-  {
-    "id": "li-4450468395",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack React/NestJs",
-    "company": "TEAMPIFY",
-    "location": "Tourcoing",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-react-nestjs-at-teampify-4450468395",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T16:55:19.038523+00:00"
-  },
-  {
-    "id": "li-4365799661",
-    "source": "LinkedIn",
-    "title": "Développeur(se) informatique Fullstack F/H",
-    "company": "Société des grands projets",
-    "location": "Saint-Denis",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-informatique-fullstack-f-h-at-soci%C3%A9t%C3%A9-des-grands-projets-4365799661",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T16:55:19.038524+00:00"
-  },
-  {
-    "id": "li-4452989542",
-    "source": "LinkedIn",
-    "title": "Finaxys recrute un Développeur Fullstack Java / Angular H/F",
-    "company": "FINAXYS",
-    "location": "Nantes",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/finaxys-recrute-un-d%C3%A9veloppeur-fullstack-java-angular-h-f-at-finaxys-4452989542",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T16:55:19.038526+00:00"
-  },
-  {
-    "id": "li-4448158882",
-    "source": "LinkedIn",
-    "title": "Développeur Java junior (H/F)",
-    "company": "Groupe SII",
-    "location": "Brest",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-junior-h-f-at-groupe-sii-4448158882",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T13:06:52.319242+00:00"
-  },
-  {
-    "id": "li-4445923790",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java / VueJS (H/F)",
-    "company": "Groupe SII",
-    "location": "Brest",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-vuejs-h-f-at-groupe-sii-4445923790",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T13:06:52.319244+00:00"
-  },
-  {
     "id": "ft-212KVWT",
     "source": "France Travail",
     "title": "Chauffeur livreur pièces automobile (H/F)",
@@ -1188,34 +1118,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212KVWT",
     "experience_detected": "none_required",
     "first_seen": "2026-08-13T09:10:36.483316+00:00"
-  },
-  {
-    "id": "li-4450473331",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack, Front-End ou Back-End H/F",
-    "company": "PRIME ENGINEERING",
-    "location": "Île-de-France, France",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-front-end-ou-back-end-h-f-at-prime-engineering-france-4450473331",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T09:10:36.483319+00:00"
-  },
-  {
-    "id": "li-4450472536",
-    "source": "LinkedIn",
-    "title": "Lead Développeur / Développeuse Fullstack",
-    "company": "Ministère de la Justice",
-    "location": "Ville de Paris",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-13",
-    "url": "https://fr.linkedin.com/jobs/view/lead-d%C3%A9veloppeur-d%C3%A9veloppeuse-fullstack-at-minist%C3%A8re-de-la-justice-4450472536",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-13T09:10:36.483320+00:00"
   },
   {
     "id": "ft-5943063",
@@ -1244,19 +1146,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5943059",
     "experience_detected": "required",
     "first_seen": "2026-08-13T01:51:11.916405+00:00"
-  },
-  {
-    "id": "ft-5940791",
-    "source": "France Travail",
-    "title": "Développeur fullstack C# / Angular - H/F",
-    "company": "Seyos",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 45000.0 Euros",
-    "published_at": "2026-08-12T23:01:11.127Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5940791",
-    "experience_detected": "required",
-    "first_seen": "2026-08-13T01:51:11.916407+00:00"
   }
 ]
