@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4456491006",
+    "source": "LinkedIn",
+    "title": "Développeuse/Développeur Fullstack",
+    "company": "Capgemini",
+    "location": "Montpellier",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-20",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeuse-d%C3%A9veloppeur-fullstack-at-capgemini-4456491006",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-20T16:33:36.871962+00:00"
+  },
+  {
+    "id": "li-4437099594",
+    "source": "LinkedIn",
+    "title": "Développeur Java Fullstack Confirmé H/F",
+    "company": "Extia",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-20",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-confirm%C3%A9-h-f-at-extia-4437099594",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-20T16:33:36.871964+00:00"
+  },
+  {
     "id": "ft-6146586",
     "source": "France Travail",
     "title": "DEVELOPPEUR JAVA FULLSTACK (H/F)",
