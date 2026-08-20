@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-6120918",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Garges-lès-Gonesse",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-20T03:28:27.414Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6120918",
+    "experience_detected": "required",
+    "first_seen": "2026-08-20T04:35:56.053481+00:00"
+  },
+  {
+    "id": "ft-6120845",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Butry-sur-Oise",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-20T03:28:21.359Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6120845",
+    "experience_detected": "required",
+    "first_seen": "2026-08-20T04:35:56.053482+00:00"
+  },
+  {
+    "id": "li-4308972681",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Vue.js (H/F)",
+    "company": "Davidson consulting",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-vue-js-h-f-at-davidson-consulting-4308972681",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-20T04:35:56.053605+00:00"
+  },
+  {
     "id": "li-4456329631",
     "source": "LinkedIn",
     "title": "Développeur GO Fullstack (H/F)",
@@ -1118,33 +1160,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212KVWT",
     "experience_detected": "none_required",
     "first_seen": "2026-08-13T09:10:36.483316+00:00"
-  },
-  {
-    "id": "ft-5943063",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "92 - Meudon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-13T03:24:52.250Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5943063",
-    "experience_detected": "required",
-    "first_seen": "2026-08-13T01:51:11.916403+00:00"
-  },
-  {
-    "id": "ft-5943059",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "91 - Ulis",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-13T03:24:50.342Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5943059",
-    "experience_detected": "required",
-    "first_seen": "2026-08-13T01:51:11.916405+00:00"
   }
 ]
