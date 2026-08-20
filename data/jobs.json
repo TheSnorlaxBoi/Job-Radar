@@ -1146,19 +1146,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5967689",
     "experience_detected": "required",
     "first_seen": "2026-08-14T01:48:42.916089+00:00"
-  },
-  {
-    "id": "ft-212KVWT",
-    "source": "France Travail",
-    "title": "Chauffeur livreur pièces automobile (H/F)",
-    "company": "SMILE DELIVERY",
-    "location": "69 - Chassieu",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Mensuel de 1900.0 Euros à 2100.0 Euros sur 12 mois",
-    "published_at": "2026-08-13T08:33:21.165Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212KVWT",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-13T09:10:36.483316+00:00"
   }
 ]
