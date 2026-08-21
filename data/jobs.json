@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4454627323",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack H/F",
+    "company": "Extia",
+    "location": "Île-de-France, France",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-h-f-at-extia-4454627323",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-21T16:32:25.867793+00:00"
+  },
+  {
+    "id": "li-4445022230",
+    "source": "LinkedIn",
+    "title": "Développeur java/fullstack - F/H",
+    "company": "Orange Business",
+    "location": "Grenoble",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-f-h-at-orange-business-4445022230",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-21T16:32:25.867794+00:00"
+  },
+  {
+    "id": "li-4392985911",
+    "source": "LinkedIn",
+    "title": "Développeur(se) Fullstack JAVA/ReactJS - Services Financiers F/H",
+    "company": "CGI",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-java-reactjs-services-financiers-f-h-at-cgi-4392985911",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-21T16:32:25.867795+00:00"
+  },
+  {
     "id": "ft-6169441",
     "source": "France Travail",
     "title": "Développeur Fullstack Angular Java Spring Boot (H/F)",
