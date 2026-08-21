@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6152335",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Roissy-en-France",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-21T03:28:31.452Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6152335",
+    "experience_detected": "required",
+    "first_seen": "2026-08-21T04:36:24.729451+00:00"
+  },
+  {
+    "id": "ft-6152282",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "78 - Chesnay-Rocquencourt",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-21T03:28:27.899Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6152282",
+    "experience_detected": "required",
+    "first_seen": "2026-08-21T04:36:24.729452+00:00"
+  },
+  {
     "id": "li-4456743865",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Java/Angular Back H/F",
@@ -1118,33 +1146,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/5974316",
     "experience_detected": "required",
     "first_seen": "2026-08-14T05:37:24.334831+00:00"
-  },
-  {
-    "id": "ft-5967694",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Pecq",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-14T03:28:49.177Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5967694",
-    "experience_detected": "required",
-    "first_seen": "2026-08-14T01:48:42.916087+00:00"
-  },
-  {
-    "id": "ft-5967689",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Noisy-le-Roi",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-14T03:28:45.124Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5967689",
-    "experience_detected": "required",
-    "first_seen": "2026-08-14T01:48:42.916089+00:00"
   }
 ]
