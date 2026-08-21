@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4444446231",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack Java",
+    "company": "Groupe Yoni",
+    "location": "Montpellier",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-at-groupe-yoni-4444446231",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-21T20:24:03.950955+00:00"
+  },
+  {
+    "id": "li-4457317696",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Drancy",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4457317696",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-21T20:24:03.950956+00:00"
+  },
+  {
+    "id": "li-4457371849",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack - Java - F/H",
+    "company": "Ciril GROUP",
+    "location": "Villeurbanne",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-f-h-at-ciril-group-4457371849",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-21T20:24:03.950957+00:00"
+  },
+  {
     "id": "li-4454627323",
     "source": "LinkedIn",
     "title": "Développeur Fullstack H/F",
