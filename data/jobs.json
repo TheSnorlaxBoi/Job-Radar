@@ -1132,19 +1132,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6003622",
     "experience_detected": "required",
     "first_seen": "2026-08-15T04:29:05.092733+00:00"
-  },
-  {
-    "id": "ft-5974316",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille (H/F)",
-    "company": "Non précisé",
-    "location": "59 - Lezennes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-14T05:30:59.940Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/5974316",
-    "experience_detected": "required",
-    "first_seen": "2026-08-14T05:37:24.334831+00:00"
   }
 ]
