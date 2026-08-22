@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6183572",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "93 - Gagny",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-22T03:27:50.578Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6183572",
+    "experience_detected": "required",
+    "first_seen": "2026-08-22T04:31:04.072073+00:00"
+  },
+  {
+    "id": "ft-6183535",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "93 - Drancy",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-22T03:27:48.553Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6183535",
+    "experience_detected": "required",
+    "first_seen": "2026-08-22T04:31:04.072074+00:00"
+  },
+  {
     "id": "li-4454155580",
     "source": "LinkedIn",
     "title": "Développeur Golang Fullstack",
@@ -1174,33 +1202,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6030163",
     "experience_detected": "none_required",
     "first_seen": "2026-08-16T04:34:43.375833+00:00"
-  },
-  {
-    "id": "ft-6003648",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Bezons",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-15T03:27:48.984Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6003648",
-    "experience_detected": "required",
-    "first_seen": "2026-08-15T04:29:05.092732+00:00"
-  },
-  {
-    "id": "ft-6003622",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Herblay-sur-Seine",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-15T03:27:45.528Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6003622",
-    "experience_detected": "required",
-    "first_seen": "2026-08-15T04:29:05.092733+00:00"
   }
 ]
