@@ -1314,19 +1314,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6033475",
     "experience_detected": "none_required",
     "first_seen": "2026-08-16T12:36:06.348835+00:00"
-  },
-  {
-    "id": "ft-6030163",
-    "source": "France Travail",
-    "title": "Développeur/se confirmé - Fullstack Java/Angular - Services Financiers - Lyon (H/F)",
-    "company": "Forums Talents Handicap",
-    "location": "69 - Lyon 1er Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-16T05:00:55.784Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6030163",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-16T04:34:43.375833+00:00"
   }
 ]
