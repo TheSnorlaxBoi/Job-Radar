@@ -1064,20 +1064,6 @@
     "first_seen": "2026-08-18T12:41:57.369204+00:00"
   },
   {
-    "id": "li-4249291844",
-    "source": "LinkedIn",
-    "title": "Développeur GO Fullstack (H/F)",
-    "company": "Davidson consulting",
-    "location": "Sophia Antipolis",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-go-fullstack-h-f-at-davidson-consulting-4249291844",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-18T12:41:57.369205+00:00"
-  },
-  {
     "id": "ft-6062702",
     "source": "France Travail",
     "title": "Développeur Fullstack Java/React H/F",
@@ -1134,20 +1120,6 @@
     "first_seen": "2026-08-18T08:35:14.266562+00:00"
   },
   {
-    "id": "li-4400562273",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Angular C# .NET H/F",
-    "company": "Expleo Group",
-    "location": "Dunkerque",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-angular-c%23-net-h-f-at-expleo-group-4400562273",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-18T08:35:14.266563+00:00"
-  },
-  {
     "id": "ft-6061735",
     "source": "France Travail",
     "title": "Développeur Java Fullstack Confirmé (H/F)",
@@ -1190,20 +1162,6 @@
     "first_seen": "2026-08-18T04:33:55.781357+00:00"
   },
   {
-    "id": "li-4452285014",
-    "source": "LinkedIn",
-    "title": "Développeur FullStack .NET / Angular F/H",
-    "company": "Rapid Views",
-    "location": "Toulouse",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-net-angular-f-h-at-rapid-views-4452285014",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-17T20:24:55.787879+00:00"
-  },
-  {
     "id": "ft-212NKTL",
     "source": "France Travail",
     "title": "Développeur.euse Senior Fullstack Java / Angular (H/F)",
@@ -1244,34 +1202,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212NNZN",
     "experience_detected": "required",
     "first_seen": "2026-08-17T16:25:27.894133+00:00"
-  },
-  {
-    "id": "li-4455248985",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack - Services Financiers - Angers",
-    "company": "Sopra Steria",
-    "location": "Angers",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-services-financiers-angers-at-sopra-steria-4455248985",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-17T16:25:27.894135+00:00"
-  },
-  {
-    "id": "li-4451523135",
-    "source": "LinkedIn",
-    "title": "DEVELOPPEUR FULLSTACK JAVA",
-    "company": "L'AGENT X",
-    "location": "Lille",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-17",
-    "url": "https://fr.linkedin.com/jobs/view/developpeur-fullstack-java-at-l-agent-x-4451523135",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-17T16:25:27.894137+00:00"
   },
   {
     "id": "ft-6039666",
