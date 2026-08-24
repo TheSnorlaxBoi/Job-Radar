@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6231960",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Java/Angular-Vue.JS H/F",
+    "company": "Non précisé",
+    "location": "35 - Rennes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-24T12:17:19.953Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6231960",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-24T12:46:24.297864+00:00"
+  },
+  {
+    "id": "ft-212VFRG",
+    "source": "France Travail",
+    "title": "Conducteur / Conductrice de véhicules grumiers et grues portées (H/F)",
+    "company": "GROUPE SOVITRAT",
+    "location": "13 - SAINT-VICTORET",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Horaire de 15.0 Euros à 17.0 Euros sur 12 mois",
+    "published_at": "2026-08-24T11:20:23.118Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212VFRG",
+    "experience_detected": "required",
+    "first_seen": "2026-08-24T12:46:24.297978+00:00"
+  },
+  {
     "id": "ft-212VBFN",
     "source": "France Travail",
     "title": "Développeur Junior - Technicien Support Applicatif - H/F (H/F)",
