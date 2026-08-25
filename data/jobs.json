@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-212WJJR",
+    "source": "France Travail",
+    "title": "Développeur junior & Support applicatif H/F (H/F)",
+    "company": "QUALIJOB",
+    "location": "60 - AMBLAINVILLE",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Mensuel de 2080.39 Euros à 2300.0 Euros sur 12 mois",
+    "published_at": "2026-08-25T09:15:10.266Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212WJJR",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-25T08:40:09.671758+00:00"
+  },
+  {
+    "id": "li-4457111016",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Confirmé H/F",
+    "company": "SOCOTEC",
+    "location": "Villeurbanne",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-h-f-at-socotec-4457111016",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-25T08:40:09.671911+00:00"
+  },
+  {
+    "id": "li-4381485031",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java React.js (H/F)",
+    "company": "Davidson consulting",
+    "location": "Sophia Antipolis",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-js-h-f-at-davidson-consulting-4381485031",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-25T08:40:09.671912+00:00"
+  },
+  {
     "id": "ft-6245074",
     "source": "France Travail",
     "title": "Développeuse / Développeur Fullstack (Java/Angular) senior - Nantes (H/F)",
@@ -1118,19 +1160,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6089101",
     "experience_detected": "required",
     "first_seen": "2026-08-19T04:35:18.302565+00:00"
-  },
-  {
-    "id": "ft-6062702",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java/React H/F",
-    "company": "GEODIS",
-    "location": "92 - Gennevilliers",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-18T07:04:34.935Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6062702",
-    "experience_detected": "required",
-    "first_seen": "2026-08-18T08:35:14.266465+00:00"
   }
 ]
