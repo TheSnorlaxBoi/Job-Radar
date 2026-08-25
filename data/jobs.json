@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6245074",
+    "source": "France Travail",
+    "title": "Développeuse / Développeur Fullstack (Java/Angular) senior - Nantes (H/F)",
+    "company": "Forums Talents Handicap",
+    "location": "44 - Nantes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-25T05:05:18.699Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6245074",
+    "experience_detected": "required",
+    "first_seen": "2026-08-25T04:37:17.747230+00:00"
+  },
+  {
+    "id": "ft-6240829",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "77 - Roissy-en-Brie",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-08-25T03:26:38.917Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6240829",
+    "experience_detected": "required",
+    "first_seen": "2026-08-25T04:37:17.747232+00:00"
+  },
+  {
     "id": "ft-212VWQQ",
     "source": "France Travail",
     "title": "Développeur Fullstack (H/F)",
@@ -1104,47 +1132,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6062702",
     "experience_detected": "required",
     "first_seen": "2026-08-18T08:35:14.266465+00:00"
-  },
-  {
-    "id": "ft-6061735",
-    "source": "France Travail",
-    "title": "Développeur Java Fullstack Confirmé (H/F)",
-    "company": "SULLY GROUP",
-    "location": "69 - Lyon 7e Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-18T04:31:55.525Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6061735",
-    "experience_detected": "required",
-    "first_seen": "2026-08-18T04:33:55.781354+00:00"
-  },
-  {
-    "id": "ft-6059083",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "92 - Antony",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-18T03:27:54.698Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6059083",
-    "experience_detected": "required",
-    "first_seen": "2026-08-18T04:33:55.781356+00:00"
-  },
-  {
-    "id": "ft-6059055",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Poissy",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-18T03:27:52.620Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6059055",
-    "experience_detected": "required",
-    "first_seen": "2026-08-18T04:33:55.781357+00:00"
   }
 ]
