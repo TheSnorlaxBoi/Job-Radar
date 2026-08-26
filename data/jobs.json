@@ -1146,19 +1146,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6092076",
     "experience_detected": "required",
     "first_seen": "2026-08-19T04:35:18.302564+00:00"
-  },
-  {
-    "id": "ft-6089101",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "92 - Rueil-Malmaison",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-19T03:26:12.281Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6089101",
-    "experience_detected": "required",
-    "first_seen": "2026-08-19T04:35:18.302565+00:00"
   }
 ]
