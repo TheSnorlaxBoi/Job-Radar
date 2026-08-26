@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4459330657",
+    "source": "LinkedIn",
+    "title": "Développeur(se) informatique Fullstack F/H",
+    "company": "Société des grands projets",
+    "location": "Saint-Denis",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-26",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-informatique-fullstack-f-h-at-soci%C3%A9t%C3%A9-des-grands-projets-4459330657",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-26T16:47:38.346755+00:00"
+  },
+  {
+    "id": "li-4459309470",
+    "source": "LinkedIn",
+    "title": "Développeur TypeScript Fullstack F/H",
+    "company": "Absys Cyborg",
+    "location": "Bordeaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-26",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-typescript-fullstack-f-h-at-absys-cyborg-4459309470",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-26T16:47:38.346757+00:00"
+  },
+  {
     "id": "li-4459188388",
     "source": "LinkedIn",
     "title": "Développeur web fullstack H/F",
