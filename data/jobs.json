@@ -1118,33 +1118,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212QKLG",
     "experience_detected": "required",
     "first_seen": "2026-08-19T08:35:41.100644+00:00"
-  },
-  {
-    "id": "ft-6092164",
-    "source": "France Travail",
-    "title": "Développeur Fullstack confirmé - JAVA ANGULAR - Collectivités territoriales - Bordeaux (H/F)",
-    "company": "Forums Talents Handicap",
-    "location": "33 - Bordeaux",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-19T05:13:50.802Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6092164",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-19T04:35:18.302563+00:00"
-  },
-  {
-    "id": "ft-6092076",
-    "source": "France Travail",
-    "title": "Développeuse / Développeur Fullstack (Java/Angular) senior - Nantes (H/F)",
-    "company": "Forums Talents Handicap",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-19T05:03:24.602Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6092076",
-    "experience_detected": "required",
-    "first_seen": "2026-08-19T04:35:18.302564+00:00"
   }
 ]
