@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-6318554",
+    "source": "France Travail",
+    "title": "Développeur junior - H/F",
+    "company": "Externatic",
+    "location": "14 - Caen",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 25000.0 Euros",
+    "published_at": "2026-08-26T23:01:15.831Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6318554",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-26T22:43:53.632261+00:00"
+  },
+  {
     "id": "li-4459330657",
     "source": "LinkedIn",
     "title": "Développeur(se) informatique Fullstack F/H",
@@ -1118,19 +1132,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6120845",
     "experience_detected": "required",
     "first_seen": "2026-08-20T04:35:56.053482+00:00"
-  },
-  {
-    "id": "ft-212RHGW",
-    "source": "France Travail",
-    "title": "Développeur(se) Fullstack - JAVA ANGULAR - Bordeaux (H/F)",
-    "company": "SOPRA STERIA GROUP",
-    "location": "33 - Bordeaux",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-19T18:27:09.771Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212RHGW",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-19T16:29:53.156769+00:00"
   }
 ]
