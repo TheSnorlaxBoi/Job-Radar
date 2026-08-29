@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4423501727",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack - Angular / Node (H/F)",
+    "company": "Scalian",
+    "location": "Montpellier",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-29",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-angular-node-h-f-at-scalian-4423501727",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-29T22:22:24.958914+00:00"
+  },
+  {
+    "id": "li-4437351517",
+    "source": "LinkedIn",
+    "title": "Développeur/se Fullstack C#/.Net/Vue.js Confirmé(e)",
+    "company": "eXalt",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-29",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-c%23-net-vue-js-confirm%C3%A9-e-at-exalt-4437351517",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-29T22:22:24.958915+00:00"
+  },
+  {
+    "id": "li-4373562477",
+    "source": "LinkedIn",
+    "title": "DEVELOPPEUR FULLSTACK JAVA REACT NATIVE CONFIRME H/F",
+    "company": "Inetum",
+    "location": "Saint-Ouen",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-29",
+    "url": "https://fr.linkedin.com/jobs/view/developpeur-fullstack-java-react-native-confirme-h-f-at-inetum-4373562477",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-29T22:22:24.958916+00:00"
+  },
+  {
     "id": "li-4410639684",
     "source": "LinkedIn",
     "title": "Développeur Web Fullstack Python / FastAPI / VueJS H/F",
@@ -978,19 +1020,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6217424",
     "experience_detected": "required",
     "first_seen": "2026-08-23T04:35:11.140720+00:00"
-  },
-  {
-    "id": "ft-6213213",
-    "source": "France Travail",
-    "title": "Développeur Fullstack - Java - F/H H/F",
-    "company": "Non précisé",
-    "location": "69 - Villeurbanne",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-22T22:16:43.100Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6213213",
-    "experience_detected": "required",
-    "first_seen": "2026-08-22T20:20:29.966882+00:00"
   }
 ]
