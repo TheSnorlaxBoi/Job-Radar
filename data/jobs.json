@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4410639684",
+    "source": "LinkedIn",
+    "title": "Développeur Web Fullstack Python / FastAPI / VueJS H/F",
+    "company": "Atos",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-29",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-python-fastapi-vuejs-h-f-at-atos-4410639684",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-29T16:14:20.096480+00:00"
+  },
+  {
+    "id": "li-4450388547",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack Ruby/React (H/F)",
+    "company": "MyUnisoft",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-29",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-ruby-react-h-f-at-myunisoft-4450388547",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-29T16:14:20.096481+00:00"
+  },
+  {
+    "id": "li-3959022838",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack .NET/ANGULAR (H/F)",
+    "company": "Davidson consulting",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-29",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-net-angular-h-f-at-davidson-consulting-3959022838",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-29T16:14:20.096483+00:00"
+  },
+  {
     "id": "ft-6400992",
     "source": "France Travail",
     "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille (H/F)",
