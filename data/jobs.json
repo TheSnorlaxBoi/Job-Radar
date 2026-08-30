@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6435852",
+    "source": "France Travail",
+    "title": "Lead Développeur Fullstack H/F",
+    "company": "Non précisé",
+    "location": "44 - Nantes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-30T11:55:17.900Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6435852",
+    "experience_detected": "none_required",
+    "first_seen": "2026-08-30T16:05:12.864732+00:00"
+  },
+  {
+    "id": "li-4459737163",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack JAVA @eXalt Ouest",
+    "company": "eXalt",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-30",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-%40exalt-ouest-at-exalt-4459737163",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-30T16:05:12.864831+00:00"
+  },
+  {
     "id": "li-4402863501",
     "source": "LinkedIn",
     "title": "Développeur fullstack (H/F)",
