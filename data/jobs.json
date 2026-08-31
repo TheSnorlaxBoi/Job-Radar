@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4461078538",
+    "source": "LinkedIn",
+    "title": "Développeur junior Java / Angular (H/F)",
+    "company": "Talan",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-31",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-junior-java-angular-h-f-at-talan-4461078538",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-31T10:33:45.794171+00:00"
+  },
+  {
+    "id": "li-4438477415",
+    "source": "LinkedIn",
+    "title": "Développeur C# .Net Fullstack Angular ou React JS (H/F)",
+    "company": "Algofi",
+    "location": "Ville de Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-31",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-c%23-net-fullstack-angular-ou-react-js-h-f-at-algofi-4438477415",
+    "experience_detected": "unknown",
+    "first_seen": "2026-08-31T10:33:45.794172+00:00"
+  },
+  {
     "id": "ft-6442213",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -908,19 +936,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212VFRG",
     "experience_detected": "required",
     "first_seen": "2026-08-24T12:46:24.297978+00:00"
-  },
-  {
-    "id": "ft-212VBFN",
-    "source": "France Travail",
-    "title": "Développeur Junior - Technicien Support Applicatif - H/F (H/F)",
-    "company": "MATEN",
-    "location": "69 - Lyon 9e Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 25000.0 Euros à 27000.0 Euros sur 12.0 mois",
-    "published_at": "2026-08-24T10:15:12.070Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212VBFN",
-    "experience_detected": "required",
-    "first_seen": "2026-08-24T08:45:43.806045+00:00"
   }
 ]
