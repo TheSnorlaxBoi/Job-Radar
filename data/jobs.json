@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4459284074",
+    "source": "LinkedIn",
+    "title": "Développeur.euse Full Stack junior",
+    "company": "IRCAM",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-31",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-euse-full-stack-junior-at-ircam-4459284074",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-01T09:11:18.228452+00:00"
+  },
+  {
+    "id": "li-4461288820",
+    "source": "LinkedIn",
+    "title": "Développeur Junior Java Oracle Docker",
+    "company": "STEP UP",
+    "location": "Issy-les-Moulineaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-08-31",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-junior-java-oracle-docker-at-step-up-4461288820",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-01T09:11:18.228454+00:00"
+  },
+  {
+    "id": "li-4461578190",
+    "source": "LinkedIn",
+    "title": "Développeur/se fullstack java angular ou react",
+    "company": "Capgemini",
+    "location": "Issy-les-Moulineaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-java-angular-ou-react-at-capgemini-4461578190",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-01T09:11:18.228455+00:00"
+  },
+  {
     "id": "ft-6474571",
     "source": "France Travail",
     "title": "Développeur.euse Full Stack junior (H/F)",
@@ -1034,19 +1076,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212WJJR",
     "experience_detected": "none_required",
     "first_seen": "2026-08-25T08:40:09.671758+00:00"
-  },
-  {
-    "id": "ft-6245074",
-    "source": "France Travail",
-    "title": "Développeuse / Développeur Fullstack (Java/Angular) senior - Nantes (H/F)",
-    "company": "Forums Talents Handicap",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-25T05:05:18.699Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6245074",
-    "experience_detected": "required",
-    "first_seen": "2026-08-25T04:37:17.747230+00:00"
   }
 ]
