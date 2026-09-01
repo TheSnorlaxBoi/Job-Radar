@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4412238171",
+    "source": "LinkedIn",
+    "title": "Développeur Junior - C#/SQL (F/H)",
+    "company": "Natixis Corporate & Investment Banking",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-junior-c%23-sql-f-h-at-natixis-corporate-investment-banking-4412238171",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-01T16:05:36.541386+00:00"
+  },
+  {
+    "id": "li-4444457297",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Typescript H/F",
+    "company": "Recrulab",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-typescript-h-f-at-recrulab-4444457297",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-01T16:05:36.541387+00:00"
+  },
+  {
+    "id": "li-4455762393",
+    "source": "LinkedIn",
+    "title": "Développeur(se) Fullstack Java & Cloud - Aéroline – Bordeaux",
+    "company": "Sopra Steria",
+    "location": "Mérignac",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-java-cloud-a%C3%A9roline-%E2%80%93-bordeaux-at-sopra-steria-4455762393",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-01T16:05:36.541388+00:00"
+  },
+  {
     "id": "li-4459284074",
     "source": "LinkedIn",
     "title": "Développeur.euse Full Stack junior",
@@ -1048,33 +1090,5 @@
     "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4459177665",
     "experience_detected": "unknown",
     "first_seen": "2026-08-26T12:48:47.421299+00:00"
-  },
-  {
-    "id": "ft-6264262",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java VueJS (H/F)",
-    "company": "Act Digital France",
-    "location": "59 - Lille",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-25T11:21:22.640Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6264262",
-    "experience_detected": "required",
-    "first_seen": "2026-08-25T12:43:39.001604+00:00"
-  },
-  {
-    "id": "ft-212WJJR",
-    "source": "France Travail",
-    "title": "Développeur junior & Support applicatif H/F (H/F)",
-    "company": "QUALIJOB",
-    "location": "60 - AMBLAINVILLE",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Mensuel de 2080.39 Euros à 2300.0 Euros sur 12 mois",
-    "published_at": "2026-08-25T09:15:10.266Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212WJJR",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-25T08:40:09.671758+00:00"
   }
 ]
