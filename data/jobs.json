@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-6534191",
+    "source": "France Travail",
+    "title": "Développeur fullstack JavaScript - H/F",
+    "company": "skaelia",
+    "location": "59 - Lille",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 42000.0 Euros à 52000.0 Euros",
+    "published_at": "2026-09-02T23:01:16.838Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6534191",
+    "experience_detected": "required",
+    "first_seen": "2026-09-02T22:23:09.549817+00:00"
+  },
+  {
     "id": "li-4462422713",
     "source": "LinkedIn",
     "title": "Développeur·euse Fullstack Confirmé.e (H/F)",
