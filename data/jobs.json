@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6536123",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "92 - Meudon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-09-03T03:28:15.880Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6536123",
+    "experience_detected": "required",
+    "first_seen": "2026-09-03T03:01:19.692332+00:00"
+  },
+  {
+    "id": "ft-6536093",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "94 - Queue-en-Brie",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-09-03T03:28:14.883Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6536093",
+    "experience_detected": "required",
+    "first_seen": "2026-09-03T03:01:19.692333+00:00"
+  },
+  {
     "id": "ft-6534191",
     "source": "France Travail",
     "title": "Développeur fullstack JavaScript - H/F",
@@ -1022,20 +1050,6 @@
     "first_seen": "2026-08-28T19:54:19.310282+00:00"
   },
   {
-    "id": "li-4454546276",
-    "source": "LinkedIn",
-    "title": "Développeur(euse) - Fullstack – Services Financiers - Tours",
-    "company": "Sopra Steria",
-    "location": "Tours",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-27",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-euse-fullstack-%E2%80%93-services-financiers-tours-at-sopra-steria-4454546276",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-28T19:54:19.310283+00:00"
-  },
-  {
     "id": "li-4458976435",
     "source": "LinkedIn",
     "title": "Développeur FullStack JAVA @eXalt Nantes",
@@ -1148,62 +1162,6 @@
     "first_seen": "2026-08-27T18:51:16.238651+00:00"
   },
   {
-    "id": "li-4459843157",
-    "source": "LinkedIn",
-    "title": "Développeur(se) Junior - C# .NET - Services Financiers - Strasbourg",
-    "company": "Sopra Steria",
-    "location": "Schiltigheim",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-27",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-junior-c%23-net-services-financiers-strasbourg-at-sopra-steria-4459843157",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-27T18:51:16.238665+00:00"
-  },
-  {
-    "id": "li-4458383362",
-    "source": "LinkedIn",
-    "title": "Développeur/se Fullstack JavaScript @eXalt Lille",
-    "company": "eXalt",
-    "location": "Lille",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-27",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-javascript-%40exalt-lille-at-exalt-4458383362",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-27T18:51:16.238666+00:00"
-  },
-  {
-    "id": "li-4459688568",
-    "source": "LinkedIn",
-    "title": "Développeur web fullstack H/F",
-    "company": "Leihia",
-    "location": "Voisins-le-Bretonneux",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-27",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4459688568",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-27T18:51:16.238667+00:00"
-  },
-  {
-    "id": "li-4459690586",
-    "source": "LinkedIn",
-    "title": "Développeur web fullstack H/F",
-    "company": "Leihia",
-    "location": "Domont",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-27",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4459690586",
-    "experience_detected": "unknown",
-    "first_seen": "2026-08-27T18:51:16.238668+00:00"
-  },
-  {
     "id": "ft-6324262",
     "source": "France Travail",
     "title": "Développeuse / Développeur Fullstack (Java/Angular) senior - Nantes (H/F)",
@@ -1244,19 +1202,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6320387",
     "experience_detected": "required",
     "first_seen": "2026-08-27T07:24:10.158496+00:00"
-  },
-  {
-    "id": "ft-6318554",
-    "source": "France Travail",
-    "title": "Développeur junior - H/F",
-    "company": "Externatic",
-    "location": "14 - Caen",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 25000.0 Euros",
-    "published_at": "2026-08-26T23:01:15.831Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6318554",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-26T22:43:53.632261+00:00"
   }
 ]
