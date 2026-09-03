@@ -1,5 +1,19 @@
 [
   {
+    "id": "li-4460495007",
+    "source": "LinkedIn",
+    "title": "Développeur Full-Stack junior H/F",
+    "company": "Infotel",
+    "location": "Brest",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-03",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-full-stack-junior-h-f-at-infotel-4460495007",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-03T08:33:57.572140+00:00"
+  },
+  {
     "id": "ft-6536123",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1160,47 +1174,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/212ZLTR",
     "experience_detected": "none_required",
     "first_seen": "2026-08-27T18:51:16.238651+00:00"
-  },
-  {
-    "id": "ft-6324262",
-    "source": "France Travail",
-    "title": "Développeuse / Développeur Fullstack (Java/Angular) senior - Nantes (H/F)",
-    "company": "Forums Talents Handicap",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-27T05:05:23.633Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6324262",
-    "experience_detected": "required",
-    "first_seen": "2026-08-27T07:24:10.158492+00:00"
-  },
-  {
-    "id": "ft-6320420",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "91 - Paray-Vieille-Poste",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-27T03:26:47.083Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6320420",
-    "experience_detected": "required",
-    "first_seen": "2026-08-27T07:24:10.158494+00:00"
-  },
-  {
-    "id": "ft-6320387",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "91 - Crosne",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-27T03:26:42.220Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6320387",
-    "experience_detected": "required",
-    "first_seen": "2026-08-27T07:24:10.158496+00:00"
   }
 ]
