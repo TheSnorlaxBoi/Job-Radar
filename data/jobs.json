@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-213KGXZ",
+    "source": "France Travail",
+    "title": "Conducteur / Conductrice de véhicules poids Lourds (H/F)",
+    "company": "SARL LE FRAIS CHALOSSAIS",
+    "location": "40 - HAGETMAU",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-04T10:03:09.326Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213KGXZ",
+    "experience_detected": "required",
+    "first_seen": "2026-09-04T08:29:14.789555+00:00"
+  },
+  {
     "id": "li-4461679846",
     "source": "LinkedIn",
     "title": "Développeur Python Junior – Service Migration",
@@ -1146,33 +1160,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6384520",
     "experience_detected": "none_required",
     "first_seen": "2026-08-28T19:54:19.309977+00:00"
-  },
-  {
-    "id": "ft-6356435",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Domont",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-28T03:26:44.010Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6356435",
-    "experience_detected": "required",
-    "first_seen": "2026-08-28T04:02:44.889715+00:00"
-  },
-  {
-    "id": "ft-6356413",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Voisins-le-Bretonneux",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-28T03:26:38.770Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6356413",
-    "experience_detected": "required",
-    "first_seen": "2026-08-28T04:02:44.889716+00:00"
   }
 ]
