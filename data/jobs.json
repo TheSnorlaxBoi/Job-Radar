@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-6643818",
+    "source": "France Travail",
+    "title": "Développeur Expert - Java Fullstack - Transport - Ile-de-Fance (H/F)",
+    "company": "Forums Talents Handicap",
+    "location": "92 - Nanterre",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-05T05:06:18.429Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6643818",
+    "experience_detected": "none_required",
+    "first_seen": "2026-09-05T08:03:48.568135+00:00"
+  },
+  {
+    "id": "ft-6643676",
+    "source": "France Travail",
+    "title": "Développeur Java Fullstack React/Angular - Services Financiers - Orléans (H/F)",
+    "company": "Forums Talents Handicap",
+    "location": "45 - Orléans",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-05T05:02:06.181Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6643676",
+    "experience_detected": "none_required",
+    "first_seen": "2026-09-05T08:03:48.568136+00:00"
+  },
+  {
+    "id": "li-4463709451",
+    "source": "LinkedIn",
+    "title": "Développeur / Développeuse Fullstack Java& JavaScript (React | Vue | Angular)",
+    "company": "Agixis",
+    "location": "Villeurbanne",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-05",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-d%C3%A9veloppeuse-fullstack-java-javascript-react-vue-angular-at-agixis-4463709451",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-05T08:03:48.568214+00:00"
+  },
+  {
     "id": "ft-6638932",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1216,19 +1258,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6429310",
     "experience_detected": "required",
     "first_seen": "2026-08-30T03:45:15.658666+00:00"
-  },
-  {
-    "id": "ft-6400992",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille (H/F)",
-    "company": "Forums Talents Handicap",
-    "location": "59 - Lezennes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-29T05:02:07.062Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6400992",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-29T10:48:49.460800+00:00"
   }
 ]
