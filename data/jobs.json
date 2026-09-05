@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4444987105",
+    "source": "LinkedIn",
+    "title": "Lead Développeur Fullstack C# .Net - F/H",
+    "company": "Coexya",
+    "location": "Rennes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-05",
+    "url": "https://fr.linkedin.com/jobs/view/lead-d%C3%A9veloppeur-fullstack-c%23-net-f-h-at-coexya-4444987105",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-05T17:55:38.633488+00:00"
+  },
+  {
+    "id": "li-4445216001",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java – Solutions IA & Automatisation H/F",
+    "company": "Inetum",
+    "location": "La Chapelle-sur-Erdre",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-05",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-%E2%80%93-solutions-ia-automatisation-h-f-at-inetum-4445216001",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-05T17:55:38.633489+00:00"
+  },
+  {
     "id": "ft-213LNJW",
     "source": "France Travail",
     "title": "Vendeur livreur de pièces automobiles (H/F)",
