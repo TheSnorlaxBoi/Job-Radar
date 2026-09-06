@@ -1328,33 +1328,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6435852",
     "experience_detected": "none_required",
     "first_seen": "2026-08-30T16:05:12.864732+00:00"
-  },
-  {
-    "id": "ft-6430485",
-    "source": "France Travail",
-    "title": "Développeuse / Développeur Fullstack (Java/Angular) senior - Nantes (H/F)",
-    "company": "Forums Talents Handicap",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-30T05:04:16.333Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6430485",
-    "experience_detected": "required",
-    "first_seen": "2026-08-30T03:45:15.658665+00:00"
-  },
-  {
-    "id": "ft-6429310",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Maisons-Laffitte",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-30T03:31:57.962Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6429310",
-    "experience_detected": "required",
-    "first_seen": "2026-08-30T03:45:15.658666+00:00"
   }
 ]
