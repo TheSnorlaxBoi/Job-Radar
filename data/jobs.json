@@ -1,5 +1,75 @@
 [
   {
+    "id": "li-4383948926",
+    "source": "LinkedIn",
+    "title": "Développeur C#.Net Junior H/F",
+    "company": "Extia",
+    "location": "Metz",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-c%23-net-junior-h-f-at-extia-4383948926",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-06T14:57:37.924116+00:00"
+  },
+  {
+    "id": "li-4034047980",
+    "source": "LinkedIn",
+    "title": "Développeur C#.Net junior (H/F)",
+    "company": "Extia",
+    "location": "Rouen",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-c%23-net-junior-h-f-at-extia-4034047980",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-06T14:57:37.924118+00:00"
+  },
+  {
+    "id": "li-4382204260",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Confirmé (JS) H/F",
+    "company": "Extia",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-confirm%C3%A9-js-h-f-at-extia-4382204260",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-06T14:57:37.924119+00:00"
+  },
+  {
+    "id": "li-4433197208",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java & React/ Angular (H/F)",
+    "company": "Atos",
+    "location": "Olivet",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-angular-h-f-at-atos-4433197208",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-06T14:57:37.924121+00:00"
+  },
+  {
+    "id": "li-4033397792",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Sénior (JS) H/F",
+    "company": "Extia",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-s%C3%A9nior-js-h-f-at-extia-4033397792",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-06T14:57:37.924122+00:00"
+  },
+  {
     "id": "ft-6676045",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1314,19 +1384,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6442205",
     "experience_detected": "required",
     "first_seen": "2026-08-31T03:46:39.703085+00:00"
-  },
-  {
-    "id": "ft-6435852",
-    "source": "France Travail",
-    "title": "Lead Développeur Fullstack H/F",
-    "company": "Non précisé",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-08-30T11:55:17.900Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6435852",
-    "experience_detected": "none_required",
-    "first_seen": "2026-08-30T16:05:12.864732+00:00"
   }
 ]
