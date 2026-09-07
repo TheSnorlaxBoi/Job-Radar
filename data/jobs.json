@@ -1188,33 +1188,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/213DKHT",
     "experience_detected": "none_required",
     "first_seen": "2026-08-31T18:47:37.641986+00:00"
-  },
-  {
-    "id": "ft-6442213",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "94 - Saint-Maur-des-Fossés",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-31T03:27:58.824Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6442213",
-    "experience_detected": "required",
-    "first_seen": "2026-08-31T03:46:39.703083+00:00"
-  },
-  {
-    "id": "ft-6442205",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Taverny",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-08-31T03:27:58.535Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6442205",
-    "experience_detected": "required",
-    "first_seen": "2026-08-31T03:46:39.703085+00:00"
   }
 ]
