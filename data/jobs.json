@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4463806292",
+    "source": "LinkedIn",
+    "title": "Développeur Batch / Perl Junior (H/F)",
+    "company": "Klanik",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-09",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-batch-perl-junior-h-f-at-klanik-4463806292",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-09T08:39:11.383484+00:00"
+  },
+  {
+    "id": "li-4438477415",
+    "source": "LinkedIn",
+    "title": "Développeur C# .Net Fullstack Angular ou React JS (H/F)",
+    "company": "Algofi",
+    "location": "Ville de Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-09",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-c%23-net-fullstack-angular-ou-react-js-h-f-at-algofi-4438477415",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-09T08:39:11.383485+00:00"
+  },
+  {
+    "id": "li-4462527194",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack F/H",
+    "company": "Réseau Compétences et Développement",
+    "location": "Montpellier",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-08",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-f-h-at-r%C3%A9seau-comp%C3%A9tences-et-d%C3%A9veloppement-4462527194",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-09T08:39:11.383487+00:00"
+  },
+  {
     "id": "ft-6740248",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1300,19 +1342,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6519227",
     "experience_detected": "none_required",
     "first_seen": "2026-09-02T15:59:49.939504+00:00"
-  },
-  {
-    "id": "ft-6503940",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "78 - Toussus-le-Noble",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-02T03:26:51.836Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6503940",
-    "experience_detected": "required",
-    "first_seen": "2026-09-02T02:58:50.135092+00:00"
   }
 ]
