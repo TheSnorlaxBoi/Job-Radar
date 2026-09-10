@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-213RHPM",
+    "source": "France Travail",
+    "title": "Développeur Junior - Technicien Support Applicatif - H/F (H/F)",
+    "company": "MATEN",
+    "location": "69 - Lyon 9e Arrondissement",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 25000.0 Euros à 27000.0 Euros",
+    "published_at": "2026-09-10T10:03:52.196Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213RHPM",
+    "experience_detected": "required",
+    "first_seen": "2026-09-10T08:40:03.100709+00:00"
+  },
+  {
+    "id": "ft-6782117",
+    "source": "France Travail",
+    "title": "Développeur(se) Fullstack Expérimenté(e) - Développement Régional - Lille (H/F)",
+    "company": "Non précisé",
+    "location": "59 - Lezennes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-10T05:31:02.588Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6782117",
+    "experience_detected": "required",
+    "first_seen": "2026-09-10T08:40:03.100735+00:00"
+  },
+  {
+    "id": "li-4444446231",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack Java",
+    "company": "Groupe Yoni",
+    "location": "Montpellier",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-10",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-at-groupe-yoni-4444446231",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-10T08:40:03.100803+00:00"
+  },
+  {
     "id": "ft-6778384",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1286,33 +1328,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/213JJYN",
     "experience_detected": "required",
     "first_seen": "2026-09-03T15:49:08.545299+00:00"
-  },
-  {
-    "id": "ft-6536123",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "92 - Meudon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-03T03:28:15.880Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6536123",
-    "experience_detected": "required",
-    "first_seen": "2026-09-03T03:01:19.692332+00:00"
-  },
-  {
-    "id": "ft-6536093",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "94 - Queue-en-Brie",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-03T03:28:14.883Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6536093",
-    "experience_detected": "required",
-    "first_seen": "2026-09-03T03:01:19.692333+00:00"
   }
 ]
