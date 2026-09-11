@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4466076000",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Node.js / TypeScript / React H/F",
+    "company": "Ortec Group",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-11",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-typescript-react-h-f-at-ortec-group-4466076000",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-11T18:59:20.015532+00:00"
+  },
+  {
+    "id": "li-4466310651",
+    "source": "LinkedIn",
+    "title": "Développeur/se – Java Fullstack - Services Financiers - Nantes",
+    "company": "Sopra Steria",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-11",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-%E2%80%93-java-fullstack-services-financiers-nantes-at-sopra-steria-4466310651",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-11T18:59:20.015533+00:00"
+  },
+  {
+    "id": "li-4462841539",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java React - Services Financiers - Ile-De-France",
+    "company": "Sopra Steria",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-11",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-services-financiers-ile-de-france-at-sopra-steria-4462841539",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-11T18:59:20.015534+00:00"
+  },
+  {
     "id": "ft-6828494",
     "source": "France Travail",
     "title": "Développeur Fullstack confirmé - JAVA ANGULAR - Collectivités territoriales - Bordeaux H/F",
