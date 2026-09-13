@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4466771639",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Conflans-Sainte-Honorine",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4466771639",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-13T15:39:13.120070+00:00"
+  },
+  {
+    "id": "li-4466757718",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Grigny",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4466757718",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-13T15:39:13.120072+00:00"
+  },
+  {
+    "id": "li-4466765666",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4466765666",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-13T15:39:13.120074+00:00"
+  },
+  {
     "id": "li-4465407159",
     "source": "LinkedIn",
     "title": "Développeur Fullstack PHP",
@@ -1538,19 +1580,5 @@
     "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4464335127",
     "experience_detected": "unknown",
     "first_seen": "2026-09-07T17:17:10.394407+00:00"
-  },
-  {
-    "id": "ft-6676045",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "93 - Villepinte",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-06T03:29:29.841Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6676045",
-    "experience_detected": "required",
-    "first_seen": "2026-09-06T03:01:57.166005+00:00"
   }
 ]
