@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-6866307",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Angular H/F",
+    "company": "Hays France",
+    "location": "79 - Niort",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Mensuel de 9900.0 Euros à 11100.0 Euros",
+    "published_at": "2026-09-15T00:33:49.638Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6866307",
+    "experience_detected": "required",
+    "first_seen": "2026-09-14T22:57:33.371094+00:00"
+  },
+  {
+    "id": "ft-6866292",
+    "source": "France Travail",
+    "title": "Développeur Fullstack TypeScript H/F",
+    "company": "Hays France",
+    "location": "31 - Toulouse",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 39000.0 Euros à 45000.0 Euros",
+    "published_at": "2026-09-15T00:33:49.626Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6866292",
+    "experience_detected": "required",
+    "first_seen": "2026-09-14T22:57:33.371095+00:00"
+  },
+  {
     "id": "ft-6864820",
     "source": "France Travail",
     "title": "Lead Développeur Fullstack H/F",
