@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4467785786",
+    "source": "LinkedIn",
+    "title": "3 Développeurs Angular Juniors (1 à 4 ans)Sur Grenoble",
+    "company": "Free-Work",
+    "location": "Grenoble",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-15",
+    "url": "https://fr.linkedin.com/jobs/view/3-d%C3%A9veloppeurs-angular-juniors-1-%C3%A0-4-ans-sur-grenoble-at-free-work-4467785786",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-15T22:43:28.889647+00:00"
+  },
+  {
+    "id": "li-4467771835",
+    "source": "LinkedIn",
+    "title": "Développeurs Front-End Angular Juniors",
+    "company": "Free-Work",
+    "location": "Grenoble",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-15",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeurs-front-end-angular-juniors-at-free-work-4467771835",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-15T22:43:28.889648+00:00"
+  },
+  {
+    "id": "li-4448888168",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack H/F",
+    "company": "MANITOU Group",
+    "location": "Ancenis",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-15",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-h-f-at-manitou-group-4448888168",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-15T22:43:28.889650+00:00"
+  },
+  {
     "id": "ft-6895578",
     "source": "France Travail",
     "title": "DÉVELOPPEUR JUNIOR FULL STACK (H/F)",
@@ -1692,19 +1734,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6740183",
     "experience_detected": "required",
     "first_seen": "2026-09-09T03:11:17.113695+00:00"
-  },
-  {
-    "id": "ft-6735071",
-    "source": "France Travail",
-    "title": "DEVELOPPEUR JUNIOR FULL STACK & IA (H/F)",
-    "company": "LA BELLE EMPREINTE",
-    "location": "75 - Paris",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 35000.0 Euros à 65000.0 Euros",
-    "published_at": "2026-09-08T18:31:18.294Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6735071",
-    "experience_detected": "none_required",
-    "first_seen": "2026-09-08T22:22:47.275327+00:00"
   }
 ]
