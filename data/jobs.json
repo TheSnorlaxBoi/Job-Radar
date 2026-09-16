@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4468233859",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / React (H/F)",
+    "company": "Amiltone",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-16",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-h-f-at-amiltone-4468233859",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-16T22:39:41.167393+00:00"
+  },
+  {
+    "id": "li-4467103912",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Confirmé H/F",
+    "company": "Consort Group",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-16",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-h-f-at-consort-group-4467103912",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-16T22:39:41.167394+00:00"
+  },
+  {
     "id": "ft-213YWYT",
     "source": "France Travail",
     "title": "Développeur fullstack  (H/F)",
@@ -1512,20 +1540,6 @@
     "first_seen": "2026-09-10T15:51:56.126851+00:00"
   },
   {
-    "id": "ft-213RBFK",
-    "source": "France Travail",
-    "title": "Préparateur convoyeur automobile (H/F)",
-    "company": "D L M",
-    "location": "80 - RIVERY",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Mensuel de 1867.02 Euros - Tickets restaurants, prise en charge à 100% de la mutuelle",
-    "published_at": "2026-09-09T21:45:21.223Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213RBFK",
-    "experience_detected": "required",
-    "first_seen": "2026-09-10T15:51:56.126900+00:00"
-  },
-  {
     "id": "li-4437099594",
     "source": "LinkedIn",
     "title": "Développeur Java Fullstack Confirmé H/F",
@@ -1678,19 +1692,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6778377",
     "experience_detected": "required",
     "first_seen": "2026-09-10T03:11:13.466700+00:00"
-  },
-  {
-    "id": "ft-213QTDJ",
-    "source": "France Travail",
-    "title": "CDI - Développeur(se) Fullstack et automatisation (H/F)",
-    "company": "DRIVECASE",
-    "location": "67 - STRASBOURG",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 28000.0 Euros à 32000.0 Euros",
-    "published_at": "2026-09-09T16:21:29.658Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213QTDJ",
-    "experience_detected": "none_required",
-    "first_seen": "2026-09-09T15:57:19.831489+00:00"
   }
 ]
