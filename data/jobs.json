@@ -1,5 +1,19 @@
 [
   {
+    "id": "li-4467984556",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java React.js (H/F)",
+    "company": "axYus",
+    "location": "Issy-les-Moulineaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-16",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-js-h-f-at-axyus-4467984556",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-16T09:05:17.274118+00:00"
+  },
+  {
     "id": "ft-6909319",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1594,33 +1608,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/213QFRN",
     "experience_detected": "required",
     "first_seen": "2026-09-09T15:57:19.831491+00:00"
-  },
-  {
-    "id": "ft-6740248",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Argenteuil",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-09T03:26:56.651Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6740248",
-    "experience_detected": "required",
-    "first_seen": "2026-09-09T03:11:17.113694+00:00"
-  },
-  {
-    "id": "ft-6740183",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Butry-sur-Oise",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-09T03:26:48.345Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6740183",
-    "experience_detected": "required",
-    "first_seen": "2026-09-09T03:11:17.113695+00:00"
   }
 ]
