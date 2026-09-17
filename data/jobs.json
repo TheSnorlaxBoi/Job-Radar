@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4467189555",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java React.js (H/F)",
+    "company": "axYus",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-17",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-js-h-f-at-axyus-4467189555",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-17T09:13:39.121371+00:00"
+  },
+  {
+    "id": "li-4466096848",
+    "source": "LinkedIn",
+    "title": "Développeur/se – Java Fullstack - Services Financiers - Bordeaux",
+    "company": "Sopra Steria",
+    "location": "Mérignac",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-17",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-%E2%80%93-java-fullstack-services-financiers-bordeaux-at-sopra-steria-4466096848",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-17T09:13:39.121372+00:00"
+  },
+  {
     "id": "li-4468233859",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Java / React (H/F)",
@@ -1440,19 +1468,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/213RHPM",
     "experience_detected": "required",
     "first_seen": "2026-09-10T08:40:03.100709+00:00"
-  },
-  {
-    "id": "ft-6782117",
-    "source": "France Travail",
-    "title": "Développeur(se) Fullstack Expérimenté(e) - Développement Régional - Lille (H/F)",
-    "company": "Non précisé",
-    "location": "59 - Lezennes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-10T05:31:02.588Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6782117",
-    "experience_detected": "required",
-    "first_seen": "2026-09-10T08:40:03.100735+00:00"
   }
 ]
