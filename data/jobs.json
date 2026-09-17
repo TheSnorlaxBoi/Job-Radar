@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4467566689",
+    "source": "LinkedIn",
+    "title": "Consultant développeur junior - Javascript (H/F)",
+    "company": "Basikon",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-17",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-d%C3%A9veloppeur-junior-javascript-h-f-at-basikon-4467566689",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-17T22:41:20.541864+00:00"
+  },
+  {
+    "id": "li-4468603310",
+    "source": "LinkedIn",
+    "title": "Développeur sénior fullstack Java - Angular",
+    "company": "Tessi",
+    "location": "Limoges",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-17",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-s%C3%A9nior-fullstack-java-angular-at-tessi-4468603310",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-17T22:41:20.541865+00:00"
+  },
+  {
     "id": "ft-213ZSWV",
     "source": "France Travail",
     "title": "Développeur Fullstack Java (H/F)",
