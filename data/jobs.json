@@ -1328,47 +1328,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6824560",
     "experience_detected": "none_required",
     "first_seen": "2026-09-11T08:35:26.651444+00:00"
-  },
-  {
-    "id": "ft-6808131",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "91 - Bièvres",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-11T03:28:31.348Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6808131",
-    "experience_detected": "required",
-    "first_seen": "2026-09-11T03:06:31.255276+00:00"
-  },
-  {
-    "id": "ft-6808129",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "94 - Choisy-le-Roi",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-11T03:28:30.352Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6808129",
-    "experience_detected": "required",
-    "first_seen": "2026-09-11T03:06:31.255278+00:00"
-  },
-  {
-    "id": "ft-6808005",
-    "source": "France Travail",
-    "title": "Analyste développeur Fullstack (H/F)",
-    "company": "NEW NET 3D",
-    "location": "45 - Orléans",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 38000.0 Euros à 45000.0 Euros - De 38000.0 à 45000.0 EUR par an",
-    "published_at": "2026-09-11T03:28:11.262Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/6808005",
-    "experience_detected": "none_required",
-    "first_seen": "2026-09-11T03:06:31.255279+00:00"
   }
 ]
