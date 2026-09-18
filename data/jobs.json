@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4366140965",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java/Angular F/H",
+    "company": "SQLI",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-18",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-f-h-at-sqli-4366140965",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-18T18:53:08.220731+00:00"
+  },
+  {
+    "id": "li-4466696592",
+    "source": "LinkedIn",
+    "title": "Expert Développeur Fullstack Web Java / Angular 20 + Quarkus",
+    "company": "Free-Work",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-18",
+    "url": "https://fr.linkedin.com/jobs/view/expert-d%C3%A9veloppeur-fullstack-web-java-angular-20-%2B-quarkus-at-free-work-4466696592",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-18T18:53:08.220732+00:00"
+  },
+  {
     "id": "ft-6988733",
     "source": "France Travail",
     "title": "Lead Développeur(euse)/Développeur Fullstack Java/Angular- Bordeaux H/F",
