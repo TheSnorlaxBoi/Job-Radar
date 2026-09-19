@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4450307776",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Vue.js / PHP (H/F)",
+    "company": "Scalian",
+    "location": "Rennes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-vue-js-php-h-f-at-scalian-4450307776",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-19T18:25:58.640007+00:00"
+  },
+  {
+    "id": "li-4437351517",
+    "source": "LinkedIn",
+    "title": "Développeur/se Fullstack C#/.Net/Vue.js Confirmé(e)",
+    "company": "eXalt",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-c%23-net-vue-js-confirm%C3%A9-e-at-exalt-4437351517",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-19T18:25:58.640008+00:00"
+  },
+  {
+    "id": "li-4469248800",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack confirmé H/F",
+    "company": "Soors",
+    "location": "Bordeaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-18",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-h-f-at-soors-4469248800",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-19T18:25:58.640008+00:00"
+  },
+  {
     "id": "li-4458976435",
     "source": "LinkedIn",
     "title": "Développeur FullStack JAVA @eXalt Nantes",
