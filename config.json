@@ -15,8 +15,8 @@
     ],
     "remote_only": false,
     "min_salary": null,
-    "commune": "",
-    "rayon_km": 10,
+    "commune": "67000 Strasbourg",
+    "rayon_km": null,
     "max_results": 150
   },
   "linkedin": {
