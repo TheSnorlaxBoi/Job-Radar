@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-7093139",
+    "source": "France Travail",
+    "title": "Ingénieur développeur fullstack Java/Angular - Services Financiers - Angers (H/F)",
+    "company": "Non précisé",
+    "location": "49 - Angers",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-22T10:09:46.556Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7093139",
+    "experience_detected": "required",
+    "first_seen": "2026-09-22T09:01:44.545198+00:00"
+  },
+  {
+    "id": "ft-7093131",
+    "source": "France Travail",
+    "title": "Développeur(euse) confirmé(e) - Fullstack Java - Services Financiers - Niort (H/F)",
+    "company": "Non précisé",
+    "location": "79 - Niort",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-22T10:09:44.996Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7093131",
+    "experience_detected": "required",
+    "first_seen": "2026-09-22T09:01:44.545199+00:00"
+  },
+  {
+    "id": "li-4470299187",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular - H/F",
+    "company": "Talan",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-22",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-talan-4470299187",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-22T09:01:44.545266+00:00"
+  },
+  {
     "id": "ft-7070120",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
