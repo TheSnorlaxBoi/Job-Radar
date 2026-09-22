@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-7070120",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Méry-sur-Oise",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-09-22T03:25:12.866Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7070120",
+    "experience_detected": "required",
+    "first_seen": "2026-09-22T03:24:50.824948+00:00"
+  },
+  {
+    "id": "ft-7070119",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Montigny-lès-Cormeilles",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-09-22T03:25:12.861Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7070119",
+    "experience_detected": "required",
+    "first_seen": "2026-09-22T03:24:50.824949+00:00"
+  },
+  {
+    "id": "li-4319057688",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Senior H/F",
+    "company": "Inetum",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-senior-h-f-at-inetum-4319057688",
+    "experience_detected": "required",
+    "first_seen": "2026-09-22T03:24:50.825016+00:00"
+  },
+  {
     "id": "li-4423526274",
     "source": "LinkedIn",
     "title": "Développeur·se Senior (Fullstack / Trading Systems) – H/F",
