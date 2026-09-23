@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4469420703",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Python / React - SaaS Healthtech (H/F)",
+    "company": "Leonar",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-23",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-python-react-saas-healthtech-h-f-at-leonar-4469420703",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-23T22:41:45.619484+00:00"
+  },
+  {
+    "id": "li-4471128182",
+    "source": "LinkedIn",
+    "title": "Développeur(se) fullstack Java/Angular F/H",
+    "company": "CGI",
+    "location": "Bordeaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-23",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-java-angular-f-h-at-cgi-4471128182",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-23T22:41:45.619485+00:00"
+  },
+  {
+    "id": "li-4470973070",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Angular (H/F)",
+    "company": "Davidson consulting",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-23",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-davidson-consulting-4470973070",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-23T22:41:45.619486+00:00"
+  },
+  {
     "id": "ft-7138306",
     "source": "France Travail",
     "title": "DÉVELOPPEUR FULLSTACK ERP PHP (F/H)",
@@ -1104,20 +1146,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/213ZSWV",
     "experience_detected": "required",
     "first_seen": "2026-09-21T09:13:35.526428+00:00"
-  },
-  {
-    "id": "ft-213YWYT",
-    "source": "France Travail",
-    "title": "Développeur fullstack  (H/F)",
-    "company": "Stand Sogia",
-    "location": "33 - BORDEAUX",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-16T17:04:53.670Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213YWYT",
-    "experience_detected": "required",
-    "first_seen": "2026-09-21T09:13:35.526430+00:00"
   },
   {
     "id": "ft-214BDKM",
