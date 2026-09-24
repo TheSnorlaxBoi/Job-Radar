@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-7157106",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Java/Angular - IA Générative (H/F)",
+    "company": "Forums Talents Handicap",
+    "location": "92 - Issy-les-Moulineaux",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-24T05:01:28.026Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7157106",
+    "experience_detected": "required",
+    "first_seen": "2026-09-24T03:15:10.850061+00:00"
+  },
+  {
+    "id": "ft-7153947",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "92 - Meudon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-09-24T03:25:53.844Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7153947",
+    "experience_detected": "required",
+    "first_seen": "2026-09-24T03:15:10.850062+00:00"
+  },
+  {
+    "id": "ft-7153916",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "77 - Roissy-en-Brie",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-09-24T03:25:51.903Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7153916",
+    "experience_detected": "required",
+    "first_seen": "2026-09-24T03:15:10.850063+00:00"
+  },
+  {
     "id": "li-4469420703",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Python / React - SaaS Healthtech (H/F)",
