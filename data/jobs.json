@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4469771928",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Flutter",
+    "company": "Free-Work",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-flutter-at-free-work-4469771928",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-24T23:01:19.991437+00:00"
+  },
+  {
+    "id": "li-4471601147",
+    "source": "LinkedIn",
+    "title": "Développeur(se) Fullstack .NET / Angular - Industrie - Pau",
+    "company": "CS GROUP",
+    "location": "Pau",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-net-angular-industrie-pau-at-cs-group-4471601147",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-24T23:01:19.991437+00:00"
+  },
+  {
     "id": "ft-214JSMW",
     "source": "France Travail",
     "title": "Développeur Web Junior - Focus IA & Plateforme Pédagogique (H/F)",
@@ -1356,20 +1384,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/6971385",
     "experience_detected": "required",
     "first_seen": "2026-09-21T09:13:35.526426+00:00"
-  },
-  {
-    "id": "ft-214BDKM",
-    "source": "France Travail",
-    "title": "Conducteur convoyeur /conductrice convoyeuse de véhicules (H/F)",
-    "company": "auto controle",
-    "location": "75 - PARIS",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Mensuel de 2000.0 Euros",
-    "published_at": "2026-09-17T17:12:39.272Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214BDKM",
-    "experience_detected": "none_required",
-    "first_seen": "2026-09-21T09:13:35.526531+00:00"
   },
   {
     "id": "ft-214CHFX",
