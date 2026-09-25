@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4471881658",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "Amiltone",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-amiltone-4471881658",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-25T23:06:01.315098+00:00"
+  },
+  {
+    "id": "li-4470383440",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Expérimenté | Senior Java / Angular | Annecy (H/F)",
+    "company": "eXalt",
+    "location": "Annecy",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-exp%C3%A9riment%C3%A9-senior-java-angular-annecy-h-f-at-exalt-4470383440",
+    "experience_detected": "required",
+    "first_seen": "2026-09-25T23:06:01.315099+00:00"
+  },
+  {
     "id": "ft-214KWWJ",
     "source": "France Travail",
     "title": "Développeur Fullstack  Node.js / Next.js & IA Tu veux démar (H/F)",
@@ -1594,20 +1622,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7010148",
     "experience_detected": "required",
     "first_seen": "2026-09-21T09:13:35.526419+00:00"
-  },
-  {
-    "id": "ft-7008043",
-    "source": "France Travail",
-    "title": "Développeur Fullstack .NET / Angular H/F",
-    "company": "Non précisé",
-    "location": "18 - Bourges",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-18T22:32:08.560Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7008043",
-    "experience_detected": "required",
-    "first_seen": "2026-09-21T09:13:35.526421+00:00"
   },
   {
     "id": "li-4469853357",
