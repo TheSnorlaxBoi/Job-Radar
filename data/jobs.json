@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4470086190",
+    "source": "LinkedIn",
+    "title": "Développeur Batch / Perl Junior (H/F)",
+    "company": "Klanik",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-batch-perl-junior-h-f-at-klanik-4470086190",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-25T09:23:45.744188+00:00"
+  },
+  {
+    "id": "li-4453206378",
+    "source": "LinkedIn",
+    "title": "Finaxys recrute un Développeur Fullstack Java / Angular H/F",
+    "company": "FINAXYS",
+    "location": "Vannes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-25",
+    "url": "https://fr.linkedin.com/jobs/view/finaxys-recrute-un-d%C3%A9veloppeur-fullstack-java-angular-h-f-at-finaxys-4453206378",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-25T09:23:45.744189+00:00"
+  },
+  {
+    "id": "li-4410639684",
+    "source": "LinkedIn",
+    "title": "Développeur Web Fullstack Python / FastAPI / VueJS H/F",
+    "company": "Atos",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-python-fastapi-vuejs-h-f-at-atos-4410639684",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-25T09:23:45.744190+00:00"
+  },
+  {
     "id": "ft-7357643",
     "source": "France Travail",
     "title": "DÉVELOPPEUR FULLSTACK .NET C# / ANGULAR (H/F)",
