@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-7402868",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "95 - Garges-lès-Gonesse",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-09-26T03:27:17.104Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7402868",
+    "experience_detected": "required",
+    "first_seen": "2026-09-26T03:38:13.480081+00:00"
+  },
+  {
+    "id": "li-4471873971",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "Amiltone",
+    "location": "Niort",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-amiltone-4471873971",
+    "experience_detected": "unknown",
+    "first_seen": "2026-09-26T03:38:13.480159+00:00"
+  },
+  {
     "id": "li-4471881658",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Java / Angular (H/F)",
@@ -1608,20 +1636,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7039065",
     "experience_detected": "required",
     "first_seen": "2026-09-21T09:13:35.526418+00:00"
-  },
-  {
-    "id": "ft-7010148",
-    "source": "France Travail",
-    "title": "Developpeur Fullstack JAVA / ANGULAR H/F",
-    "company": "AKKODIS",
-    "location": "83 - Toulon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 41000.0 Euros",
-    "published_at": "2026-09-19T00:33:00.763Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7010148",
-    "experience_detected": "required",
-    "first_seen": "2026-09-21T09:13:35.526419+00:00"
   },
   {
     "id": "li-4469853357",
