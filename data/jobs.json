@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-7421720",
+    "source": "France Travail",
+    "title": "Développeur Java Fullstack - CDI (H/F)",
+    "company": "Collective.work",
+    "location": "92 - Plessis-Robinson",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 45000.0 Euros à 55000.0 Euros",
+    "published_at": "2026-09-26T10:02:49.929Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7421720",
+    "experience_detected": "required",
+    "first_seen": "2026-09-26T09:08:11.796482+00:00"
+  },
+  {
+    "id": "li-4470096571",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Expérimenté | Senior Java / Angular | Annecy (H/F)",
+    "company": "eXalt",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-09-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-exp%C3%A9riment%C3%A9-senior-java-angular-annecy-h-f-at-exalt-4470096571",
+    "experience_detected": "required",
+    "first_seen": "2026-09-26T09:08:11.796528+00:00"
+  },
+  {
     "id": "ft-7402868",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
