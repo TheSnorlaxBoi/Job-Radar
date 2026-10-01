@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4467201830",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack (H/F)",
+    "company": "Groupe SII",
+    "location": "Brest",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-h-f-at-groupe-sii-4467201830",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-01T20:48:29.772796+00:00"
+  },
+  {
+    "id": "li-4472941818",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack java",
+    "company": "FRANFINANCE",
+    "location": "La Défense",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-at-franfinance-4472941818",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-01T20:48:29.772797+00:00"
+  },
+  {
+    "id": "li-4474183324",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Le Plessis-Trévise",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-01",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4474183324",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-01T20:48:29.772799+00:00"
+  },
+  {
     "id": "li-4472901727",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Java / Angular – Environnement bancaire",
@@ -754,20 +796,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7465377",
     "experience_detected": "required",
     "first_seen": "2026-09-28T10:35:48.147847+00:00"
-  },
-  {
-    "id": "ft-214JXPW",
-    "source": "France Travail",
-    "title": "Développeur/Développeuse Fullstack Java-Angular (H/F)",
-    "company": "RAYON-MED",
-    "location": "91 - Champlan",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-24T16:46:01.741Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214JXPW",
-    "experience_detected": "required",
-    "first_seen": "2026-09-28T10:35:48.147849+00:00"
   },
   {
     "id": "ft-214KXVB",
