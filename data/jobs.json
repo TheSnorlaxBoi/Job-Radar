@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4424347476",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Confirmé F/H",
+    "company": "padoa",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-f-h-at-padoa-4424347476",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-02T20:22:20.457303+00:00"
+  },
+  {
+    "id": "li-4474716913",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "Amiltone",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-amiltone-4474716913",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-02T20:22:20.457305+00:00"
+  },
+  {
+    "id": "li-4475026538",
+    "source": "LinkedIn",
+    "title": "Développeur/se – Java Fullstack - Services Financiers - Nantes",
+    "company": "Sopra Steria",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-%E2%80%93-java-fullstack-services-financiers-nantes-at-sopra-steria-4475026538",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-02T20:22:20.457306+00:00"
+  },
+  {
     "id": "ft-7588086",
     "source": "France Travail",
     "title": "Developpeur fullstack (F/H)",
@@ -1036,20 +1078,6 @@
     "first_seen": "2026-09-28T10:35:48.147847+00:00"
   },
   {
-    "id": "ft-214KXVB",
-    "source": "France Travail",
-    "title": "Un(e) CONDUCTEUR(TRICE) de véhicules super-Lourd (H/F)",
-    "company": "OLANO SERVICES",
-    "location": "62 - Carvin",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-25T15:03:41.278Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214KXVB",
-    "experience_detected": "required",
-    "first_seen": "2026-09-28T10:35:48.147905+00:00"
-  },
-  {
     "id": "li-4472487886",
     "source": "LinkedIn",
     "title": "[VO2 Finance] - Développeur C# Junior – Trading Électronique / Front-Office CIB",
@@ -1370,19 +1398,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7402868",
     "experience_detected": "required",
     "first_seen": "2026-09-26T03:38:13.480081+00:00"
-  },
-  {
-    "id": "ft-214KWWJ",
-    "source": "France Travail",
-    "title": "Développeur Fullstack  Node.js / Next.js & IA Tu veux démar (H/F)",
-    "company": "REBOOT CONSEIL",
-    "location": "67 - STRASBOURG",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-25T14:47:38.618Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214KWWJ",
-    "experience_detected": "required",
-    "first_seen": "2026-09-25T16:35:37.829569+00:00"
   }
 ]
