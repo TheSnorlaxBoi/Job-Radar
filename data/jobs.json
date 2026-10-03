@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-7600838",
+    "source": "France Travail",
+    "title": "Développeur Fullstack JS NestJS - React H/F",
+    "company": "Externatic",
+    "location": "44 - Nantes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 45000.0 Euros",
+    "published_at": "2026-10-02T23:01:44.228Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7600838",
+    "experience_detected": "required",
+    "first_seen": "2026-10-03T03:52:55.786434+00:00"
+  },
+  {
     "id": "li-4424347476",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Confirmé F/H",
@@ -1288,90 +1302,6 @@
     "first_seen": "2026-09-27T03:47:07.967877+00:00"
   },
   {
-    "id": "li-4444987105",
-    "source": "LinkedIn",
-    "title": "Lead Développeur Fullstack C# .Net - F/H",
-    "company": "Coexya",
-    "location": "Rennes",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-26",
-    "url": "https://fr.linkedin.com/jobs/view/lead-d%C3%A9veloppeur-fullstack-c%23-net-f-h-at-coexya-4444987105",
-    "experience_detected": "unknown",
-    "first_seen": "2026-09-27T03:47:07.967940+00:00"
-  },
-  {
-    "id": "li-4420462682",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java/ Angular Senior - F/H/X",
-    "company": "Amaris Consulting  | Part of Mantu",
-    "location": "Lyon",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-26",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-senior-f-h-x-at-amaris-consulting-part-of-mantu-4420462682",
-    "experience_detected": "required",
-    "first_seen": "2026-09-26T22:22:42.619957+00:00"
-  },
-  {
-    "id": "li-4039342661",
-    "source": "LinkedIn",
-    "title": "Développeur Java Junior (H/F)",
-    "company": "Extia",
-    "location": "Metz",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-26",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-junior-h-f-at-extia-4039342661",
-    "experience_detected": "unknown",
-    "first_seen": "2026-09-26T15:49:40.091177+00:00"
-  },
-  {
-    "id": "li-4054708883",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Confirmé (H/F)",
-    "company": "Extia",
-    "location": "Paris",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-26",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-h-f-at-extia-4054708883",
-    "experience_detected": "unknown",
-    "first_seen": "2026-09-26T15:49:40.091178+00:00"
-  },
-  {
-    "id": "li-4243677076",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java Confirmé (JS) H/F",
-    "company": "Extia",
-    "location": "Brest",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-26",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-confirm%C3%A9-js-h-f-at-extia-4243677076",
-    "experience_detected": "unknown",
-    "first_seen": "2026-09-26T15:49:40.091180+00:00"
-  },
-  {
-    "id": "li-4445216001",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java – Solutions IA & Automatisation H/F",
-    "company": "Inetum",
-    "location": "La Chapelle-sur-Erdre",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-26",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-%E2%80%93-solutions-ia-automatisation-h-f-at-inetum-4445216001",
-    "experience_detected": "unknown",
-    "first_seen": "2026-09-26T15:49:40.091181+00:00"
-  },
-  {
     "id": "ft-7421720",
     "source": "France Travail",
     "title": "Développeur Java Fullstack - CDI (H/F)",
@@ -1384,19 +1314,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7421720",
     "experience_detected": "required",
     "first_seen": "2026-09-26T09:08:11.796482+00:00"
-  },
-  {
-    "id": "ft-7402868",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "95 - Garges-lès-Gonesse",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-09-26T03:27:17.104Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7402868",
-    "experience_detected": "required",
-    "first_seen": "2026-09-26T03:38:13.480081+00:00"
   }
 ]
