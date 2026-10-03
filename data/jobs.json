@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4474787544",
+    "source": "LinkedIn",
+    "title": "Développeur .NET / C# Fullstack (F/H)",
+    "company": "Groupe SII",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-net-c%23-fullstack-f-h-at-groupe-sii-4474787544",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-03T09:41:26.403284+00:00"
+  },
+  {
+    "id": "li-4473150135",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java/Angular (H/F)",
+    "company": "Alteca",
+    "location": "Niort",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-02",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-alteca-4473150135",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-03T09:41:26.403286+00:00"
+  },
+  {
     "id": "ft-7600838",
     "source": "France Travail",
     "title": "Développeur Fullstack JS NestJS - React H/F",
