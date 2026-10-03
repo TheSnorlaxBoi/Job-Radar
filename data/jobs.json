@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4473453266",
+    "source": "LinkedIn",
+    "title": "Développeur(se) Fullstack H/F",
+    "company": "Le Comptoir Des Pharmacies",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-03",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-h-f-at-le-comptoir-des-pharmacies-4473453266",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-03T19:00:50.341235+00:00"
+  },
+  {
+    "id": "li-4092812344",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack[Node.js / React / Vue.js] - Lille, France  (H/F)",
+    "company": "Astek",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-03",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-react-vue-js-lille-france-h-f-at-astek-4092812344",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-03T19:00:50.341236+00:00"
+  },
+  {
     "id": "ft-7632360",
     "source": "France Travail",
     "title": "Développeur Fullstack Java Spring H/F",
