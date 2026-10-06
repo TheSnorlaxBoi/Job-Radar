@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-7709335",
+    "source": "France Travail",
+    "title": "DÉVELOPPEUR WEB & ETL JUNIOR - H/F",
+    "company": "ESTP",
+    "location": "94 - Cachan",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-06T19:35:48.954Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7709335",
+    "experience_detected": "required",
+    "first_seen": "2026-10-06T17:57:57.894469+00:00"
+  },
+  {
+    "id": "li-4469853357",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Angular (H/F)",
+    "company": "Algofi",
+    "location": "Ville de Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-algofi-4469853357",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-06T17:57:57.894557+00:00"
+  },
+  {
     "id": "ft-7678435",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
