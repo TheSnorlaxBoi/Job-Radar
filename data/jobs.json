@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-7712026",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Senior (Java / Spring Boot) H/F",
+    "company": "Hays France",
+    "location": "56 - Vannes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 42000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-10-07T00:33:10.494Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7712026",
+    "experience_detected": "required",
+    "first_seen": "2026-10-06T23:34:48.428351+00:00"
+  },
+  {
+    "id": "ft-7710883",
+    "source": "France Travail",
+    "title": "Développeur(se) Fullstack JAVA/Angular - Services Financiers F/H h/f",
+    "company": "Non précisé",
+    "location": "92 - Puteaux",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-06T22:12:04.396Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7710883",
+    "experience_detected": "required",
+    "first_seen": "2026-10-06T23:34:48.428353+00:00"
+  },
+  {
+    "id": "li-4476382936",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack (PHP Symfony / React) H/F",
+    "company": "S-quaar",
+    "location": "Agen",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-06",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-php-symfony-react-h-f-at-s-quaar-4476382936",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-06T23:34:48.428416+00:00"
+  },
+  {
     "id": "ft-7709335",
     "source": "France Travail",
     "title": "DÉVELOPPEUR WEB & ETL JUNIOR - H/F",
