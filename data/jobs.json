@@ -1,5 +1,89 @@
 [
   {
+    "id": "ft-7746105",
+    "source": "France Travail",
+    "title": "CHAUFFEUR LIVREUR PIÈCES AUTOMOBILE - H/F",
+    "company": "CAR Avenue France",
+    "location": "54 - Longwy",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-07T19:34:02.464Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7746105",
+    "experience_detected": "required",
+    "first_seen": "2026-10-07T21:00:41.899563+00:00"
+  },
+  {
+    "id": "li-4457622618",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Angular/Vue JS H/F",
+    "company": "Extia",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-vue-js-h-f-at-extia-4457622618",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-07T21:00:41.899565+00:00"
+  },
+  {
+    "id": "li-4433197208",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java & React/ Angular (H/F)",
+    "company": "Atos",
+    "location": "Olivet",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-angular-h-f-at-atos-4433197208",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-07T21:00:41.899566+00:00"
+  },
+  {
+    "id": "li-4475481078",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack (H/F)",
+    "company": "Fives",
+    "location": "Montévrain",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-h-f-at-fives-4475481078",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-07T21:00:41.899567+00:00"
+  },
+  {
+    "id": "li-4466844946",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack .NET Angular & GenAI (H/F)",
+    "company": "Talan",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-net-angular-genai-h-f-at-talan-4466844946",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-07T21:00:41.899568+00:00"
+  },
+  {
+    "id": "li-4475196292",
+    "source": "LinkedIn",
+    "title": "Développeur Java fullstack senior - CDI",
+    "company": "Webnet",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-senior-cdi-at-webnet-4475196292",
+    "experience_detected": "required",
+    "first_seen": "2026-10-07T21:00:41.899570+00:00"
+  },
+  {
     "id": "ft-214XWRH",
     "source": "France Travail",
     "title": "Développeur Junior - Technicien Support Applicatif - H/F (H/F)",
@@ -1330,20 +1414,6 @@
     "first_seen": "2026-10-01T04:16:57.270304+00:00"
   },
   {
-    "id": "ft-214QFQD",
-    "source": "France Travail",
-    "title": "Clause sociale OF 1692 : Développeur Fullstack (H/F)",
-    "company": "ENSEMBLE PARIS EMPLOI COMPETENCES",
-    "location": "92 - Issy-les-Moulineaux",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Mensuel de 3333.0 Euros à 4583.0 Euros - Pour un profil sénior avec expérience",
-    "published_at": "2026-09-30T16:42:29.601Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214QFQD",
-    "experience_detected": "required",
-    "first_seen": "2026-09-30T20:33:10.207203+00:00"
-  },
-  {
     "id": "ft-7534597",
     "source": "France Travail",
     "title": "Développeur(euse) Fullstack Python / JavaScript F/H h/f",
@@ -1356,19 +1426,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7534597",
     "experience_detected": "required",
     "first_seen": "2026-09-30T20:33:10.207205+00:00"
-  },
-  {
-    "id": "ft-214QDTC",
-    "source": "France Travail",
-    "title": "Développeur Fullstack F/H (H/F)",
-    "company": "MYREPORT",
-    "location": "81 - Albi",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-09-30T16:21:13.102Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214QDTC",
-    "experience_detected": "required",
-    "first_seen": "2026-09-30T14:38:04.485646+00:00"
   }
 ]
