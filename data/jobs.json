@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-7777748",
+    "source": "France Travail",
+    "title": "DÉVELOPPEUR(EUSE) JUNIOR - H/F",
+    "company": "DGA Tech France Travail",
+    "location": "69 - Lyon 9e Arrondissement",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 38000.0 Euros à 45000.0 Euros",
+    "published_at": "2026-10-08T19:33:57.156Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7777748",
+    "experience_detected": "none_required",
+    "first_seen": "2026-10-08T21:02:40.191302+00:00"
+  },
+  {
+    "id": "li-4477138609",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F) – Caen – 3 ans d’expérience min",
+    "company": "FIRST Conseil",
+    "location": "Caen",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-08",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-%E2%80%93-caen-%E2%80%93-3-ans-d%E2%80%99exp%C3%A9rience-min-at-first-conseil-4477138609",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-08T21:02:40.191373+00:00"
+  },
+  {
+    "id": "li-4475996330",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Confirmé (CDI)",
+    "company": "Leando.tech",
+    "location": "Nantes et périphérie",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-08",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-cdi-at-leando-tech-4475996330",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-08T21:02:40.191374+00:00"
+  },
+  {
     "id": "ft-7767953",
     "source": "France Travail",
     "title": "Développeur Fullstack Node.js / React - CDI (H/F)",
