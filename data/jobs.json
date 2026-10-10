@@ -1622,19 +1622,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7636056",
     "experience_detected": "required",
     "first_seen": "2026-10-03T22:42:03.778372+00:00"
-  },
-  {
-    "id": "ft-7635560",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java - logiciel finance - F/H H/F",
-    "company": "Non précisé",
-    "location": "69 - Villeurbanne",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-03T22:19:48.980Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7635560",
-    "experience_detected": "required",
-    "first_seen": "2026-10-03T22:42:03.778374+00:00"
   }
 ]
