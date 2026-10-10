@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4458976435",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack JAVA @eXalt Nantes",
+    "company": "eXalt",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-10",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-%40exalt-nantes-at-exalt-4458976435",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-10T19:46:53.167450+00:00"
+  },
+  {
+    "id": "li-4477874130",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack - Services Financiers - Angers",
+    "company": "Sopra Steria",
+    "location": "Angers",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-09",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-services-financiers-angers-at-sopra-steria-4477874130",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-10T19:46:53.167451+00:00"
+  },
+  {
     "id": "ft-7834695",
     "source": "France Travail",
     "title": "Developpeur fullstack (F/H)",
@@ -1608,19 +1636,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7635560",
     "experience_detected": "required",
     "first_seen": "2026-10-03T22:42:03.778374+00:00"
-  },
-  {
-    "id": "ft-7632360",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java Spring H/F",
-    "company": "VIVERIS",
-    "location": "59 - Lille",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-03T14:34:30.710Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7632360",
-    "experience_detected": "required",
-    "first_seen": "2026-10-03T15:45:06.336415+00:00"
   }
 ]
