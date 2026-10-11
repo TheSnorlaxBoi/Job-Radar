@@ -1,5 +1,61 @@
 [
   {
+    "id": "li-4437351517",
+    "source": "LinkedIn",
+    "title": "Développeur/se Fullstack C#/.Net/Vue.js Confirmé(e)",
+    "company": "eXalt",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-11",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-c%23-net-vue-js-confirm%C3%A9-e-at-exalt-4437351517",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-11T14:39:33.649244+00:00"
+  },
+  {
+    "id": "li-4478306669",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Choisy-le-Roi",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-11",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4478306669",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-11T14:39:33.649245+00:00"
+  },
+  {
+    "id": "li-4478096966",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Bry-sur-Marne",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-11",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4478096966",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-11T14:39:33.649246+00:00"
+  },
+  {
+    "id": "li-4267270783",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Angular (H/F)",
+    "company": "Davidson consulting",
+    "location": "Île-de-France, France",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-11",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-davidson-consulting-4267270783",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-11T14:39:33.649247+00:00"
+  },
+  {
     "id": "ft-7844675",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1538,33 +1594,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7657791",
     "experience_detected": "required",
     "first_seen": "2026-10-05T04:10:13.835996+00:00"
-  },
-  {
-    "id": "ft-7656112",
-    "source": "France Travail",
-    "title": "Développeur-se Fullstack PHP / JavaScript (H/F)",
-    "company": "Non précisé",
-    "location": "69 - Lyon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-04T12:01:12.731Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7656112",
-    "experience_detected": "none_required",
-    "first_seen": "2026-10-04T13:42:26.203021+00:00"
-  },
-  {
-    "id": "ft-7641178",
-    "source": "France Travail",
-    "title": "Développeur-se Fullstack PHP / JavaScript (H/F)",
-    "company": "MICHAEL PAGE ADVERTISING",
-    "location": "69 - Lyon",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-04T07:13:10.934Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7641178",
-    "experience_detected": "none_required",
-    "first_seen": "2026-10-04T13:42:26.203023+00:00"
   }
 ]
