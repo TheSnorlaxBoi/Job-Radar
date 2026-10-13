@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-215DTFH",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Java Vue.Js - Accessibilité Rgaa (H/F)",
+    "company": "SOCIETE GESER BEST",
+    "location": "14 - Caen",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 36000.0 Euros à 41000.0 Euros",
+    "published_at": "2026-10-13T14:22:13.094Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/215DTFH",
+    "experience_detected": "required",
+    "first_seen": "2026-10-13T18:54:02.743918+00:00"
+  },
+  {
+    "id": "li-4478128596",
+    "source": "LinkedIn",
+    "title": "CHAUFFEUR LIVREUR PIÈCES AUTOMOBILE - H/F",
+    "company": "Lesménils\n          \n\n        \n    \n    \n    \n    \n\n      \n        \n        \n          Soyez un des premiers candidats\n        \n      \n  \n\n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      il y a 23 heures",
+    "location": "Lesménils",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-12",
+    "url": "https://fr.linkedin.com/jobs/view/chauffeur-livreur-pi%C3%A8ces-automobile-h-f-4478128596",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-13T18:54:02.743971+00:00"
+  },
+  {
     "id": "ft-7885401",
     "source": "France Travail",
     "title": "Développeur Fullstack Java / Angular Confirmé (H/F) - CDI",
