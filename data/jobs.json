@@ -1,5 +1,19 @@
 [
   {
+    "id": "li-4412238171",
+    "source": "LinkedIn",
+    "title": "Développeur Junior - C#/SQL (F/H)",
+    "company": "Natixis Corporate & Investment Banking",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-13",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-junior-c%23-sql-f-h-at-natixis-corporate-investment-banking-4412238171",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-13T23:36:11.873144+00:00"
+  },
+  {
     "id": "ft-215DTFH",
     "source": "France Travail",
     "title": "Développeur Fullstack Java Vue.Js - Accessibilité Rgaa (H/F)",
@@ -1650,33 +1664,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7712026",
     "experience_detected": "required",
     "first_seen": "2026-10-06T23:34:48.428351+00:00"
-  },
-  {
-    "id": "ft-7710883",
-    "source": "France Travail",
-    "title": "Développeur(se) Fullstack JAVA/Angular - Services Financiers F/H h/f",
-    "company": "Non précisé",
-    "location": "92 - Puteaux",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-06T22:12:04.396Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7710883",
-    "experience_detected": "required",
-    "first_seen": "2026-10-06T23:34:48.428353+00:00"
-  },
-  {
-    "id": "ft-7709335",
-    "source": "France Travail",
-    "title": "DÉVELOPPEUR WEB & ETL JUNIOR - H/F",
-    "company": "ESTP",
-    "location": "94 - Cachan",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-06T19:35:48.954Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7709335",
-    "experience_detected": "required",
-    "first_seen": "2026-10-06T17:57:57.894469+00:00"
   }
 ]
