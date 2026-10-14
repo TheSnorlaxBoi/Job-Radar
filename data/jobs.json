@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-7923162",
+    "source": "France Travail",
+    "title": "CHAUFFEUR LIVREUR PIÈCES AUTOMOBILE - H/F",
+    "company": "CAR Avenue France",
+    "location": "54 - Longwy",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-14T19:34:16.753Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7923162",
+    "experience_detected": "required",
+    "first_seen": "2026-10-14T22:59:18.605617+00:00"
+  },
+  {
+    "id": "li-4477011703",
+    "source": "LinkedIn",
+    "title": "Developpeur·euse Fullstack React / PHP",
+    "company": "UNIPRÉVOYANCE",
+    "location": "Montreuil",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-14",
+    "url": "https://fr.linkedin.com/jobs/view/developpeur%C2%B7euse-fullstack-react-php-at-unipr%C3%A9voyance-4477011703",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-14T22:59:18.605619+00:00"
+  },
+  {
+    "id": "li-4479282969",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Angular (H/F)",
+    "company": "Davidson consulting",
+    "location": "Rennes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-davidson-consulting-4479282969",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-14T22:59:18.605620+00:00"
+  },
+  {
     "id": "ft-215GBMX",
     "source": "France Travail",
     "title": "Conducteur / Conductrice de véhicules SPL de chantier (H/F)",
@@ -1594,19 +1636,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7749404",
     "experience_detected": "required",
     "first_seen": "2026-10-08T04:36:58.256421+00:00"
-  },
-  {
-    "id": "ft-7746105",
-    "source": "France Travail",
-    "title": "CHAUFFEUR LIVREUR PIÈCES AUTOMOBILE - H/F",
-    "company": "CAR Avenue France",
-    "location": "54 - Longwy",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-07T19:34:02.464Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7746105",
-    "experience_detected": "required",
-    "first_seen": "2026-10-07T21:00:41.899563+00:00"
   }
 ]
