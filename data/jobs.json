@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4477710343",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack C#/React H/F",
+    "company": "Free-Work",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-16",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-c%23-react-h-f-at-free-work-4477710343",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-16T22:32:43.668585+00:00"
+  },
+  {
+    "id": "li-4480547276",
+    "source": "LinkedIn",
+    "title": "Développeur JAVA Fullstack/IA H/F – Lille",
+    "company": "Smile",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-16",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-ia-h-f-%E2%80%93-lille-at-smile-4480547276",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-16T22:32:43.668586+00:00"
+  },
+  {
+    "id": "li-4480369140",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Roissy-en-Brie",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-16",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4480369140",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-16T22:32:43.668587+00:00"
+  },
+  {
     "id": "ft-8017844",
     "source": "France Travail",
     "title": "Lead Développeur(euse)/Développeur Fullstack Java/Angular- Bordeaux H/F",
