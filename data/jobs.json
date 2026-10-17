@@ -1,5 +1,61 @@
 [
   {
+    "id": "li-4039342661",
+    "source": "LinkedIn",
+    "title": "Développeur Java Junior (H/F)",
+    "company": "Extia",
+    "location": "Metz",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-17",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-junior-h-f-at-extia-4039342661",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-17T14:59:38.672086+00:00"
+  },
+  {
+    "id": "li-4243677076",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Confirmé (JS) H/F",
+    "company": "Extia",
+    "location": "Brest",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-17",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-confirm%C3%A9-js-h-f-at-extia-4243677076",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-17T14:59:38.672087+00:00"
+  },
+  {
+    "id": "li-4445216001",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java – Solutions IA & Automatisation H/F",
+    "company": "Inetum",
+    "location": "La Chapelle-sur-Erdre",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-17",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-%E2%80%93-solutions-ia-automatisation-h-f-at-inetum-4445216001",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-17T14:59:38.672087+00:00"
+  },
+  {
+    "id": "li-4479373534",
+    "source": "LinkedIn",
+    "title": "Lead Développeur Fullstack",
+    "company": "Sander",
+    "location": "Ville de Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-16",
+    "url": "https://fr.linkedin.com/jobs/view/lead-d%C3%A9veloppeur-fullstack-at-sander-4479373534",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-17T14:59:38.672088+00:00"
+  },
+  {
     "id": "li-4479391916",
     "source": "LinkedIn",
     "title": "Développeur JAVA Fullstack/IA H/F  – Lille",
@@ -2196,33 +2252,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7844674",
     "experience_detected": "required",
     "first_seen": "2026-10-11T04:07:32.062764+00:00"
-  },
-  {
-    "id": "ft-7834695",
-    "source": "France Travail",
-    "title": "Developpeur fullstack (F/H)",
-    "company": "Non précisé",
-    "location": "92 - Levallois-Perret",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-10T12:09:36.088Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7834695",
-    "experience_detected": "none_required",
-    "first_seen": "2026-10-10T14:14:40.003641+00:00"
-  },
-  {
-    "id": "ft-7833486",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java / Angular (H/F)",
-    "company": "AMILTONE",
-    "location": "79 - Niort",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-10T11:21:43.853Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7833486",
-    "experience_detected": "required",
-    "first_seen": "2026-10-10T14:14:40.003643+00:00"
   }
 ]
