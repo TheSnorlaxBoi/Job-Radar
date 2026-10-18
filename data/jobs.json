@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-8021131",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Java/Angular-Vue.JS H/F",
+    "company": "Non précisé",
+    "location": "35 - Rennes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-18T11:56:18.781Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8021131",
+    "experience_detected": "none_required",
+    "first_seen": "2026-10-18T15:24:25.794014+00:00"
+  },
+  {
+    "id": "li-4034047980",
+    "source": "LinkedIn",
+    "title": "Développeur C#.Net junior (H/F)",
+    "company": "Extia",
+    "location": "Rouen",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-18",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-c%23-net-junior-h-f-at-extia-4034047980",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-18T15:24:25.794087+00:00"
+  },
+  {
     "id": "li-4470383440",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Expérimenté | Senior Java / Angular | Annecy (H/F)",
