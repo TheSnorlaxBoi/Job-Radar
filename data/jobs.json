@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-8071697",
+    "source": "France Travail",
+    "title": "Developpeur Fullstack JAVA / ANGULAR H/F",
+    "company": "AKKODIS",
+    "location": "83 - Toulon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 39000.0 Euros à 40000.0 Euros",
+    "published_at": "2026-10-20T00:31:53.464Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8071697",
+    "experience_detected": "required",
+    "first_seen": "2026-10-19T23:18:54.058811+00:00"
+  },
+  {
+    "id": "li-4478616707",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular Confirmé (H/F)",
+    "company": "Free-Work",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-confirm%C3%A9-h-f-at-free-work-4478616707",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-19T23:18:54.058876+00:00"
+  },
+  {
+    "id": "li-4033397792",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Sénior (JS) H/F",
+    "company": "Extia",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-s%C3%A9nior-js-h-f-at-extia-4033397792",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-19T23:18:54.058877+00:00"
+  },
+  {
     "id": "ft-215KQQX",
     "source": "France Travail",
     "title": "Développeur(se) Fullstack H/F (H/F)",
@@ -2252,19 +2294,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7865288",
     "experience_detected": "required",
     "first_seen": "2026-10-13T01:49:28.484720+00:00"
-  },
-  {
-    "id": "ft-7862078",
-    "source": "France Travail",
-    "title": "CHAUFFEUR LIVREUR PIÈCES AUTOMOBILE - H/F",
-    "company": "CAR Avenue France",
-    "location": "54 - Lesménils",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-12T19:35:17.781Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7862078",
-    "experience_detected": "required",
-    "first_seen": "2026-10-13T01:49:28.484789+00:00"
   }
 ]
