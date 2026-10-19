@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4477874130",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack - Services Financiers - Angers",
+    "company": "Sopra Steria",
+    "location": "Angers",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-services-financiers-angers-at-sopra-steria-4477874130",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-19T09:36:18.884122+00:00"
+  },
+  {
+    "id": "li-4480943728",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack PHP - Martech - 65k-75k",
+    "company": "LITY",
+    "location": "Ville de Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-php-martech-65k-75k-at-lity-4480943728",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-19T09:36:18.884123+00:00"
+  },
+  {
+    "id": "li-4480949555",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular",
+    "company": "ALTEN",
+    "location": "Île-de-France, France",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-at-alten-4480949555",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-19T09:36:18.884124+00:00"
+  },
+  {
     "id": "ft-8043005",
     "source": "France Travail",
     "title": "Lead Développeuse/Développeur Fullstack Java/Angular- Bordeaux (H/F)",
@@ -2154,19 +2196,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/215CCJD",
     "experience_detected": "required",
     "first_seen": "2026-10-12T17:23:42.966580+00:00"
-  },
-  {
-    "id": "ft-7850371",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "94 - Choisy-le-Roi",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-10-12T03:31:48.890Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7850371",
-    "experience_detected": "required",
-    "first_seen": "2026-10-12T04:26:17.798812+00:00"
   }
 ]
