@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-8105671",
+    "source": "France Travail",
+    "title": "DÉVELOPPEUR(EUSE) JUNIOR - H/F",
+    "company": "DGA Tech France Travail",
+    "location": "69 - Lyon 9e Arrondissement",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 38000.0 Euros à 45000.0 Euros",
+    "published_at": "2026-10-20T19:34:16.884Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8105671",
+    "experience_detected": "none_required",
+    "first_seen": "2026-10-20T22:56:11.647530+00:00"
+  },
+  {
+    "id": "li-4470893850",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack Java/Angular (H/F)",
+    "company": "Infotel",
+    "location": "Aix-en-Provence",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-20",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-infotel-4470893850",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-20T22:56:11.647607+00:00"
+  },
+  {
+    "id": "li-4368591516",
+    "source": "LinkedIn",
+    "title": "Développeur Java fullstack F/H",
+    "company": "Devoteam",
+    "location": "Levallois-Perret",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-20",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-f-h-at-devoteam-4368591516",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-20T22:56:11.647609+00:00"
+  },
+  {
     "id": "ft-215LMZC",
     "source": "France Travail",
     "title": "#talentintech2026 Developpeur  Fullstack Java Angular H/F",
