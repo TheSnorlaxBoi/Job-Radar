@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-215MBHH",
+    "source": "France Travail",
+    "title": "Préparateur convoyeur automobile (H/F)",
+    "company": "D L M",
+    "location": "80 - RIVERY",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Mensuel de 1867.02 Euros - Tickets restaurants, prise en charge à 100% de la mutuelle",
+    "published_at": "2026-10-21T09:39:48.337Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/215MBHH",
+    "experience_detected": "required",
+    "first_seen": "2026-10-21T09:08:04.005304+00:00"
+  },
+  {
     "id": "ft-8108903",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
@@ -1986,33 +2000,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7916640",
     "experience_detected": "required",
     "first_seen": "2026-10-14T09:17:51.322630+00:00"
-  },
-  {
-    "id": "ft-7901352",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "77 - Mitry-Mory",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-10-14T03:45:35.527Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7901352",
-    "experience_detected": "required",
-    "first_seen": "2026-10-14T03:37:26.210809+00:00"
-  },
-  {
-    "id": "ft-7901307",
-    "source": "France Travail",
-    "title": "Développeur web fullstack (H/F)",
-    "company": "LEIHIA",
-    "location": "92 - Vaucresson",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-10-14T03:45:29.571Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7901307",
-    "experience_detected": "required",
-    "first_seen": "2026-10-14T03:37:26.210810+00:00"
   }
 ]
