@@ -1,5 +1,75 @@
 [
   {
+    "id": "ft-8136436",
+    "source": "France Travail",
+    "title": "Développeur PHP Fullstack - Éditeur de logiciels transport & logistique (H/F)",
+    "company": "SILKHOM SAS",
+    "location": "84 - Avignon",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 34000.0 Euros à 36000.0 Euros",
+    "published_at": "2026-10-21T23:01:13.722Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8136436",
+    "experience_detected": "none_required",
+    "first_seen": "2026-10-21T23:01:50.225892+00:00"
+  },
+  {
+    "id": "ft-8135716",
+    "source": "France Travail",
+    "title": "Développeur(euse) fullstack Java Cloud F/H h/f",
+    "company": "Non précisé",
+    "location": "75 - Paris",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-21T22:12:50.711Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8135716",
+    "experience_detected": "required",
+    "first_seen": "2026-10-21T23:01:50.225894+00:00"
+  },
+  {
+    "id": "li-4479410081",
+    "source": "LinkedIn",
+    "title": "Développeur(euse) Fullstack NextJS / NestJS",
+    "company": "Free-Work",
+    "location": "Guyancourt",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-euse-fullstack-nextjs-nestjs-at-free-work-4479410081",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-21T23:01:50.225946+00:00"
+  },
+  {
+    "id": "li-4482086853",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Colombes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4482086853",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-21T23:01:50.225947+00:00"
+  },
+  {
+    "id": "li-4479453286",
+    "source": "LinkedIn",
+    "title": "Développeur fullstack - Java React - Confirmé",
+    "company": "Free-Work",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-21",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-confirm%C3%A9-at-free-work-4479453286",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-21T23:01:50.225949+00:00"
+  },
+  {
     "id": "ft-215MLNK",
     "source": "France Travail",
     "title": "Développeur Fullstack - dominante Back Java (H/F)",
@@ -2070,19 +2140,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7934969",
     "experience_detected": "required",
     "first_seen": "2026-10-15T08:52:32.394890+00:00"
-  },
-  {
-    "id": "ft-7923162",
-    "source": "France Travail",
-    "title": "CHAUFFEUR LIVREUR PIÈCES AUTOMOBILE - H/F",
-    "company": "CAR Avenue France",
-    "location": "54 - Longwy",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-14T19:34:16.753Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7923162",
-    "experience_detected": "required",
-    "first_seen": "2026-10-14T22:59:18.605617+00:00"
   }
 ]
