@@ -1,5 +1,75 @@
 [
   {
+    "id": "ft-8168874",
+    "source": "France Travail",
+    "title": "Développeur / Développeuse Fullstack Junior - CDI (Lyon) (H/F)",
+    "company": "Non précisé",
+    "location": "69 - Amplepuis",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-22T22:31:48.102Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8168874",
+    "experience_detected": "required",
+    "first_seen": "2026-10-22T22:58:16.725443+00:00"
+  },
+  {
+    "id": "ft-8168602",
+    "source": "France Travail",
+    "title": "Développeur Fullstack (F/H) h/f",
+    "company": "Non précisé",
+    "location": "76 - Bois-Guillaume",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-22T22:12:16.323Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8168602",
+    "experience_detected": "required",
+    "first_seen": "2026-10-22T22:58:16.725472+00:00"
+  },
+  {
+    "id": "li-4482466826",
+    "source": "LinkedIn",
+    "title": "Ingénieur développeur web Fullstack F/H",
+    "company": "AMPLITUDE",
+    "location": "Valence",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-22",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d%C3%A9veloppeur-web-fullstack-f-h-at-amplitude-4482466826",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-22T22:58:16.725525+00:00"
+  },
+  {
+    "id": "li-4479816263",
+    "source": "LinkedIn",
+    "title": "Développeur·euse Fullstack Confirmé.e (H/F)",
+    "company": "Cegedim Business Services",
+    "location": "Boulogne-Billancourt",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-22",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur%C2%B7euse-fullstack-confirm%C3%A9-e-h-f-at-cegedim-business-services-4479816263",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-22T22:58:16.725526+00:00"
+  },
+  {
+    "id": "li-4329046704",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java/Angular Confirmé - F/H",
+    "company": "Onepoint",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-22",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-confirm%C3%A9-f-h-at-onepoint-4329046704",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-22T22:58:16.725528+00:00"
+  },
+  {
     "id": "ft-215NYGD",
     "source": "France Travail",
     "title": "Developpeur FullStack (H/F)",
@@ -1986,19 +2056,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7984411",
     "experience_detected": "required",
     "first_seen": "2026-10-16T03:13:44.700815+00:00"
-  },
-  {
-    "id": "ft-7977698",
-    "source": "France Travail",
-    "title": "Développeur Web Fullstack Confirmé F/H - IONIS Group",
-    "company": "IONIS Group",
-    "location": "75 - Paris",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 45000.0 Euros",
-    "published_at": "2026-10-15T21:15:40.986Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7977698",
-    "experience_detected": "required",
-    "first_seen": "2026-10-15T22:54:12.227326+00:00"
   }
 ]
