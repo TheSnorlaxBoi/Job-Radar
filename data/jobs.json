@@ -1,5 +1,19 @@
 [
   {
+    "id": "ft-8160018",
+    "source": "France Travail",
+    "title": "Consultant Lead Développeur Fullstack (Vue.js / C# .NET) - CDI (H/F)",
+    "company": "Collective.work",
+    "location": "67 - Strasbourg",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-22T10:04:36.065Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8160018",
+    "experience_detected": "none_required",
+    "first_seen": "2026-10-22T09:10:34.560879+00:00"
+  },
+  {
     "id": "ft-8141975",
     "source": "France Travail",
     "title": "Développeur(se) Java Fullstack (H/F)",
@@ -1930,19 +1944,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/7960394",
     "experience_detected": "none_required",
     "first_seen": "2026-10-15T16:21:00.308222+00:00"
-  },
-  {
-    "id": "ft-7934969",
-    "source": "France Travail",
-    "title": "Developpeur-euse Fullstack React / PHP (H/F)",
-    "company": "Institution de prévoyance",
-    "location": "93 - Montreuil",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 45000.0 Euros à 60000.0 Euros",
-    "published_at": "2026-10-15T05:27:24.975Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7934969",
-    "experience_detected": "required",
-    "first_seen": "2026-10-15T08:52:32.394890+00:00"
   }
 ]
