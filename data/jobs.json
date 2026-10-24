@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4317924366",
+    "source": "LinkedIn",
+    "title": "Développeur/se Fullstack C#/.Net/React Confirmé(e)",
+    "company": "eXalt",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-c%23-net-react-confirm%C3%A9-e-at-exalt-4317924366",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-24T15:24:49.639977+00:00"
+  },
+  {
+    "id": "li-4475026538",
+    "source": "LinkedIn",
+    "title": "Développeur/se – Java Fullstack - Services Financiers - Nantes",
+    "company": "Sopra Steria",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-%E2%80%93-java-fullstack-services-financiers-nantes-at-sopra-steria-4475026538",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-24T15:24:49.639978+00:00"
+  },
+  {
+    "id": "li-4483119878",
+    "source": "LinkedIn",
+    "title": "Développeur Web Fullstack Confirmé F/H",
+    "company": "IONIS Education Group",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-23",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-confirm%C3%A9-f-h-at-ionis-education-group-4483119878",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-24T15:24:49.639980+00:00"
+  },
+  {
     "id": "ft-8231108",
     "source": "France Travail",
     "title": "Développeur(euse) Fullstack Java/Angular Confirmé/e - Industrie - Le Plessis Robinson (H/F)",
