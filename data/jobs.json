@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-8231108",
+    "source": "France Travail",
+    "title": "Développeur(euse) Fullstack Java/Angular Confirmé/e - Industrie - Le Plessis Robinson (H/F)",
+    "company": "Non précisé",
+    "location": "92 - Nanterre",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-24T05:30:58.730Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8231108",
+    "experience_detected": "required",
+    "first_seen": "2026-10-24T08:39:43.512022+00:00"
+  },
+  {
+    "id": "ft-8231106",
+    "source": "France Travail",
+    "title": "Ingénieur développeur fullstack Java/Angular - Services Financiers - Angers (H/F)",
+    "company": "Non précisé",
+    "location": "49 - Angers",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-24T05:30:58.537Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8231106",
+    "experience_detected": "required",
+    "first_seen": "2026-10-24T08:39:43.512023+00:00"
+  },
+  {
+    "id": "ft-8231099",
+    "source": "France Travail",
+    "title": "Développeur Fullstack - Services Financiers - Angers (H/F)",
+    "company": "Non précisé",
+    "location": "49 - Angers",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-24T05:30:58.131Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8231099",
+    "experience_detected": "required",
+    "first_seen": "2026-10-24T08:39:43.512024+00:00"
+  },
+  {
     "id": "ft-8227010",
     "source": "France Travail",
     "title": "Développeur web fullstack (H/F)",
