@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-8227010",
+    "source": "France Travail",
+    "title": "Développeur web fullstack (H/F)",
+    "company": "LEIHIA",
+    "location": "77 - Lésigny",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-10-24T03:25:07.176Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8227010",
+    "experience_detected": "required",
+    "first_seen": "2026-10-24T03:22:54.048807+00:00"
+  },
+  {
+    "id": "li-4481669405",
+    "source": "LinkedIn",
+    "title": "Développeur Java fullstack - CDI",
+    "company": "Webnet",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-23",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-fullstack-cdi-at-webnet-4481669405",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-24T03:22:54.048904+00:00"
+  },
+  {
     "id": "ft-8224157",
     "source": "France Travail",
     "title": "Développeur Full Stack Junior (H/F)",
@@ -1370,61 +1398,5 @@
     "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-c%23-net-junior-h-f-at-extia-4034047980",
     "experience_detected": "unknown",
     "first_seen": "2026-10-18T15:24:25.794087+00:00"
-  },
-  {
-    "id": "li-4470383440",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Expérimenté | Senior Java / Angular | Annecy (H/F)",
-    "company": "eXalt",
-    "location": "Annecy",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-exp%C3%A9riment%C3%A9-senior-java-angular-annecy-h-f-at-exalt-4470383440",
-    "experience_detected": "required",
-    "first_seen": "2026-10-17T21:58:19.147242+00:00"
-  },
-  {
-    "id": "li-4039342661",
-    "source": "LinkedIn",
-    "title": "Développeur Java Junior (H/F)",
-    "company": "Extia",
-    "location": "Metz",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-java-junior-h-f-at-extia-4039342661",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-17T14:59:38.672086+00:00"
-  },
-  {
-    "id": "li-4243677076",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java Confirmé (JS) H/F",
-    "company": "Extia",
-    "location": "Brest",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-confirm%C3%A9-js-h-f-at-extia-4243677076",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-17T14:59:38.672087+00:00"
-  },
-  {
-    "id": "li-4445216001",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java – Solutions IA & Automatisation H/F",
-    "company": "Inetum",
-    "location": "La Chapelle-sur-Erdre",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-17",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-%E2%80%93-solutions-ia-automatisation-h-f-at-inetum-4445216001",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-17T14:59:38.672087+00:00"
   }
 ]
