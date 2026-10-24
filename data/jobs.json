@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4474787544",
+    "source": "LinkedIn",
+    "title": "Développeur .NET / C# Fullstack (F/H)",
+    "company": "Groupe SII",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-net-c%23-fullstack-f-h-at-groupe-sii-4474787544",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-24T18:35:55.957762+00:00"
+  },
+  {
+    "id": "li-4437364008",
+    "source": "LinkedIn",
+    "title": "Développeur/se Fullstack JavaScript / TypeScript confirmé(e)",
+    "company": "eXalt",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-24",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-se-fullstack-javascript-typescript-confirm%C3%A9-e-at-exalt-4437364008",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-24T18:35:55.957763+00:00"
+  },
+  {
     "id": "li-4317924366",
     "source": "LinkedIn",
     "title": "Développeur/se Fullstack C#/.Net/React Confirmé(e)",
