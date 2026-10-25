@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4466317237",
+    "source": "LinkedIn",
+    "title": "Ingénieur Développeur Fullstack H/F",
+    "company": "Lefebvre Dalloz",
+    "location": "Courbevoie",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25",
+    "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-d%C3%A9veloppeur-fullstack-h-f-at-lefebvre-dalloz-4466317237",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-25T15:35:11.172981+00:00"
+  },
+  {
+    "id": "li-4092812344",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack[Node.js / React / Vue.js] - Lille, France  (H/F)",
+    "company": "Astek",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-react-vue-js-lille-france-h-f-at-astek-4092812344",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-25T15:35:11.172982+00:00"
+  },
+  {
+    "id": "li-4426832755",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Node.js / Vue ou React - F/H",
+    "company": "Niji",
+    "location": "La Madeleine",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-vue-ou-react-f-h-at-niji-4426832755",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-25T15:35:11.172983+00:00"
+  },
+  {
     "id": "li-4474787544",
     "source": "LinkedIn",
     "title": "Développeur .NET / C# Fullstack (F/H)",
@@ -1412,19 +1454,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8032379",
     "experience_detected": "required",
     "first_seen": "2026-10-18T22:14:13.955635+00:00"
-  },
-  {
-    "id": "ft-8021131",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java/Angular-Vue.JS H/F",
-    "company": "Non précisé",
-    "location": "35 - Rennes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18T11:56:18.781Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8021131",
-    "experience_detected": "none_required",
-    "first_seen": "2026-10-18T15:24:25.794014+00:00"
   }
 ]
