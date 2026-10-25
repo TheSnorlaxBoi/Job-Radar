@@ -1,5 +1,75 @@
 [
   {
+    "id": "ft-8259718",
+    "source": "France Travail",
+    "title": "Développeur(euse) fullstack Java Cloud F/H h/f",
+    "company": "Non précisé",
+    "location": "75 - Paris",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25T22:16:20.715Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8259718",
+    "experience_detected": "required",
+    "first_seen": "2026-10-25T22:18:36.422064+00:00"
+  },
+  {
+    "id": "ft-8259706",
+    "source": "France Travail",
+    "title": "Développeur(se) Fullstack Java/Javascript F/H h/f",
+    "company": "Non précisé",
+    "location": "29 - Brest",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25T22:16:19.516Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8259706",
+    "experience_detected": "required",
+    "first_seen": "2026-10-25T22:18:36.422065+00:00"
+  },
+  {
+    "id": "ft-8259683",
+    "source": "France Travail",
+    "title": "Développeur(se) Fullstack Java/Angular F/H h/f",
+    "company": "Non précisé",
+    "location": "37 - Tours",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25T22:16:16.555Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8259683",
+    "experience_detected": "required",
+    "first_seen": "2026-10-25T22:18:36.422066+00:00"
+  },
+  {
+    "id": "li-4483502029",
+    "source": "LinkedIn",
+    "title": "Développeur web fullstack H/F",
+    "company": "Leihia",
+    "location": "Grigny",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-web-fullstack-h-f-at-leihia-4483502029",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-25T22:18:36.422141+00:00"
+  },
+  {
+    "id": "li-4483398470",
+    "source": "LinkedIn",
+    "title": "CDD - Développeur Java Fullstack F/H",
+    "company": "La Poste Groupe",
+    "location": "Nantes",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-25",
+    "url": "https://fr.linkedin.com/jobs/view/cdd-d%C3%A9veloppeur-java-fullstack-f-h-at-la-poste-groupe-4483398470",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-25T22:18:36.422143+00:00"
+  },
+  {
     "id": "li-4483380972",
     "source": "LinkedIn",
     "title": "Développeur web fullstack H/F",
@@ -1454,19 +1524,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8033694",
     "experience_detected": "required",
     "first_seen": "2026-10-18T22:14:13.955634+00:00"
-  },
-  {
-    "id": "ft-8032379",
-    "source": "France Travail",
-    "title": "Développeur Senior Fullstack Java Angular (H/F) h/f",
-    "company": "Non précisé",
-    "location": "75 - Paris",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18T22:12:29.543Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8032379",
-    "experience_detected": "required",
-    "first_seen": "2026-10-18T22:14:13.955635+00:00"
   }
 ]
