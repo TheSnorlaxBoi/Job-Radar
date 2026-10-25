@@ -1386,20 +1386,6 @@
     "first_seen": "2026-10-19T03:21:02.769798+00:00"
   },
   {
-    "id": "li-4249299088",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Java/Angular et/ou AngularJS (H/F)",
-    "company": "Davidson consulting",
-    "location": "Sophia Antipolis",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-et-ou-angularjs-h-f-at-davidson-consulting-4249299088",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-19T03:21:02.769857+00:00"
-  },
-  {
     "id": "ft-8033694",
     "source": "France Travail",
     "title": "Développeur Fullstack PHP React - Client Final - H/F",
@@ -1428,62 +1414,6 @@
     "first_seen": "2026-10-18T22:14:13.955635+00:00"
   },
   {
-    "id": "li-4444987105",
-    "source": "LinkedIn",
-    "title": "Lead Développeur Fullstack C# .Net - F/H",
-    "company": "Coexya",
-    "location": "Rennes",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18",
-    "url": "https://fr.linkedin.com/jobs/view/lead-d%C3%A9veloppeur-fullstack-c%23-net-f-h-at-coexya-4444987105",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-18T22:14:13.955724+00:00"
-  },
-  {
-    "id": "li-4054708883",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Confirmé (H/F)",
-    "company": "Extia",
-    "location": "Paris",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-confirm%C3%A9-h-f-at-extia-4054708883",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-18T18:27:48.639019+00:00"
-  },
-  {
-    "id": "li-4429035051",
-    "source": "LinkedIn",
-    "title": "Développeur Fullstack Senior (H/F)",
-    "company": "Extia",
-    "location": "Paris",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-senior-h-f-at-extia-4429035051",
-    "experience_detected": "required",
-    "first_seen": "2026-10-18T18:27:48.639020+00:00"
-  },
-  {
-    "id": "li-4434632113",
-    "source": "LinkedIn",
-    "title": "Concepteur Développeur Fullstack Expert (IoT) - (H/F)",
-    "company": "OPEN",
-    "location": "Villeurbanne",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18",
-    "url": "https://fr.linkedin.com/jobs/view/concepteur-d%C3%A9veloppeur-fullstack-expert-iot-h-f-at-open-4434632113",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-18T18:27:48.639021+00:00"
-  },
-  {
     "id": "ft-8021131",
     "source": "France Travail",
     "title": "Développeur Fullstack Java/Angular-Vue.JS H/F",
@@ -1496,19 +1426,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8021131",
     "experience_detected": "none_required",
     "first_seen": "2026-10-18T15:24:25.794014+00:00"
-  },
-  {
-    "id": "li-4034047980",
-    "source": "LinkedIn",
-    "title": "Développeur C#.Net junior (H/F)",
-    "company": "Extia",
-    "location": "Rouen",
-    "contract": "",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-18",
-    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-c%23-net-junior-h-f-at-extia-4034047980",
-    "experience_detected": "unknown",
-    "first_seen": "2026-10-18T15:24:25.794087+00:00"
   }
 ]
