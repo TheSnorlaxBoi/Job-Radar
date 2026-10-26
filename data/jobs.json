@@ -1,5 +1,75 @@
 [
   {
+    "id": "ft-215QXKR",
+    "source": "France Travail",
+    "title": "Développeur Junior - Technicien Support Applicatif - H/F (H/F)",
+    "company": "MATEN",
+    "location": "69 - Lyon 9e Arrondissement",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 25000.0 Euros à 27000.0 Euros",
+    "published_at": "2026-10-26T11:45:40.787Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/215QXKR",
+    "experience_detected": "required",
+    "first_seen": "2026-10-26T18:16:47.543151+00:00"
+  },
+  {
+    "id": "li-4481425810",
+    "source": "LinkedIn",
+    "title": "Analyste Développeur COBOL Junior – Monétique / Autorisations (H/F)",
+    "company": "CITECH",
+    "location": "Strasbourg",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-26",
+    "url": "https://fr.linkedin.com/jobs/view/analyste-d%C3%A9veloppeur-cobol-junior-%E2%80%93-mon%C3%A9tique-autorisations-h-f-at-citech-4481425810",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-26T18:16:47.543250+00:00"
+  },
+  {
+    "id": "li-4483591376",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "PROXIAD",
+    "location": "Lyon",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-26",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-proxiad-4483591376",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-26T18:16:47.543251+00:00"
+  },
+  {
+    "id": "li-4483563982",
+    "source": "LinkedIn",
+    "title": "Développeur FullStack H/F",
+    "company": "Figaro Classifieds",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-26",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-h-f-at-figaro-classifieds-4483563982",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-26T18:16:47.543252+00:00"
+  },
+  {
+    "id": "li-4481476142",
+    "source": "LinkedIn",
+    "title": "Developpeur Fullstack (H/F)",
+    "company": "Atos",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-26",
+    "url": "https://fr.linkedin.com/jobs/view/developpeur-fullstack-h-f-at-atos-4481476142",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-26T18:16:47.543254+00:00"
+  },
+  {
     "id": "li-4430738674",
     "source": "LinkedIn",
     "title": "Développeur Fullstack .NET/ANGULAR (H/F)",
@@ -1300,19 +1370,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8071697",
     "experience_detected": "required",
     "first_seen": "2026-10-19T23:18:54.058811+00:00"
-  },
-  {
-    "id": "ft-215KQQX",
-    "source": "France Travail",
-    "title": "Développeur(se) Fullstack H/F (H/F)",
-    "company": "LE COMPTOIR DES PHARMACIES",
-    "location": "31 - TOULOUSE",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 52000.0 Euros à 58000.0 Euros",
-    "published_at": "2026-10-19T17:24:24.949Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/215KQQX",
-    "experience_detected": "required",
-    "first_seen": "2026-10-19T18:21:44.858749+00:00"
   }
 ]
