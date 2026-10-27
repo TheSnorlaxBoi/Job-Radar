@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-8303707",
+    "source": "France Travail",
+    "title": "Développeur / Développeuse Fullstack Junior - CDI (Lyon) (H/F)",
+    "company": "Non précisé",
+    "location": "69 - Amplepuis",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-27T21:31:34.619Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8303707",
+    "experience_detected": "required",
+    "first_seen": "2026-10-27T23:30:09.691309+00:00"
+  },
+  {
+    "id": "li-4433197208",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java & React/ Angular (H/F)",
+    "company": "Atos",
+    "location": "Olivet",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-10-27",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-angular-h-f-at-atos-4433197208",
+    "experience_detected": "unknown",
+    "first_seen": "2026-10-27T23:30:09.691416+00:00"
+  },
+  {
     "id": "li-4484090692",
     "source": "LinkedIn",
     "title": "Développeur(se) fullstack Java/Angular F/H",
@@ -1370,19 +1398,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8108866",
     "experience_detected": "required",
     "first_seen": "2026-10-21T03:24:04.121704+00:00"
-  },
-  {
-    "id": "ft-8105671",
-    "source": "France Travail",
-    "title": "DÉVELOPPEUR(EUSE) JUNIOR - H/F",
-    "company": "DGA Tech France Travail",
-    "location": "69 - Lyon 9e Arrondissement",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 38000.0 Euros à 45000.0 Euros",
-    "published_at": "2026-10-20T19:34:16.884Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8105671",
-    "experience_detected": "none_required",
-    "first_seen": "2026-10-20T22:56:11.647530+00:00"
   }
 ]
