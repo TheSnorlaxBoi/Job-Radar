@@ -1,5 +1,33 @@
 [
   {
+    "id": "ft-8624002",
+    "source": "France Travail",
+    "title": "Développeur Full Stack Junior (H/F)",
+    "company": "BATEXT",
+    "location": "77 - Gretz-Armainvilliers",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 30000.0 Euros à 33000.0 Euros",
+    "published_at": "2026-11-06T20:01:14.472Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8624002",
+    "experience_detected": "none_required",
+    "first_seen": "2026-11-06T23:57:37.488557+00:00"
+  },
+  {
+    "id": "ft-8625515",
+    "source": "France Travail",
+    "title": "Développeur(se) Fullstack Java/Javascript F/H h/f",
+    "company": "Non précisé",
+    "location": "29 - Brest",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-06T22:12:36.249Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8625515",
+    "experience_detected": "none_required",
+    "first_seen": "2026-11-06T23:57:37.488580+00:00"
+  },
+  {
     "id": "ft-216DSYC",
     "source": "France Travail",
     "title": "Développeur Java Fullstack (H/F)",
