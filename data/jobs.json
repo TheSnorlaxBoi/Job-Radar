@@ -1,5 +1,47 @@
 [
   {
+    "id": "li-4479272810",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java React.js (H/F)",
+    "company": "Magellan",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-js-h-f-at-magellan-4479272810",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-07T14:41:01.300576+00:00"
+  },
+  {
+    "id": "li-4479268961",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java Vues.js (H/F)",
+    "company": "Magellan",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-vues-js-h-f-at-magellan-4479268961",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-07T14:41:01.300577+00:00"
+  },
+  {
+    "id": "li-4479812139",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java React.js (H/F)",
+    "company": "Magellan",
+    "location": "Issy-les-Moulineaux",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-react-js-h-f-at-magellan-4479812139",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-07T14:41:01.300578+00:00"
+  },
+  {
     "id": "li-4480129605",
     "source": "LinkedIn",
     "title": "Développeur ou développeuse fullstack Front Angular",
@@ -1314,33 +1356,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8455956",
     "experience_detected": "required",
     "first_seen": "2026-11-01T04:30:22.515022+00:00"
-  },
-  {
-    "id": "ft-8445788",
-    "source": "France Travail",
-    "title": "Développeur FullStack Java H/F",
-    "company": "Non précisé",
-    "location": "93 - Noisy-le-Grand",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-31T12:00:23.333Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8445788",
-    "experience_detected": "none_required",
-    "first_seen": "2026-10-31T14:18:18.666854+00:00"
-  },
-  {
-    "id": "ft-8444624",
-    "source": "France Travail",
-    "title": "Développeur Fullstack (H/F)",
-    "company": "LTd",
-    "location": "93 - Montreuil",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-10-31T11:21:54.447Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8444624",
-    "experience_detected": "required",
-    "first_seen": "2026-10-31T14:18:18.666855+00:00"
   }
 ]
