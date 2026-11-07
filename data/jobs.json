@@ -1,5 +1,33 @@
 [
   {
+    "id": "li-4479292059",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java/ Angular (H/F)",
+    "company": "Magellan",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-magellan-4479292059",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-07T19:53:11.737352+00:00"
+  },
+  {
+    "id": "li-4279599212",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Node.js Vue.js (H/F)",
+    "company": "Davidson consulting",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-07",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-vue-js-h-f-at-davidson-consulting-4279599212",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-07T19:53:11.737353+00:00"
+  },
+  {
     "id": "li-4479272810",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Java React.js (H/F)",
