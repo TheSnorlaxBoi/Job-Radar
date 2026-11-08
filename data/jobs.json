@@ -1314,19 +1314,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8463285",
     "experience_detected": "required",
     "first_seen": "2026-11-02T04:32:17.342453+00:00"
-  },
-  {
-    "id": "ft-8458141",
-    "source": "France Travail",
-    "title": "Lead Développeur Fullstack H/F",
-    "company": "Non précisé",
-    "location": "44 - Nantes",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-11-01T12:03:31.506Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8458141",
-    "experience_detected": "none_required",
-    "first_seen": "2026-11-01T14:45:04.584069+00:00"
   }
 ]
