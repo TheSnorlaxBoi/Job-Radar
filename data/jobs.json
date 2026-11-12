@@ -1,5 +1,61 @@
 [
   {
+    "id": "ft-216HVNS",
+    "source": "France Travail",
+    "title": "Développeur / Développeuse junior ou confirmé(e) (H/F)",
+    "company": "PROF EN POCHE",
+    "location": "64 - PAU",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 26000.0 Euros à 38000.0 Euros - Salaire selon profil et expérience",
+    "published_at": "2026-11-12T10:06:04.243Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/216HVNS",
+    "experience_detected": "none_required",
+    "first_seen": "2026-11-12T16:35:29.170433+00:00"
+  },
+  {
+    "id": "li-4482087758",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Python / React (H/F)",
+    "company": "Cabinet EKINOX",
+    "location": "Paris",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-python-react-h-f-at-cabinet-ekinox-4482087758",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-12T16:35:29.170509+00:00"
+  },
+  {
+    "id": "li-4490331032",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Node.js Vue.js (H/F)",
+    "company": "Davidson consulting",
+    "location": "Lille",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-vue-js-h-f-at-davidson-consulting-4490331032",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-12T16:35:29.170510+00:00"
+  },
+  {
+    "id": "li-4488538311",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Node.js / Vue ou React - F/H",
+    "company": "Niji",
+    "location": "La Madeleine",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-12",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-node-js-vue-ou-react-f-h-at-niji-4488538311",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-12T16:35:29.170511+00:00"
+  },
+  {
     "id": "li-4482023488",
     "source": "LinkedIn",
     "title": "Développeur FullStack Java Angular H/F",
@@ -1160,33 +1216,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8577570",
     "experience_detected": "required",
     "first_seen": "2026-11-05T19:30:54.496617+00:00"
-  },
-  {
-    "id": "ft-8572592",
-    "source": "France Travail",
-    "title": "DÉVELOPPEUR FULLSTACK ERP PHP (F/H)",
-    "company": "Non précisé",
-    "location": "38 - Porcieu-Amblagnieu",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-11-05T12:50:37.145Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8572592",
-    "experience_detected": "none_required",
-    "first_seen": "2026-11-05T11:52:50.315134+00:00"
-  },
-  {
-    "id": "ft-8571905",
-    "source": "France Travail",
-    "title": "Développeur/se - Java Fullstack - Services Financiers - Bordeaux H/F",
-    "company": "Non précisé",
-    "location": "08 - Girondelle",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-11-05T12:50:04.144Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8571905",
-    "experience_detected": "none_required",
-    "first_seen": "2026-11-05T11:52:50.315136+00:00"
   }
 ]
