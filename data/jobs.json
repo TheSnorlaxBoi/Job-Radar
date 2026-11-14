@@ -1,5 +1,47 @@
 [
   {
+    "id": "ft-8848578",
+    "source": "France Travail",
+    "title": "Développeur PL/SQL Junior - Solutions Innovantes pour le BTP - Biguglia (H/F) - CDI",
+    "company": "Collective.work",
+    "location": "2B - Biguglia",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 33000.0 Euros à 36000.0 Euros",
+    "published_at": "2026-11-14T09:03:20.672Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8848578",
+    "experience_detected": "none_required",
+    "first_seen": "2026-11-14T11:13:21.378216+00:00"
+  },
+  {
+    "id": "li-4491057178",
+    "source": "LinkedIn",
+    "title": "Développeur PL/SQL Junior - Solutions Innovantes pour le BTP - Biguglia (H/F",
+    "company": "Kicklox",
+    "location": "Biguglia",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-14",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-pl-sql-junior-solutions-innovantes-pour-le-btp-biguglia-h-f-at-kicklox-4491057178",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-14T11:13:21.378311+00:00"
+  },
+  {
+    "id": "li-4488987502",
+    "source": "LinkedIn",
+    "title": "(H/F) Développeur fullstack Java confirmé",
+    "company": "Free-Work",
+    "location": "Villeurbanne",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-13",
+    "url": "https://fr.linkedin.com/jobs/view/h-f-d%C3%A9veloppeur-fullstack-java-confirm%C3%A9-at-free-work-4488987502",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-14T11:13:21.378313+00:00"
+  },
+  {
     "id": "li-4450388547",
     "source": "LinkedIn",
     "title": "Développeur FullStack Ruby/React (H/F)",
@@ -922,20 +964,6 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8647544",
     "experience_detected": "required",
     "first_seen": "2026-11-10T02:33:18.117483+00:00"
-  },
-  {
-    "id": "ft-8636035",
-    "source": "France Travail",
-    "title": "(H/F) Développeur fullstack Java confirmé",
-    "company": "ADSEARCH",
-    "location": "69 - Villeurbanne",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 40000.0 Euros à 50000.0 Euros",
-    "published_at": "2026-11-07T09:00:40.639Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8636035",
-    "experience_detected": "none_required",
-    "first_seen": "2026-11-10T02:33:18.117485+00:00"
   },
   {
     "id": "ft-216FKLR",
