@@ -1,5 +1,75 @@
 [
   {
+    "id": "ft-8970534",
+    "source": "France Travail",
+    "title": "Développeur/se - Fullstack Java React - Telecom, Medias & Entertainment - Ile-de-France (H/F)",
+    "company": "CIMPA",
+    "location": "92 - Nanterre",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-19T04:30:56.549Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8970534",
+    "experience_detected": "required",
+    "first_seen": "2026-11-19T12:30:34.247053+00:00"
+  },
+  {
+    "id": "ft-8970529",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille (H/F)",
+    "company": "CIMPA",
+    "location": "59 - Lezennes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-19T04:30:56.322Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8970529",
+    "experience_detected": "required",
+    "first_seen": "2026-11-19T12:30:34.247055+00:00"
+  },
+  {
+    "id": "ft-8970528",
+    "source": "France Travail",
+    "title": "Développeur/se - Fullstack Java Angular - Telecom, Medias & Entertainment - Ile-de-France (H/F)",
+    "company": "CIMPA",
+    "location": "92 - Nanterre",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-19T04:30:56.321Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8970528",
+    "experience_detected": "required",
+    "first_seen": "2026-11-19T12:30:34.247056+00:00"
+  },
+  {
+    "id": "li-4491602461",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular - Domaine de la santé (H/F)",
+    "company": "Free-Work",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-domaine-de-la-sant%C3%A9-h-f-at-free-work-4491602461",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-19T12:30:34.247158+00:00"
+  },
+  {
+    "id": "li-4492163015",
+    "source": "LinkedIn",
+    "title": "Développeur Fullstack Java / Angular (H/F)",
+    "company": "ALTEN",
+    "location": "Toulouse",
+    "contract": "",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-19",
+    "url": "https://fr.linkedin.com/jobs/view/d%C3%A9veloppeur-fullstack-java-angular-h-f-at-alten-4492163015",
+    "experience_detected": "unknown",
+    "first_seen": "2026-11-19T12:30:34.247159+00:00"
+  },
+  {
     "id": "ft-8962081",
     "source": "France Travail",
     "title": "DÉVELOPPEUR C# - JUNIOR - H/F",
@@ -1104,19 +1174,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8772197",
     "experience_detected": "required",
     "first_seen": "2026-11-13T00:54:01.075798+00:00"
-  },
-  {
-    "id": "ft-216HVNS",
-    "source": "France Travail",
-    "title": "Développeur / Développeuse junior ou confirmé(e) (H/F)",
-    "company": "PROF EN POCHE",
-    "location": "64 - PAU",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "Annuel de 26000.0 Euros à 38000.0 Euros - Salaire selon profil et expérience",
-    "published_at": "2026-11-12T10:06:04.243Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/216HVNS",
-    "experience_detected": "none_required",
-    "first_seen": "2026-11-12T16:35:29.170433+00:00"
   }
 ]
