@@ -1,5 +1,75 @@
 [
   {
+    "id": "ft-8999779",
+    "source": "France Travail",
+    "title": "Développeur(se) Fullstack Expérimenté(e) - Développement Régional - Lille (H/F)",
+    "company": "SOPRA STERIA GROUP",
+    "location": "59 - Lezennes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-20T04:31:03.731Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8999779",
+    "experience_detected": "required",
+    "first_seen": "2026-11-20T16:42:33.023397+00:00"
+  },
+  {
+    "id": "ft-8999772",
+    "source": "France Travail",
+    "title": "Développeur Fullstack Senior Java / Angular - Services Financiers - Lille (H/F)",
+    "company": "SOPRA STERIA GROUP",
+    "location": "59 - Lezennes",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-20T04:31:03.160Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8999772",
+    "experience_detected": "required",
+    "first_seen": "2026-11-20T16:42:33.023399+00:00"
+  },
+  {
+    "id": "ft-8999763",
+    "source": "France Travail",
+    "title": "Développeur/se - Fullstack Java React - Telecom, Medias & Entertainment - Ile-de-France (H/F)",
+    "company": "SOPRA STERIA GROUP",
+    "location": "92 - Nanterre",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-20T04:31:02.629Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8999763",
+    "experience_detected": "required",
+    "first_seen": "2026-11-20T16:42:33.023400+00:00"
+  },
+  {
+    "id": "ft-8999747",
+    "source": "France Travail",
+    "title": "Développeur/se - Fullstack Java Angular - Telecom, Medias & Entertainment - Ile-de-France (H/F)",
+    "company": "SOPRA STERIA GROUP",
+    "location": "92 - Nanterre",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "",
+    "published_at": "2026-11-20T04:31:02.630Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8999747",
+    "experience_detected": "required",
+    "first_seen": "2026-11-20T16:42:33.023402+00:00"
+  },
+  {
+    "id": "ft-8986121",
+    "source": "France Travail",
+    "title": "DÉVELOPPEUR FULLSTACK PHP / REACT - H/F",
+    "company": "HORIZON JOB SOLUTIONS SRH",
+    "location": "78 - Montigny-le-Bretonneux",
+    "contract": "CDI",
+    "remote": false,
+    "salary": "Annuel de 45000.0 Euros à 50000.0 Euros",
+    "published_at": "2026-11-19T19:34:23.500Z",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8986121",
+    "experience_detected": "required",
+    "first_seen": "2026-11-20T16:42:33.023403+00:00"
+  },
+  {
     "id": "li-4492162559",
     "source": "LinkedIn",
     "title": "Développeur Fullstack Angular / C# (H/F) - Rennes",
@@ -1132,19 +1202,5 @@
     "url": "https://candidat.francetravail.fr/offres/recherche/detail/8810598",
     "experience_detected": "none_required",
     "first_seen": "2026-11-13T19:14:07.937090+00:00"
-  },
-  {
-    "id": "ft-8799785",
-    "source": "France Travail",
-    "title": "Développeur Fullstack Java / Angular (H/F)",
-    "company": "AMILTONE",
-    "location": "79 - Niort",
-    "contract": "CDI",
-    "remote": false,
-    "salary": "",
-    "published_at": "2026-11-13T11:21:40.991Z",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8799785",
-    "experience_detected": "required",
-    "first_seen": "2026-11-13T11:52:40.916783+00:00"
   }
 ]
